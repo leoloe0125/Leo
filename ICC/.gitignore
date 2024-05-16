@@ -1,0 +1,29 @@
+# 忽略指定檔案
+
+# 忽略目錄下指定檔案
+
+
+# 忽略所有指定目錄下的副檔名檔案
+
+
+# 忽略副檔名檔案
+*.xpr
+*.wcfg
+*.wpc
+*.bat
+*.log
+*.wdb
+*.pb
+*.ini
+*.dbg
+*.mem
+*.reloc
+*.rlx
+*.rtti
+*.svtype
+*.xdbg
+*.exe
+*.obj
+*.c
+*.sdb
+*.rlx

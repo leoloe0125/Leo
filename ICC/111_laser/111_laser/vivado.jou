@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Feb  3 23:31:31 2024
+# Process ID: 27968
+# Current directory: C:/Users/leolo/Project/ICC/111_laser/111_laser
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30724 C:\Users\leolo\Project\ICC\111_laser\111_laser\111_laser.xpr
+# Log file: C:/Users/leolo/Project/ICC/111_laser/111_laser/vivado.log
+# Journal file: C:/Users/leolo/Project/ICC/111_laser/111_laser\vivado.jou
+# Running On: DESKTOP-LQNSKJJ, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34137 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/leolo/Project/ICC/111_laser/111_laser/111_laser.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg
+source testfixture.tcl
+remove_forces { {/testfixture/u_LASER/CLK} {/testfixture/u_LASER/RST} {/testfixture/u_LASER/X} {/testfixture/u_LASER/Y} {/testfixture/u_LASER/C1X} {/testfixture/u_LASER/C1Y} {/testfixture/u_LASER/C2X} {/testfixture/u_LASER/C2Y} {/testfixture/u_LASER/DONE} {/testfixture/u_LASER/ps} {/testfixture/u_LASER/ns} {/testfixture/u_LASER/global_cnt} {/testfixture/u_LASER/point_cnt} {/testfixture/u_LASER/din_done} {/testfixture/u_LASER/c1_done} {/testfixture/u_LASER/c2_done} {/testfixture/u_LASER/point_done} {/testfixture/u_LASER/center_x} {/testfixture/u_LASER/center_y} {/testfixture/u_LASER/point_map_x_0} {/testfixture/u_LASER/point_map_x_1} {/testfixture/u_LASER/point_map_x_2} {/testfixture/u_LASER/point_map_x_3} {/testfixture/u_LASER/point_map_x_4} {/testfixture/u_LASER/point_map_x_5} {/testfixture/u_LASER/point_map_x_6} {/testfixture/u_LASER/point_map_x_7} {/testfixture/u_LASER/point_map_x_8} {/testfixture/u_LASER/point_map_x_9} {/testfixture/u_LASER/point_map_y_0} {/testfixture/u_LASER/point_map_y_1} {/testfixture/u_LASER/point_map_y_2} {/testfixture/u_LASER/point_map_y_3} {/testfixture/u_LASER/point_map_y_4} {/testfixture/u_LASER/point_map_y_5} {/testfixture/u_LASER/point_map_y_6} {/testfixture/u_LASER/point_map_y_7} {/testfixture/u_LASER/point_map_y_8} {/testfixture/u_LASER/point_map_y_9} {/testfixture/u_LASER/point_num} {/testfixture/u_LASER/fh0/x0} {/testfixture/u_LASER/fh0/x1} {/testfixture/u_LASER/fh0/x2} {/testfixture/u_LASER/fh0/x3} {/testfixture/u_LASER/fh0/x4} {/testfixture/u_LASER/fh0/x5} {/testfixture/u_LASER/fh0/x6} {/testfixture/u_LASER/fh0/x7} {/testfixture/u_LASER/fh0/x8} {/testfixture/u_LASER/fh0/x9} {/testfixture/u_LASER/fh0/y0} {/testfixture/u_LASER/fh0/y1} {/testfixture/u_LASER/fh0/y2} {/testfixture/u_LASER/fh0/y3} {/testfixture/u_LASER/fh0/y4} {/testfixture/u_LASER/fh0/y5} {/testfixture/u_LASER/fh0/y6} {/testfixture/u_LASER/fh0/y7} {/testfixture/u_LASER/fh0/y8} {/testfixture/u_LASER/fh0/y9} {/testfixture/u_LASER/fh0/cx} {/testfixture/u_LASER/fh0/cy} {/testfixture/u_LASER/fh0/max_table} {/testfixture/u_LASER/fh0/CLK} {/testfixture/u_LASER/fh0/RST} {/testfixture/u_LASER/fh0/point_done} {/testfixture/u_LASER/fh0/point_cnt} {/testfixture/u_LASER/fh0/point_num} {/testfixture/u_LASER/fh0/table_pin} {/testfixture/u_LASER/fh0/table_pin_reg} {/testfixture/u_LASER/fh0/scm0/x0} {/testfixture/u_LASER/fh0/scm0/x1} {/testfixture/u_LASER/fh0/scm0/x2} {/testfixture/u_LASER/fh0/scm0/x3} {/testfixture/u_LASER/fh0/scm0/x4} {/testfixture/u_LASER/fh0/scm0/x5} {/testfixture/u_LASER/fh0/scm0/x6} {/testfixture/u_LASER/fh0/scm0/x7} {/testfixture/u_LASER/fh0/scm0/x8} {/testfixture/u_LASER/fh0/scm0/x9} {/testfixture/u_LASER/fh0/scm0/y0} {/testfixture/u_LASER/fh0/scm0/y1} {/testfixture/u_LASER/fh0/scm0/y2} {/testfixture/u_LASER/fh0/scm0/y3} {/testfixture/u_LASER/fh0/scm0/y4} {/testfixture/u_LASER/fh0/scm0/y5} {/testfixture/u_LASER/fh0/scm0/y6} {/testfixture/u_LASER/fh0/scm0/y7} {/testfixture/u_LASER/fh0/scm0/y8} {/testfixture/u_LASER/fh0/scm0/y9} {/testfixture/u_LASER/fh0/scm0/cx} {/testfixture/u_LASER/fh0/scm0/cy} {/testfixture/u_LASER/fh0/scm0/table_pin} {/testfixture/u_LASER/fh0/scm0/xdis0} {/testfixture/u_LASER/fh0/scm0/xdis1} {/testfixture/u_LASER/fh0/scm0/xdis2} {/testfixture/u_LASER/fh0/scm0/xdis3} {/testfixture/u_LASER/fh0/scm0/xdis4} {/testfixture/u_LASER/fh0/scm0/xdis5} {/testfixture/u_LASER/fh0/scm0/xdis6} {/testfixture/u_LASER/fh0/scm0/xdis7} {/testfixture/u_LASER/fh0/scm0/xdis8} {/testfixture/u_LASER/fh0/scm0/xdis9} {/testfixture/u_LASER/fh0/scm0/ydis0} {/testfixture/u_LASER/fh0/scm0/ydis1} {/testfixture/u_LASER/fh0/scm0/ydis2} {/testfixture/u_LASER/fh0/scm0/ydis3} {/testfixture/u_LASER/fh0/scm0/ydis4} {/testfixture/u_LASER/fh0/scm0/ydis5} {/testfixture/u_LASER/fh0/scm0/ydis6} {/testfixture/u_LASER/fh0/scm0/ydis7} {/testfixture/u_LASER/fh0/scm0/ydis8} {/testfixture/u_LASER/fh0/scm0/ydis9} {/testfixture/u_LASER/fh0/dtm0/max_table} {/testfixture/u_LASER/fh0/dtm0/table_pin} {/testfixture/u_LASER/fh0/dtm0/CLK} {/testfixture/u_LASER/fh0/dtm0/RST} {/testfixture/u_LASER/fh0/dtm0/point_done} {/testfixture/u_LASER/fh0/dtm0/point_num} {/testfixture/u_LASER/fh0/dtm0/i} }
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER}} 
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER/fh0}} 
+save_wave_config {C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg
+source testfixture.tcl
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER}} 
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER/fh0}} 
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER/fh0/scm0}} 
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_LASER/fh0/dtm0}} 
+relaunch_sim
+save_wave_config {C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us
+save_wave_config {C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/111_laser/111_laser/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us

@@ -1,0 +1,480 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Feb  7 16:24:49 2024
+# Process ID: 4168
+# Current directory: C:/Users/leolo/Project/ICC/110_jam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20424 C:\Users\leolo\Project\ICC\110_jam\110_jam.xpr
+# Log file: C:/Users/leolo/Project/ICC/110_jam/vivado.log
+# Journal file: C:/Users/leolo/Project/ICC/110_jam\vivado.jou
+# Running On: DESKTOP-LQNSKJJ, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34137 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/leolo/Project/ICC/110_jam/110_jam.xpr
+add_files -norecurse {C:/Users/leolo/Project/ICC/110_jam/JAM.v C:/Users/leolo/Project/ICC/110_jam/order.v C:/Users/leolo/Project/ICC/110_jam/tb.sv}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_JAM/do0}} 
+save_wave_config {C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_JAM/do0}} 
+save_wave_config {C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+save_wave_config {C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us
+save_wave_config {C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 1000 us
+run 1000 us
+run 1000 us
+run 5000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 5000 us
+run 5000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 5000 us
+run 5000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 5000 us
+run 5000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 5000 us
+run 5000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 5000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 5000 us
+run 5000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 5000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+relaunch_sim
+run 8000 us
+relaunch_sim
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+current_wave_config {}
+add_wave {{/testfixture/u_JAM}} 
+save_wave_config {C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+save_wave_config {C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+current_wave_config {testfixture_behav.wcfg}
+add_wave {{/testfixture/u_JAM/work_id}} 
+save_wave_config {C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+relaunch_sim
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim
+launch_simulation
+open_wave_config C:/Users/leolo/Project/ICC/110_jam/testfixture_behav.wcfg
+source testfixture.tcl
+run 8000 us
+close_sim

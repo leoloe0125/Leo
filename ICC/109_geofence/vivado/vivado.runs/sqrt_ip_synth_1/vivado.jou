@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Feb 19 10:53:49 2024
+# Process ID: 7396
+# Current directory: C:/Users/JIANG/Desktop/ICC/109_geofence/vivado/vivado.runs/sqrt_ip_synth_1
+# Command line: vivado.exe -log sqrt_ip.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sqrt_ip.tcl
+# Log file: C:/Users/JIANG/Desktop/ICC/109_geofence/vivado/vivado.runs/sqrt_ip_synth_1/sqrt_ip.vds
+# Journal file: C:/Users/JIANG/Desktop/ICC/109_geofence/vivado/vivado.runs/sqrt_ip_synth_1\vivado.jou
+# Running On: DESKTOP-3DF5MN0, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 8499 MB
+#-----------------------------------------------------------
+source sqrt_ip.tcl -notrace

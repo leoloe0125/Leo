@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../109_geofence.gen/sources_1/ip/sqrt_ip/sim/sqrt_ip.vhd" \
+
+nosort
