@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/butterfly/butterfly_32b.v,1715765927,verilog,,C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/fft_32p_32bits.v,,butterfly_32b,,,,,,,,
+C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/fft_32p_32bits.v,1715762527,verilog,,C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/fft_32p_32bits_tb.v,C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/butterfly/butterfly_32b.v,fft_32p_32bits,,,,,,,,
+C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/fft_32p_32bits_tb.v,1715832191,verilog,,,,fft_testbench,,,,,,,,
+C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/vivado/fft_vivado/fft_vivado.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,

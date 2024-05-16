@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Dec 10 20:10:25 2023
+# Process ID: 30028
+# Current directory: C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.runs/impl_1
+# Command line: vivado.exe -log Detector_0101_fsm.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Detector_0101_fsm.tcl -notrace
+# Log file: C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.runs/impl_1/Detector_0101_fsm.vdi
+# Journal file: C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.runs/impl_1\vivado.jou
+# Running On: DESKTOP-LQNSKJJ, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34137 MB
+#-----------------------------------------------------------
+source Detector_0101_fsm.tcl -notrace

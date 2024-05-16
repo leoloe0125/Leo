@@ -1,0 +1,172 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002023c019610 .scope module, "butterfly_32b_tb" "butterfly_32b_tb" 2 3;
+ .timescale -9 -12;
+v000002023c0885b0_0 .var "din0_imag", 31 0;
+v000002023c088e70 .array "din0_imag_mem", 0 9, 31 0;
+v000002023c088650_0 .var "din0_real", 31 0;
+v000002023c0888d0 .array "din0_real_mem", 0 9, 31 0;
+v000002023c0886f0_0 .var "din1_imag", 31 0;
+v000002023c088ab0 .array "din1_imag_mem", 0 9, 31 0;
+v000002023c088b50_0 .var "din1_real", 31 0;
+v000002023c088bf0 .array "din1_real_mem", 0 9, 31 0;
+v000002023c088f10_0 .net "dout0_imag", 31 0, L_000002023c089ca0;  1 drivers
+v000002023c0883d0_0 .net "dout0_real", 31 0, L_000002023c08a6a0;  1 drivers
+v000002023c088470_0 .net "dout1_imag", 31 0, L_000002023c089d40;  1 drivers
+v000002023c088510_0 .net "dout1_real", 31 0, L_000002023c08a100;  1 drivers
+v000002023c088330 .array "expected_y0_imag", 0 9, 31 0;
+v000002023c088c90 .array "expected_y0_real", 0 9, 31 0;
+v000002023c088dd0 .array "expected_y1_imag", 0 9, 31 0;
+v000002023c088a10 .array "expected_y1_real", 0 9, 31 0;
+v000002023c088790_0 .var/i "i", 31 0;
+v000002023c088fb0_0 .var "weight_imag", 31 0;
+v000002023c088150 .array "weight_imag_mem", 0 9, 31 0;
+v000002023c0880b0_0 .var "weight_real", 31 0;
+v000002023c0881f0 .array "weight_real_mem", 0 9, 31 0;
+S_000002023c01cac0 .scope module, "uut" "butterfly_32b" 2 13, 3 1 0, S_000002023c019610;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "din0_real";
+    .port_info 1 /INPUT 32 "din0_imag";
+    .port_info 2 /INPUT 32 "din1_real";
+    .port_info 3 /INPUT 32 "din1_imag";
+    .port_info 4 /INPUT 32 "w_real";
+    .port_info 5 /INPUT 32 "w_imag";
+    .port_info 6 /OUTPUT 32 "dout0_real";
+    .port_info 7 /OUTPUT 32 "dout0_imag";
+    .port_info 8 /OUTPUT 32 "dout1_real";
+    .port_info 9 /OUTPUT 32 "dout1_imag";
+v000002023c018eb0_0 .net *"_ivl_1", 31 0, L_000002023c088290;  1 drivers
+v000002023c01ade0_0 .net *"_ivl_3", 31 0, L_000002023c089de0;  1 drivers
+v000002023c01cd00_0 .net *"_ivl_7", 31 0, L_000002023c08ac40;  1 drivers
+v000002023c01cda0_0 .net *"_ivl_9", 31 0, L_000002023c08a240;  1 drivers
+v000002023bff2ce0_0 .net "din0_imag", 31 0, v000002023c0885b0_0;  1 drivers
+v000002023bff2d80_0 .net "din0_real", 31 0, v000002023c088650_0;  1 drivers
+v000002023bff2e20_0 .net "din1_imag", 31 0, v000002023c0886f0_0;  1 drivers
+v000002023bff2ec0_0 .net "din1_real", 31 0, v000002023c088b50_0;  1 drivers
+v000002023bff2f60_0 .net "din1_w_imag", 31 0, L_000002023c0895c0;  1 drivers
+v000002023bff3000_0 .net "din1_w_real", 31 0, L_000002023c089340;  1 drivers
+v000002023bff30a0_0 .net "dout0_imag", 31 0, L_000002023c089ca0;  alias, 1 drivers
+v000002023c0245a0_0 .net "dout0_real", 31 0, L_000002023c08a6a0;  alias, 1 drivers
+v000002023c024640_0 .net "dout1_imag", 31 0, L_000002023c089d40;  alias, 1 drivers
+v000002023c088d30_0 .net "dout1_real", 31 0, L_000002023c08a100;  alias, 1 drivers
+v000002023c088830_0 .net "w_imag", 31 0, v000002023c088fb0_0;  1 drivers
+v000002023c088970_0 .net "w_real", 31 0, v000002023c0880b0_0;  1 drivers
+L_000002023c088290 .arith/mult 32, v000002023c088b50_0, v000002023c0880b0_0;
+L_000002023c089de0 .arith/mult 32, v000002023c0886f0_0, v000002023c088fb0_0;
+L_000002023c089340 .arith/sub 32, L_000002023c088290, L_000002023c089de0;
+L_000002023c08ac40 .arith/mult 32, v000002023c088b50_0, v000002023c088fb0_0;
+L_000002023c08a240 .arith/mult 32, v000002023c0886f0_0, v000002023c0880b0_0;
+L_000002023c0895c0 .arith/sum 32, L_000002023c08ac40, L_000002023c08a240;
+L_000002023c08a6a0 .arith/sum 32, v000002023c088650_0, L_000002023c089340;
+L_000002023c089ca0 .arith/sum 32, v000002023c0885b0_0, L_000002023c0895c0;
+L_000002023c08a100 .arith/sub 32, v000002023c088650_0, L_000002023c089340;
+L_000002023c089d40 .arith/sub 32, v000002023c0885b0_0, L_000002023c0895c0;
+    .scope S_000002023c019610;
+T_0 ;
+    %vpi_call 2 26 "$readmemh", "din0_real.txt", v000002023c0888d0 {0 0 0};
+    %vpi_call 2 27 "$readmemh", "din0_imag.txt", v000002023c088e70 {0 0 0};
+    %vpi_call 2 28 "$readmemh", "din1_real.txt", v000002023c088bf0 {0 0 0};
+    %vpi_call 2 29 "$readmemh", "din1_imag.txt", v000002023c088ab0 {0 0 0};
+    %vpi_call 2 30 "$readmemh", "weight_real.txt", v000002023c0881f0 {0 0 0};
+    %vpi_call 2 31 "$readmemh", "weight_imag.txt", v000002023c088150 {0 0 0};
+    %vpi_call 2 34 "$readmemh", "expected_y0_real.txt", v000002023c088c90 {0 0 0};
+    %vpi_call 2 35 "$readmemh", "expected_y0_imag.txt", v000002023c088330 {0 0 0};
+    %vpi_call 2 36 "$readmemh", "expected_y1_real.txt", v000002023c088a10 {0 0 0};
+    %vpi_call 2 37 "$readmemh", "expected_y1_imag.txt", v000002023c088dd0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_000002023c019610;
+T_1 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000002023c088790_0, 0, 32;
+T_1.0 ;
+    %load/vec4 v000002023c088790_0;
+    %cmpi/s 10, 0, 32;
+    %jmp/0xz T_1.1, 5;
+    %delay 100000, 0;
+    %ix/getv/s 4, v000002023c088790_0;
+    %load/vec4a v000002023c0888d0, 4;
+    %store/vec4 v000002023c088650_0, 0, 32;
+    %ix/getv/s 4, v000002023c088790_0;
+    %load/vec4a v000002023c088e70, 4;
+    %store/vec4 v000002023c0885b0_0, 0, 32;
+    %ix/getv/s 4, v000002023c088790_0;
+    %load/vec4a v000002023c088bf0, 4;
+    %store/vec4 v000002023c088b50_0, 0, 32;
+    %ix/getv/s 4, v000002023c088790_0;
+    %load/vec4a v000002023c088ab0, 4;
+    %store/vec4 v000002023c0886f0_0, 0, 32;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %load/vec4a v000002023c0881f0, 4;
+    %store/vec4 v000002023c0880b0_0, 0, 32;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %load/vec4a v000002023c088150, 4;
+    %store/vec4 v000002023c088fb0_0, 0, 32;
+    %delay 100000, 0;
+    %load/vec4 v000002023c0883d0_0;
+    %ix/getv/s 4, v000002023c088790_0;
+    %load/vec4a v000002023c088c90, 4;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %jmp/0 T_1.6, 4;
+    %load/vec4 v000002023c088f10_0;
+    %ix/getv/s 4, v000002023c088790_0;
+    %load/vec4a v000002023c088330, 4;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %and;
+T_1.6;
+    %flag_set/vec4 10;
+    %flag_get/vec4 10;
+    %jmp/0 T_1.5, 10;
+    %load/vec4 v000002023c088510_0;
+    %ix/getv/s 4, v000002023c088790_0;
+    %load/vec4a v000002023c088a10, 4;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %and;
+T_1.5;
+    %flag_set/vec4 9;
+    %flag_get/vec4 9;
+    %jmp/0 T_1.4, 9;
+    %load/vec4 v000002023c088470_0;
+    %ix/getv/s 4, v000002023c088790_0;
+    %load/vec4a v000002023c088dd0, 4;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %and;
+T_1.4;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.2, 8;
+    %vpi_call 2 55 "$display", "Test %d passed!", v000002023c088790_0 {0 0 0};
+    %jmp T_1.3;
+T_1.2 ;
+    %vpi_call 2 57 "$display", "Test %d failed!", v000002023c088790_0 {0 0 0};
+    %vpi_call 2 58 "$display", "Expected y0_real: %h, got: %h", &A<v000002023c088c90, v000002023c088790_0 >, v000002023c0883d0_0 {0 0 0};
+    %vpi_call 2 59 "$display", "Expected y0_imag: %h, got: %h", &A<v000002023c088330, v000002023c088790_0 >, v000002023c088f10_0 {0 0 0};
+    %vpi_call 2 60 "$display", "Expected y1_real: %h, got: %h", &A<v000002023c088a10, v000002023c088790_0 >, v000002023c088510_0 {0 0 0};
+    %vpi_call 2 61 "$display", "Expected y1_imag: %h, got: %h", &A<v000002023c088dd0, v000002023c088790_0 >, v000002023c088470_0 {0 0 0};
+T_1.3 ;
+    %load/vec4 v000002023c088790_0;
+    %addi 1, 0, 32;
+    %store/vec4 v000002023c088790_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %vpi_call 2 66 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "butterfly_32b_tb_2.v";
+    "butterfly_32b.v";

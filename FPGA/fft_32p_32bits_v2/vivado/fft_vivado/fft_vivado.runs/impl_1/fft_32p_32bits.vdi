@@ -1,0 +1,164 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu May 16 12:26:14 2024
+# Process ID: 9540
+# Current directory: C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/vivado/fft_vivado/fft_vivado.runs/impl_1
+# Command line: vivado.exe -log fft_32p_32bits.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fft_32p_32bits.tcl -notrace
+# Log file: C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/vivado/fft_vivado/fft_vivado.runs/impl_1/fft_32p_32bits.vdi
+# Journal file: C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/vivado/fft_vivado/fft_vivado.runs/impl_1\vivado.jou
+# Running On: DESKTOP-LQNSKJJ, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34137 MB
+#-----------------------------------------------------------
+source fft_32p_32bits.tcl -notrace
+Command: link_design -top fft_32p_32bits -part xc7k70tfbv676-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.830 . Memory (MB): peak = 1268.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25222 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1268.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1268.035 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k70t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1268.035 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: e39fd07e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1725.527 ; gain = 457.492
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: e39fd07e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2028.734 ; gain = 0.301
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 10 inverter(s) to 18 load pin(s).
+Phase 2 Constant propagation | Checksum: 16d64489a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2028.734 ; gain = 0.301
+INFO: [Opt 31-389] Phase Constant propagation created 7735 cells and removed 26156 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 16f13f712
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2028.734 ; gain = 0.301
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 16f13f712
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2028.734 ; gain = 0.301
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 16f13f712
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2028.734 ; gain = 0.301
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 16f13f712
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2028.734 ; gain = 0.301
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |            7735  |           26156  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 2028.734 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: d2e52260
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2028.734 ; gain = 0.301
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: d2e52260
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2028.734 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: d2e52260
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2028.734 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2028.734 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: d2e52260
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2028.734 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:24 . Memory (MB): peak = 2028.734 ; gain = 760.699
+INFO: [Common 17-1381] The checkpoint 'C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/vivado/fft_vivado/fft_vivado.runs/impl_1/fft_32p_32bits_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2028.734 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file fft_32p_32bits_drc_opted.rpt -pb fft_32p_32bits_drc_opted.pb -rpx fft_32p_32bits_drc_opted.rpx
+Command: report_drc -file fft_32p_32bits_drc_opted.rpt -pb fft_32p_32bits_drc_opted.pb -rpx fft_32p_32bits_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'X:/Xilinx/Vivado/2021.2/data/ip'.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/vivado/fft_vivado/fft_vivado.runs/impl_1/fft_32p_32bits_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2076.570 ; gain = 47.836
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k70t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC UTLZ-1] Resource utilization: CARRY4 over-utilized in Top Level Design (This design requires more CARRY4 cells than are available in the target device. This design requires 20478 of such cell types but only 10250 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.)
+ERROR: [DRC UTLZ-1] Resource utilization: LUT as Logic over-utilized in Top Level Design (This design requires more LUT as Logic cells than are available in the target device. This design requires 51724 of such cell types but only 41000 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
+ERROR: [DRC UTLZ-1] Resource utilization: Slice LUTs over-utilized in Top Level Design (This design requires more Slice LUTs cells than are available in the target device. This design requires 51724 of such cell types but only 41000 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
+INFO: [Vivado_Tcl 4-198] DRC finished with 3 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu May 16 12:27:09 2024...

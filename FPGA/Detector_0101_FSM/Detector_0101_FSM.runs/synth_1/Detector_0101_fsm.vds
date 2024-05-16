@@ -1,0 +1,200 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Dec 10 20:09:53 2023
+# Process ID: 14516
+# Current directory: C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.runs/synth_1
+# Command line: vivado.exe -log Detector_0101_fsm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Detector_0101_fsm.tcl
+# Log file: C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.runs/synth_1/Detector_0101_fsm.vds
+# Journal file: C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.runs/synth_1\vivado.jou
+# Running On: DESKTOP-LQNSKJJ, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34137 MB
+#-----------------------------------------------------------
+source Detector_0101_fsm.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.srcs/utils_1/imports/synth_1/Detector_0101_fsm.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.srcs/utils_1/imports/synth_1/Detector_0101_fsm.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Detector_0101_fsm -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26140
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 935.777 ; gain = 439.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Detector_0101_fsm' [C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.srcs/sources_1/new/Detector_0101_fsm.v:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.srcs/sources_1/new/Detector_0101_fsm.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Detector_0101_fsm' (0#1) [C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.srcs/sources_1/new/Detector_0101_fsm.v:21]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1041.742 ; gain = 545.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1041.742 ; gain = 545.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1041.742 ; gain = 545.020
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Synth 8-802] inferred FSM for state register 'ps_reg' in module 'Detector_0101_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                       A |                               00 |                               00
+                       B |                               01 |                               01
+                       C |                               10 |                               10
+                       D |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ps_reg' using encoding 'sequential' in module 'Detector_0101_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1041.742 ; gain = 545.020
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT3 |     2|
+|4     |FDCE |     2|
+|5     |IBUF |     3|
+|6     |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    11|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1223.812 ; gain = 727.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1223.812 ; gain = 727.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1223.812 ; gain = 727.090
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1235.801 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1331.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: fa59cdf1
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1331.934 ; gain = 842.555
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1331.934 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/leolo/FPGA_projects/Detector_0101_FSM/Detector_0101_FSM.runs/synth_1/Detector_0101_fsm.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Detector_0101_fsm_utilization_synth.rpt -pb Detector_0101_fsm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 10 20:10:13 2023...

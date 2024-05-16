@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/butterfly/butterfly_32b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_32b
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/fft_32p_32bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module butterfly_32b
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'butterfly_32b' [C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/butterfly/butterfly_32b.v:1]
+INFO: [VRFC 10-311] analyzing module fft_32p_32bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits_v2/fft_32p_32bits_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_testbench

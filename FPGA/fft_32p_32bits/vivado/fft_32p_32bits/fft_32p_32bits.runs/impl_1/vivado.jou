@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Apr 23 19:14:10 2024
+# Process ID: 26784
+# Current directory: C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits/vivado/fft_32p_32bits/fft_32p_32bits.runs/impl_1
+# Command line: vivado.exe -log fft_32p_32bits.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fft_32p_32bits.tcl -notrace
+# Log file: C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits/vivado/fft_32p_32bits/fft_32p_32bits.runs/impl_1/fft_32p_32bits.vdi
+# Journal file: C:/Users/leolo/Project/FPGA_projects/fft_32p_32bits/vivado/fft_32p_32bits/fft_32p_32bits.runs/impl_1\vivado.jou
+# Running On: DESKTOP-LQNSKJJ, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 34137 MB
+#-----------------------------------------------------------
+source fft_32p_32bits.tcl -notrace

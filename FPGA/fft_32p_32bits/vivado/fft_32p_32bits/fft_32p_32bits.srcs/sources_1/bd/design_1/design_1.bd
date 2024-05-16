@@ -1,0 +1,511 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7k70tfbv676-1",
+      "gen_directory": "../../../../fft_32p_32bits.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2"
+    },
+    "design_tree": {
+      "fft_32p_32bits_1": ""
+    },
+    "components": {
+      "fft_32p_32bits_1": {
+        "vlnv": "xilinx.com:module_ref:fft_32p_32bits:1.0",
+        "xci_name": "design_1_fft_32p_32bits_1_0",
+        "xci_path": "ip\\design_1_fft_32p_32bits_1_0\\design_1_fft_32p_32bits_1_0.xci",
+        "inst_hier_path": "fft_32p_32bits_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fft_32p_32bits",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "din0": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din1": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din2": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din3": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din4": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din5": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din6": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din7": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din8": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din9": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din10": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din11": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din12": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din13": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din14": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din15": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din16": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din17": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din18": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din19": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din20": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din21": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din22": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din23": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din24": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din25": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din26": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din27": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din28": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din29": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din30": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "din31": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "dout0_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout0_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout1_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout1_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout2_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout2_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout3_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout3_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout4_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout4_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout5_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout5_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout6_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout6_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout7_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout7_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout8_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout8_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout9_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout9_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout10_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout10_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout11_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout11_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout12_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout12_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout13_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout13_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout14_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout14_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout15_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout15_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout16_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout16_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout17_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout17_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout18_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout18_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout19_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout19_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout20_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout20_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout21_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout21_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout22_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout22_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout23_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout23_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout24_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout24_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout25_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout25_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout26_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout26_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout27_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout27_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout28_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout28_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout29_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout29_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout30_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout30_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout31_real": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "dout31_imag": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    }
+  }
+}
