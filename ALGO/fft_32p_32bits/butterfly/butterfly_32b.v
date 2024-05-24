@@ -21,22 +21,6 @@ wire [31:0] dout0_imag_temp;
 wire signed[31:0] din1_w_real;
 wire signed[31:0] din1_w_imag;
 
-/*
-initial  begin
-    #10
-    $display ("w_real = %h",w_real);
-    $display ("din1_real = %h",din1_real);
-    $display ("din1_w_real_full = %h",din1_w_real_full);
-    $display ("din1_w_imag_full = %h",din1_w_imag_full);
-    $display ("din1_w_real = %h",din1_w_real);
-    $display ("din1_w_imag = %h",din1_w_imag);
-    $display ("dout0_real = %h",dout0_real);
-    $display ("dout0_imag = %h",dout0_imag);
-    $display ("dout1_real = %h",dout1_real);
-    $display ("dout1_imag = %h",dout1_imag);
-
-end
-*/
 assign din1_w_real_full = ((din1_real * w_real) ) - ((din1_imag * w_imag) );
 assign din1_w_imag_full = ((din1_real * w_imag) ) + ((din1_imag * w_real) );
 

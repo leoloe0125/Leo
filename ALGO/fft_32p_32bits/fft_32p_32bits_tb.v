@@ -7,8 +7,10 @@ module fft_testbench;
     wire [31:0] dout_imag [0:31];
     reg [31:0]expected_real[0:31];reg [31:0]expected_imag[0:31];
     reg [2:0]test_mode;
+reg clk,reset;
     // Instantiate the FFT module
     fft_32p_32bits fft (
+        .clk(clk), .reset(reset),
         .din0(din[0]), .din1(din[16]), .din2(din[8]), .din3(din[24]), .din4(din[4]), .din5(din[20]), .din6(din[12]), .din7(din[28]),
         .din8(din[2]), .din9(din[18]), .din10(din[10]), .din11(din[26]), .din12(din[6]), .din13(din[22]), .din14(din[14]), .din15(din[30]),
         .din16(din[1]), .din17(din[17]), .din18(din[9]), .din19(din[25]), .din20(din[5]), .din21(din[21]), .din22(din[13]), .din23(din[29]),
@@ -52,21 +54,26 @@ module fft_testbench;
     real total_error_imag = 0;
     real average_error_real;
     real average_error_imag;
-    
+
+integer test_time =400;
+always #(test_time/2) clk = ~clk;
+initial begin
+	$readmemh("input.hex", din);
+end
     initial begin
-        
+        clk = 0;
+
         // Load the input signal
-        $readmemh("input.hex", din);
-        test_mode=4;
-        // Wait for the FFT to complete
-        #1000;
-        file_real = $fopen("tb_output_real.txt", "w");
+        test_mode=0;
+        // Wait for the FFT to complet
+#test_time
+
+    	file_real = $fopen("tb_output_real.txt", "w");
         file_imag = $fopen("tb_output_imag.txt", "w");
         $display("test_mode= %d",test_mode);
         // Check the output
         $readmemh("stage_5_real.hex", expected_real);
         $readmemh("stage_5_imag.hex", expected_imag);
-    
         for (i = 0; i < 32; i = i + 1) begin
             //total_error_real = total_error_real + abs($signed(dout_real[i]) - $signed(expected_real[i]));
             //total_error_imag = total_error_imag + abs($signed(dout_imag[i]) - $signed(expected_imag[i]));
@@ -85,11 +92,17 @@ module fft_testbench;
                     i, expected_real[i], expected_imag[i], dout_real[i], dout_imag[i]);
             end
         end
-    
-        //average_error_real = total_error_real / 32;
-        //average_error_imag = total_error_imag / 32;
-    
-        $display("Average error for real part: %f", average_error_real);
-        $display("Average error for imaginary part: %f", average_error_imag);
+
+        if(pass == 1) begin
+            $display("PASS");
+        end
+        else begin
+            $display("FAIL");
+        end
+        //$display("Average error for real part: %f", average_error_real);
+        //$display("Average error for imaginary part: %f", average_error_imag);
+$finish;
+
     end
+
 endmodule

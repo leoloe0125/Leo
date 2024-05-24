@@ -1,17 +1,11 @@
 `include "butterfly/butterfly_32b.v"
 `timescale 1ns / 1ps
 module fft_32p_32bits (
+    input clk, reset,
     input [31:0] din0, din1, din2, din3, din4, din5, din6, din7, din8, din9, din10, din11, din12, din13, din14, din15, din16, din17, din18, din19, din20, din21, din22, din23, din24, din25, din26, din27, din28, din29, din30, din31,
     input [2:0]test_mode,
-    output [31:0] dout0_real, dout0_imag, dout1_real, dout1_imag, dout2_real, dout2_imag, dout3_real, dout3_imag, dout4_real, dout4_imag, dout5_real, dout5_imag, dout6_real, dout6_imag, dout7_real, dout7_imag, dout8_real, dout8_imag, dout9_real, dout9_imag, dout10_real, dout10_imag, dout11_real, dout11_imag, dout12_real, dout12_imag, dout13_real, dout13_imag, dout14_real, dout14_imag, dout15_real, dout15_imag, dout16_real, dout16_imag, dout17_real, dout17_imag, dout18_real, dout18_imag, dout19_real, dout19_imag, dout20_real, dout20_imag, dout21_real, dout21_imag, dout22_real, dout22_imag, dout23_real, dout23_imag, dout24_real, dout24_imag, dout25_real, dout25_imag, dout26_real, dout26_imag, dout27_real, dout27_imag, dout28_real, dout28_imag, dout29_real, dout29_imag, dout30_real, dout30_imag, dout31_real, dout31_imag
+    output reg[31:0] dout0_real, dout0_imag, dout1_real, dout1_imag, dout2_real, dout2_imag, dout3_real, dout3_imag, dout4_real, dout4_imag, dout5_real, dout5_imag, dout6_real, dout6_imag, dout7_real, dout7_imag, dout8_real, dout8_imag, dout9_real, dout9_imag, dout10_real, dout10_imag, dout11_real, dout11_imag, dout12_real, dout12_imag, dout13_real, dout13_imag, dout14_real, dout14_imag, dout15_real, dout15_imag, dout16_real, dout16_imag, dout17_real, dout17_imag, dout18_real, dout18_imag, dout19_real, dout19_imag, dout20_real, dout20_imag, dout21_real, dout21_imag, dout22_real, dout22_imag, dout23_real, dout23_imag, dout24_real, dout24_imag, dout25_real, dout25_imag, dout26_real, dout26_imag, dout27_real, dout27_imag, dout28_real, dout28_imag, dout29_real, dout29_imag, dout30_real, dout30_imag, dout31_real, dout31_imag
 );
-
-parameter test_stage0 = 3'b000;
-parameter test_stage1 = 3'b001;
-parameter test_stage2 = 3'b010;
-parameter test_stage3 = 3'b011;
-parameter test_stage4 = 3'b100;
-
 wire [31:0] din[0:31];
 assign din[0] = din0;
 assign din[1] = din1;
@@ -47,73 +41,6 @@ assign din[29] = din29;
 assign din[30] = din30;
 assign din[31] = din31;
 
-reg [31:0] dout_real[0:31];
-assign dout0_real = dout_real[0];
-assign dout1_real = dout_real[1];
-assign dout2_real = dout_real[2];
-assign dout3_real = dout_real[3];
-assign dout4_real = dout_real[4];
-assign dout5_real = dout_real[5];
-assign dout6_real = dout_real[6];
-assign dout7_real = dout_real[7];
-assign dout8_real = dout_real[8];
-assign dout9_real = dout_real[9];
-assign dout10_real = dout_real[10];
-assign dout11_real = dout_real[11];
-assign dout12_real = dout_real[12];
-assign dout13_real = dout_real[13];
-assign dout14_real = dout_real[14];
-assign dout15_real = dout_real[15];
-assign dout16_real = dout_real[16];
-assign dout17_real = dout_real[17];
-assign dout18_real = dout_real[18];
-assign dout19_real = dout_real[19];
-assign dout20_real = dout_real[20];
-assign dout21_real = dout_real[21];
-assign dout22_real = dout_real[22];
-assign dout23_real = dout_real[23];
-assign dout24_real = dout_real[24];
-assign dout25_real = dout_real[25];
-assign dout26_real = dout_real[26];
-assign dout27_real = dout_real[27];
-assign dout28_real = dout_real[28];
-assign dout29_real = dout_real[29];
-assign dout30_real = dout_real[30];
-assign dout31_real = dout_real[31];
-
-reg [31:0] dout_imag[0:31];
-assign dout0_imag = dout_imag[0];
-assign dout1_imag = dout_imag[1];
-assign dout2_imag = dout_imag[2];
-assign dout3_imag = dout_imag[3];
-assign dout4_imag = dout_imag[4];
-assign dout5_imag = dout_imag[5];
-assign dout6_imag = dout_imag[6];
-assign dout7_imag = dout_imag[7];
-assign dout8_imag = dout_imag[8];
-assign dout9_imag = dout_imag[9];
-assign dout10_imag = dout_imag[10];
-assign dout11_imag = dout_imag[11];
-assign dout12_imag = dout_imag[12];
-assign dout13_imag = dout_imag[13];
-assign dout14_imag = dout_imag[14];
-assign dout15_imag = dout_imag[15];
-assign dout16_imag = dout_imag[16];
-assign dout17_imag = dout_imag[17];
-assign dout18_imag = dout_imag[18];
-assign dout19_imag = dout_imag[19];
-assign dout20_imag = dout_imag[20];
-assign dout21_imag = dout_imag[21];
-assign dout22_imag = dout_imag[22];
-assign dout23_imag = dout_imag[23];
-assign dout24_imag = dout_imag[24];
-assign dout25_imag = dout_imag[25];
-assign dout26_imag = dout_imag[26];
-assign dout27_imag = dout_imag[27];
-assign dout28_imag = dout_imag[28];
-assign dout29_imag = dout_imag[29];
-assign dout30_imag = dout_imag[30];
-assign dout31_imag = dout_imag[31];
 
 wire [31:0]a_real[0:31];
 wire [31:0]a_imag[0:31];
@@ -130,15 +57,91 @@ wire [31:0]d_imag[0:31];
 wire [31:0]e_real[0:31];
 wire [31:0]e_imag[0:31];
 
-reg [31:0] weights_real_mem [0:15];
-reg [31:0] weights_imag_mem [0:15];
+
+
+always @(posedge clk ) begin
+        dout0_real <= e_real[0]; dout0_imag <= e_imag[0];
+        dout1_real <= e_real[1]; dout1_imag <= e_imag[1];
+        dout2_real <= e_real[2]; dout2_imag <= e_imag[2];
+        dout3_real <= e_real[3]; dout3_imag <= e_imag[3];
+        dout4_real <= e_real[4]; dout4_imag <= e_imag[4];
+        dout5_real <= e_real[5]; dout5_imag <= e_imag[5];
+        dout6_real <= e_real[6]; dout6_imag <= e_imag[6];
+        dout7_real <= e_real[7]; dout7_imag <= e_imag[7];
+        dout8_real <= e_real[8]; dout8_imag <= e_imag[8];
+        dout9_real <= e_real[9]; dout9_imag <= e_imag[9];
+        dout10_real <= e_real[10]; dout10_imag <= e_imag[10];
+        dout11_real <= e_real[11]; dout11_imag <= e_imag[11];
+        dout12_real <= e_real[12]; dout12_imag <= e_imag[12];
+        dout13_real <= e_real[13]; dout13_imag <= e_imag[13];
+        dout14_real <= e_real[14]; dout14_imag <= e_imag[14];
+        dout15_real <= e_real[15]; dout15_imag <= e_imag[15];
+        dout16_real <= e_real[16]; dout16_imag <= e_imag[16];
+        dout17_real <= e_real[17]; dout17_imag <= e_imag[17];
+        dout18_real <= e_real[18]; dout18_imag <= e_imag[18];
+        dout19_real <= e_real[19]; dout19_imag <= e_imag[19];
+        dout20_real <= e_real[20]; dout20_imag <= e_imag[20];
+        dout21_real <= e_real[21]; dout21_imag <= e_imag[21];
+        dout22_real <= e_real[22]; dout22_imag <= e_imag[22];
+        dout23_real <= e_real[23]; dout23_imag <= e_imag[23];
+        dout24_real <= e_real[24]; dout24_imag <= e_imag[24];
+        dout25_real <= e_real[25]; dout25_imag <= e_imag[25];
+        dout26_real <= e_real[26]; dout26_imag <= e_imag[26];
+        dout27_real <= e_real[27]; dout27_imag <= e_imag[27];
+        dout28_real <= e_real[28]; dout28_imag <= e_imag[28];
+        dout29_real <= e_real[29]; dout29_imag <= e_imag[29];
+        dout30_real <= e_real[30]; dout30_imag <= e_imag[30];
+	dout31_real <= e_real[31]; dout31_imag <= e_imag[31];
+
+end
+
 // Read the weights into the memory array
+wire [31:0] weights_real_mem [0:15];
+wire [31:0] weights_imag_mem [0:15];
+// Read the weights into the memory array
+/*
 initial begin
     $readmemh("weight_real.hex", weights_real_mem);
     $readmemh("weight_imag.hex", weights_imag_mem);
-end
+end*/
+// 使用 assign 語句初始化 weights_real_mem
+    assign weights_real_mem[0]  = 32'h00010000;
+    assign weights_real_mem[1]  = 32'h0000FB15;
+    assign weights_real_mem[2]  = 32'h0000EC83;
+    assign weights_real_mem[3]  = 32'h0000D4DB;
+    assign weights_real_mem[4]  = 32'h0000B505;
+    assign weights_real_mem[5]  = 32'h00008E3A;
+    assign weights_real_mem[6]  = 32'h000061F8;
+    assign weights_real_mem[7]  = 32'h000031F1;
+    assign weights_real_mem[8]  = 32'h00000000;
+    assign weights_real_mem[9]  = 32'hFFFFCE0E;
+    assign weights_real_mem[10] = 32'hFFFF9E08;
+    assign weights_real_mem[11] = 32'hFFFF71C6;
+    assign weights_real_mem[12] = 32'hFFFF4AFB;
+    assign weights_real_mem[13] = 32'hFFFF2B24;
+    assign weights_real_mem[14] = 32'hFFFF137C;
+    assign weights_real_mem[15] = 32'hFFFF04EB;
+
+    // 使用 assign 語句初始化 weights_imag_mem
+    assign weights_imag_mem[0]  = 32'h00000000;
+    assign weights_imag_mem[1]  = 32'hFFFFCE0E;
+    assign weights_imag_mem[2]  = 32'hFFFF9E08;
+    assign weights_imag_mem[3]  = 32'hFFFF71C6;
+    assign weights_imag_mem[4]  = 32'hFFFF4AFB;
+    assign weights_imag_mem[5]  = 32'hFFFF2B24;
+    assign weights_imag_mem[6]  = 32'hFFFF137C;
+    assign weights_imag_mem[7]  = 32'hFFFF04EB;
+    assign weights_imag_mem[8]  = 32'hFFFF0000;
+    assign weights_imag_mem[9]  = 32'hFFFF04EB;
+    assign weights_imag_mem[10] = 32'hFFFF137C;
+    assign weights_imag_mem[11] = 32'hFFFF2B24;
+    assign weights_imag_mem[12] = 32'hFFFF4AFB;
+    assign weights_imag_mem[13] = 32'hFFFF71C6;
+    assign weights_imag_mem[14] = 32'hFFFF9E08;
+    assign weights_imag_mem[15] = 32'hFFFFCE0E;
 
 integer a;
+/* 
 always@(*)
     case(test_mode)
         test_stage0:
@@ -183,7 +186,6 @@ always@(*)
             end
     endcase
 
-    /*
 initial begin
     $display("weights_real_mem[0]=%h,w_imag(weights_imag_mem[0]=%h)",weights_real_mem[0],weights_imag_mem[0]);
     #10
@@ -194,7 +196,7 @@ initial begin
 end*/
 generate
     genvar i,m;
-    for (m=0;m<5;m=m+1) begin
+    for (m=0;m<5;m=m+1) begin : stagefive
         for (i = 0; i < 16; i = i + 1) begin : stage
             case (m)
                 0://1 weights butterfly
