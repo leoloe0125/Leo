@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\quartus\Memory256_16bits\simulation\modelsim
+vDecoder3to8
+IMe07;[OMB64Z2jVBNmJ;c3
+VQN1GX6[M[5C4ZizUAM;461
+Z1 dX:\altera\13.1\quartus\Memory256_16bits\simulation\modelsim
+w1699674310
+8X:/altera/13.1/quartus/Decoder3to8/Decoder3to8.v
+FX:/altera/13.1/quartus/Decoder3to8/Decoder3to8.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@decoder3to8
+!i10b 1
+!s100 N=JAejAM@MXJS^cS3j8Pz0
+!s85 0
+!s108 1699772756.052000
+!s107 X:/altera/13.1/quartus/Decoder3to8/Decoder3to8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Decoder3to8|X:/altera/13.1/quartus/Decoder3to8/Decoder3to8.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Decoder3to8 -O0
+vMemory256_16bits
+IBO3mgJ2=O3AmcjzN@Hmo?2
+Vc[@[bd2<9Rbi0^@<69^CV1
+R1
+Z4 w1699772714
+Z5 8X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits.v
+Z6 FX:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits.v
+L0 2
+R2
+r1
+31
+Z7 !s108 1699772756.159000
+Z8 !s107 X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Memory256_16bits|X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits.v|
+R3
+Z10 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Memory256_16bits -O0
+n@memory256_16bits
+!i10b 1
+!s100 JEJ6U:hl]69]FXV@AC:6_0
+!s85 0
+!s101 -O0
+vMemory256_16bits_tb
+!i10b 1
+!s100 8o1mlYOESC^^H[KCM3OV_2
+I^]SdbOGDf522AUVAF5W`^1
+VMfV`@f:_:[^go78AFBmm72
+R1
+w1699772715
+8X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits_tb.v
+FX:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1699772756.310000
+!s107 X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Memory256_16bits|X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits_tb.v|
+!s101 -O0
+R3
+R10
+n@memory256_16bits_tb
+vMemory32_8bits
+I3PibnOIaM^e1G:_WM;cED0
+VMRDE66VU@^MV7GD8m`dA]0
+R1
+R4
+R5
+R6
+L0 44
+R2
+r1
+31
+R7
+R8
+R9
+R3
+R10
+n@memory32_8bits
+!i10b 1
+!s100 ]XUFiRzYAW0IH5d^<UX_@3
+!s85 0
+!s101 -O0
+vMux8to1_16bits
+I2g8kJfo?0U6M7z?koXc<o1
+VPBnoWPz2EOV<_D2Z31agG1
+R1
+w1699671962
+8X:/altera/13.1/quartus/Memory256_16bits/Mux8to1_16bits.v
+FX:/altera/13.1/quartus/Memory256_16bits/Mux8to1_16bits.v
+L0 1
+R2
+r1
+31
+R3
+n@mux8to1_16bits
+R10
+!i10b 1
+!s100 6U3>ZPd?cCcRG1=oHCFU>0
+!s85 0
+!s108 1699772755.910000
+!s107 X:/altera/13.1/quartus/Memory256_16bits/Mux8to1_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Memory256_16bits|X:/altera/13.1/quartus/Memory256_16bits/Mux8to1_16bits.v|
+!s101 -O0

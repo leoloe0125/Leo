@@ -1,0 +1,937 @@
+TimeQuest Timing Analyzer report for Controller
+Sat Nov 11 21:57:09 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Propagation Delay
+ 34. Minimum Propagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 38. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 39. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 40. Clock Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths
+ 44. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; Controller                                         ;
+; Device Family      ; Cyclone IV GX                                      ;
+; Device Name        ; EP4CGX15BF14C6                                     ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 20     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+---------------+-------+----+----+-------+
+; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
++------------+---------------+-------+----+----+-------+
+; ADC        ; ALU_B         ; 8.524 ;    ;    ; 8.867 ;
+; ADC        ; ALU_PSW       ; 9.041 ;    ;    ; 9.396 ;
+; ADC        ; ALU_target[0] ; 8.499 ;    ;    ; 8.877 ;
+; ADC        ; RF_wr_en      ; 8.765 ;    ;    ; 9.116 ;
+; ADC        ; RF_wr_from    ; 8.719 ;    ;    ; 9.313 ;
+; ADD        ; ALU_B         ; 7.809 ;    ;    ; 8.037 ;
+; ADD        ; ALU_PSW       ; 8.326 ;    ;    ; 8.566 ;
+; ADD        ; RF_wr_en      ; 8.050 ;    ;    ; 8.286 ;
+; ADD        ; RF_wr_from    ; 8.004 ;    ;    ; 8.483 ;
+; ADDI       ; ALU_PSW       ; 6.167 ;    ;    ; 6.177 ;
+; ADDI       ; Imm5or8       ; 6.702 ;    ;    ; 6.742 ;
+; ADDI       ; RF_wr_en      ; 6.714 ;    ;    ; 6.644 ;
+; ADDI       ; RF_wr_from    ; 6.668 ;    ;    ; 6.841 ;
+; CMP        ; ALU_B         ; 8.149 ;    ;    ; 8.515 ;
+; CMP        ; ALU_PSW       ; 8.194 ;    ;    ; 8.523 ;
+; CMP        ; ALU_op        ; 8.757 ;    ;    ; 9.152 ;
+; JAL_Label  ; JAL           ; 8.103 ;    ;    ; 8.590 ;
+; JAL_Label  ; RF_wr_en      ; 7.842 ;    ;    ; 8.097 ;
+; JAL_Rm     ; JAL           ; 5.601 ;    ;    ; 5.845 ;
+; JAL_Rm     ; RF_wr_en      ; 5.381 ;    ;    ; 5.388 ;
+; JR         ; RF_rt_addr    ; 8.048 ;    ;    ; 8.422 ;
+; LDR        ; Imm5or8       ; 8.609 ;    ;    ; 8.889 ;
+; LDR        ; RF_wr_en      ; 7.892 ;    ;    ; 8.152 ;
+; LHI        ; ALU_target[1] ; 8.094 ;    ;    ; 8.625 ;
+; LHI        ; RF_rt_addr    ; 8.327 ;    ;    ; 8.723 ;
+; LHI        ; RF_wr_en      ; 8.683 ;    ;    ; 8.972 ;
+; LHI        ; RF_wr_from    ; 8.637 ;    ;    ; 9.169 ;
+; LLI        ; ALU_target[0] ; 7.521 ;    ;    ; 7.825 ;
+; LLI        ; ALU_target[1] ; 7.853 ;    ;    ; 8.347 ;
+; LLI        ; RF_wr_en      ; 8.442 ;    ;    ; 8.694 ;
+; LLI        ; RF_wr_from    ; 8.396 ;    ;    ; 8.891 ;
+; MOV        ; ALU_B         ; 7.736 ;    ;    ; 8.027 ;
+; MOV        ; RF_wr_en      ; 7.992 ;    ;    ; 8.250 ;
+; MOV        ; RF_wr_from    ; 7.946 ;    ;    ; 8.447 ;
+; SBB        ; ALU_B         ; 8.410 ;    ;    ; 8.708 ;
+; SBB        ; ALU_PSW       ; 8.927 ;    ;    ; 9.237 ;
+; SBB        ; ALU_op        ; 8.860 ;    ;    ; 9.272 ;
+; SBB        ; ALU_target[0] ; 7.843 ;    ;    ; 8.173 ;
+; SBB        ; RF_wr_en      ; 8.651 ;    ;    ; 8.957 ;
+; SBB        ; RF_wr_from    ; 8.605 ;    ;    ; 9.154 ;
+; STR        ; Imm5or8       ; 8.688 ;    ;    ; 9.027 ;
+; STR        ; Memory_wr_en  ; 6.660 ;    ;    ; 6.969 ;
+; STR        ; RF_rt_addr    ; 8.486 ;    ;    ; 8.893 ;
+; SUB        ; ALU_B         ; 8.026 ;    ;    ; 8.275 ;
+; SUB        ; ALU_PSW       ; 8.543 ;    ;    ; 8.804 ;
+; SUB        ; ALU_op        ; 8.481 ;    ;    ; 8.844 ;
+; SUB        ; RF_wr_en      ; 8.267 ;    ;    ; 8.524 ;
+; SUB        ; RF_wr_from    ; 8.221 ;    ;    ; 8.721 ;
+; SUBI       ; ALU_PSW       ; 7.719 ;    ;    ; 8.056 ;
+; SUBI       ; ALU_op        ; 8.102 ;    ;    ; 8.474 ;
+; SUBI       ; Imm5or8       ; 8.266 ;    ;    ; 8.602 ;
+; SUBI       ; RF_wr_en      ; 8.319 ;    ;    ; 8.559 ;
+; SUBI       ; RF_wr_from    ; 8.273 ;    ;    ; 8.756 ;
++------------+---------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+---------------+-------+----+----+-------+
+; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
++------------+---------------+-------+----+----+-------+
+; ADC        ; ALU_B         ; 8.233 ;    ;    ; 8.562 ;
+; ADC        ; ALU_PSW       ; 8.733 ;    ;    ; 9.075 ;
+; ADC        ; ALU_target[0] ; 8.197 ;    ;    ; 8.543 ;
+; ADC        ; RF_wr_en      ; 8.467 ;    ;    ; 8.805 ;
+; ADC        ; RF_wr_from    ; 8.415 ;    ;    ; 8.994 ;
+; ADD        ; ALU_B         ; 7.543 ;    ;    ; 7.764 ;
+; ADD        ; ALU_PSW       ; 8.043 ;    ;    ; 8.277 ;
+; ADD        ; RF_wr_en      ; 7.777 ;    ;    ; 8.007 ;
+; ADD        ; RF_wr_from    ; 7.725 ;    ;    ; 8.196 ;
+; ADDI       ; ALU_PSW       ; 5.979 ;    ;    ; 5.991 ;
+; ADDI       ; Imm5or8       ; 6.484 ;    ;    ; 6.525 ;
+; ADDI       ; RF_wr_en      ; 6.500 ;    ;    ; 6.437 ;
+; ADDI       ; RF_wr_from    ; 6.448 ;    ;    ; 6.626 ;
+; CMP        ; ALU_B         ; 7.855 ;    ;    ; 8.204 ;
+; CMP        ; ALU_PSW       ; 7.918 ;    ;    ; 8.236 ;
+; CMP        ; ALU_op        ; 8.488 ;    ;    ; 8.872 ;
+; JAL_Label  ; JAL           ; 7.791 ;    ;    ; 8.258 ;
+; JAL_Label  ; RF_wr_en      ; 7.578 ;    ;    ; 7.826 ;
+; JAL_Rm     ; JAL           ; 5.427 ;    ;    ; 5.673 ;
+; JAL_Rm     ; RF_wr_en      ; 5.224 ;    ;    ; 5.233 ;
+; JR         ; RF_rt_addr    ; 7.778 ;    ;    ; 8.138 ;
+; LDR        ; Imm5or8       ; 8.307 ;    ;    ; 8.579 ;
+; LDR        ; RF_wr_en      ; 7.626 ;    ;    ; 7.879 ;
+; LHI        ; ALU_target[1] ; 7.852 ;    ;    ; 8.369 ;
+; LHI        ; RF_rt_addr    ; 8.050 ;    ;    ; 8.429 ;
+; LHI        ; RF_wr_en      ; 8.389 ;    ;    ; 8.668 ;
+; LHI        ; RF_wr_from    ; 8.337 ;    ;    ; 8.857 ;
+; LLI        ; ALU_target[0] ; 7.253 ;    ;    ; 7.531 ;
+; LLI        ; ALU_target[1] ; 7.585 ;    ;    ; 8.057 ;
+; LLI        ; RF_wr_en      ; 8.122 ;    ;    ; 8.356 ;
+; LLI        ; RF_wr_from    ; 8.070 ;    ;    ; 8.545 ;
+; MOV        ; ALU_B         ; 7.473 ;    ;    ; 7.755 ;
+; MOV        ; RF_wr_en      ; 7.723 ;    ;    ; 7.973 ;
+; MOV        ; RF_wr_from    ; 7.671 ;    ;    ; 8.162 ;
+; SBB        ; ALU_B         ; 8.126 ;    ;    ; 8.410 ;
+; SBB        ; ALU_PSW       ; 8.626 ;    ;    ; 8.923 ;
+; SBB        ; ALU_op        ; 8.591 ;    ;    ; 8.988 ;
+; SBB        ; ALU_target[0] ; 7.581 ;    ;    ; 7.896 ;
+; SBB        ; RF_wr_en      ; 8.360 ;    ;    ; 8.653 ;
+; SBB        ; RF_wr_from    ; 8.308 ;    ;    ; 8.842 ;
+; STR        ; Imm5or8       ; 8.383 ;    ;    ; 8.711 ;
+; STR        ; Memory_wr_en  ; 6.444 ;    ;    ; 6.743 ;
+; STR        ; RF_rt_addr    ; 8.183 ;    ;    ; 8.573 ;
+; SUB        ; ALU_B         ; 7.752 ;    ;    ; 7.993 ;
+; SUB        ; ALU_PSW       ; 8.252 ;    ;    ; 8.506 ;
+; SUB        ; ALU_op        ; 8.222 ;    ;    ; 8.576 ;
+; SUB        ; RF_wr_en      ; 7.986 ;    ;    ; 8.236 ;
+; SUB        ; RF_wr_from    ; 7.934 ;    ;    ; 8.425 ;
+; SUBI       ; ALU_PSW       ; 7.461 ;    ;    ; 7.788 ;
+; SUBI       ; ALU_op        ; 7.858 ;    ;    ; 8.220 ;
+; SUBI       ; Imm5or8       ; 7.977 ;    ;    ; 8.302 ;
+; SUBI       ; RF_wr_en      ; 7.968 ;    ;    ; 8.192 ;
+; SUBI       ; RF_wr_from    ; 7.916 ;    ;    ; 8.381 ;
++------------+---------------+-------+----+----+-------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+---------------+-------+----+----+-------+
+; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
++------------+---------------+-------+----+----+-------+
+; ADC        ; ALU_B         ; 7.564 ;    ;    ; 7.808 ;
+; ADC        ; ALU_PSW       ; 8.069 ;    ;    ; 8.274 ;
+; ADC        ; ALU_target[0] ; 7.551 ;    ;    ; 7.809 ;
+; ADC        ; RF_wr_en      ; 7.811 ;    ;    ; 8.026 ;
+; ADC        ; RF_wr_from    ; 7.720 ;    ;    ; 8.232 ;
+; ADD        ; ALU_B         ; 6.891 ;    ;    ; 7.063 ;
+; ADD        ; ALU_PSW       ; 7.396 ;    ;    ; 7.529 ;
+; ADD        ; RF_wr_en      ; 7.138 ;    ;    ; 7.281 ;
+; ADD        ; RF_wr_from    ; 7.047 ;    ;    ; 7.487 ;
+; ADDI       ; ALU_PSW       ; 5.565 ;    ;    ; 5.556 ;
+; ADDI       ; Imm5or8       ; 6.012 ;    ;    ; 6.085 ;
+; ADDI       ; RF_wr_en      ; 6.030 ;    ;    ; 5.985 ;
+; ADDI       ; RF_wr_from    ; 5.939 ;    ;    ; 6.191 ;
+; CMP        ; ALU_B         ; 7.232 ;    ;    ; 7.481 ;
+; CMP        ; ALU_PSW       ; 7.318 ;    ;    ; 7.481 ;
+; CMP        ; ALU_op        ; 7.759 ;    ;    ; 8.014 ;
+; JAL_Label  ; JAL           ; 7.159 ;    ;    ; 7.564 ;
+; JAL_Label  ; RF_wr_en      ; 6.971 ;    ;    ; 7.095 ;
+; JAL_Rm     ; JAL           ; 5.000 ;    ;    ; 5.271 ;
+; JAL_Rm     ; RF_wr_en      ; 4.847 ;    ;    ; 4.829 ;
+; JR         ; RF_rt_addr    ; 7.171 ;    ;    ; 7.393 ;
+; LDR        ; Imm5or8       ; 7.642 ;    ;    ; 7.831 ;
+; LDR        ; RF_wr_en      ; 7.019 ;    ;    ; 7.145 ;
+; LHI        ; ALU_target[1] ; 7.124 ;    ;    ; 7.553 ;
+; LHI        ; RF_rt_addr    ; 7.434 ;    ;    ; 7.662 ;
+; LHI        ; RF_wr_en      ; 7.720 ;    ;    ; 7.896 ;
+; LHI        ; RF_wr_from    ; 7.629 ;    ;    ; 8.102 ;
+; LLI        ; ALU_target[0] ; 6.637 ;    ;    ; 6.859 ;
+; LLI        ; ALU_target[1] ; 6.883 ;    ;    ; 7.295 ;
+; LLI        ; RF_wr_en      ; 7.479 ;    ;    ; 7.638 ;
+; LLI        ; RF_wr_from    ; 7.388 ;    ;    ; 7.844 ;
+; MOV        ; ALU_B         ; 6.841 ;    ;    ; 7.047 ;
+; MOV        ; RF_wr_en      ; 7.099 ;    ;    ; 7.241 ;
+; MOV        ; RF_wr_from    ; 7.008 ;    ;    ; 7.447 ;
+; SBB        ; ALU_B         ; 7.461 ;    ;    ; 7.656 ;
+; SBB        ; ALU_PSW       ; 7.966 ;    ;    ; 8.122 ;
+; SBB        ; ALU_op        ; 7.850 ;    ;    ; 8.117 ;
+; SBB        ; ALU_target[0] ; 6.957 ;    ;    ; 7.175 ;
+; SBB        ; RF_wr_en      ; 7.708 ;    ;    ; 7.874 ;
+; SBB        ; RF_wr_from    ; 7.617 ;    ;    ; 8.080 ;
+; STR        ; Imm5or8       ; 7.714 ;    ;    ; 7.951 ;
+; STR        ; Memory_wr_en  ; 5.876 ;    ;    ; 6.097 ;
+; STR        ; RF_rt_addr    ; 7.573 ;    ;    ; 7.812 ;
+; SUB        ; ALU_B         ; 7.091 ;    ;    ; 7.267 ;
+; SUB        ; ALU_PSW       ; 7.596 ;    ;    ; 7.733 ;
+; SUB        ; ALU_op        ; 7.485 ;    ;    ; 7.732 ;
+; SUB        ; RF_wr_en      ; 7.338 ;    ;    ; 7.485 ;
+; SUB        ; RF_wr_from    ; 7.247 ;    ;    ; 7.691 ;
+; SUBI       ; ALU_PSW       ; 6.858 ;    ;    ; 7.055 ;
+; SUBI       ; ALU_op        ; 7.143 ;    ;    ; 7.406 ;
+; SUBI       ; Imm5or8       ; 7.318 ;    ;    ; 7.567 ;
+; SUBI       ; RF_wr_en      ; 7.374 ;    ;    ; 7.513 ;
+; SUBI       ; RF_wr_from    ; 7.283 ;    ;    ; 7.719 ;
++------------+---------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+---------------+-------+----+----+-------+
+; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
++------------+---------------+-------+----+----+-------+
+; ADC        ; ALU_B         ; 7.301 ;    ;    ; 7.537 ;
+; ADC        ; ALU_PSW       ; 7.789 ;    ;    ; 7.989 ;
+; ADC        ; ALU_target[0] ; 7.278 ;    ;    ; 7.514 ;
+; ADC        ; RF_wr_en      ; 7.544 ;    ;    ; 7.749 ;
+; ADC        ; RF_wr_from    ; 7.448 ;    ;    ; 7.948 ;
+; ADD        ; ALU_B         ; 6.653 ;    ;    ; 6.821 ;
+; ADD        ; ALU_PSW       ; 7.141 ;    ;    ; 7.273 ;
+; ADD        ; RF_wr_en      ; 6.896 ;    ;    ; 7.033 ;
+; ADD        ; RF_wr_from    ; 6.800 ;    ;    ; 7.232 ;
+; ADDI       ; ALU_PSW       ; 5.392 ;    ;    ; 5.385 ;
+; ADDI       ; Imm5or8       ; 5.817 ;    ;    ; 5.889 ;
+; ADDI       ; RF_wr_en      ; 5.836 ;    ;    ; 5.795 ;
+; ADDI       ; RF_wr_from    ; 5.740 ;    ;    ; 5.994 ;
+; CMP        ; ALU_B         ; 6.968 ;    ;    ; 7.206 ;
+; CMP        ; ALU_PSW       ; 7.069 ;    ;    ; 7.228 ;
+; CMP        ; ALU_op        ; 7.518 ;    ;    ; 7.769 ;
+; JAL_Label  ; JAL           ; 6.885 ;    ;    ; 7.273 ;
+; JAL_Label  ; RF_wr_en      ; 6.736 ;    ;    ; 6.857 ;
+; JAL_Rm     ; JAL           ; 4.843 ;    ;    ; 5.112 ;
+; JAL_Rm     ; RF_wr_en      ; 4.703 ;    ;    ; 4.689 ;
+; JR         ; RF_rt_addr    ; 6.930 ;    ;    ; 7.144 ;
+; LDR        ; Imm5or8       ; 7.376 ;    ;    ; 7.561 ;
+; LDR        ; RF_wr_en      ; 6.782 ;    ;    ; 6.906 ;
+; LHI        ; ALU_target[1] ; 6.908 ;    ;    ; 7.325 ;
+; LHI        ; RF_rt_addr    ; 7.183 ;    ;    ; 7.404 ;
+; LHI        ; RF_wr_en      ; 7.457 ;    ;    ; 7.625 ;
+; LHI        ; RF_wr_from    ; 7.361 ;    ;    ; 7.824 ;
+; LLI        ; ALU_target[0] ; 6.399 ;    ;    ; 6.601 ;
+; LLI        ; ALU_target[1] ; 6.651 ;    ;    ; 7.043 ;
+; LLI        ; RF_wr_en      ; 7.200 ;    ;    ; 7.343 ;
+; LLI        ; RF_wr_from    ; 7.104 ;    ;    ; 7.542 ;
+; MOV        ; ALU_B         ; 6.607 ;    ;    ; 6.807 ;
+; MOV        ; RF_wr_en      ; 6.859 ;    ;    ; 6.997 ;
+; MOV        ; RF_wr_from    ; 6.763 ;    ;    ; 7.196 ;
+; SBB        ; ALU_B         ; 7.204 ;    ;    ; 7.392 ;
+; SBB        ; ALU_PSW       ; 7.692 ;    ;    ; 7.844 ;
+; SBB        ; ALU_op        ; 7.606 ;    ;    ; 7.867 ;
+; SBB        ; ALU_target[0] ; 6.720 ;    ;    ; 6.933 ;
+; SBB        ; RF_wr_en      ; 7.447 ;    ;    ; 7.604 ;
+; SBB        ; RF_wr_from    ; 7.351 ;    ;    ; 7.803 ;
+; STR        ; Imm5or8       ; 7.445 ;    ;    ; 7.673 ;
+; STR        ; Memory_wr_en  ; 5.685 ;    ;    ; 5.898 ;
+; STR        ; RF_rt_addr    ; 7.299 ;    ;    ; 7.530 ;
+; SUB        ; ALU_B         ; 6.847 ;    ;    ; 7.016 ;
+; SUB        ; ALU_PSW       ; 7.335 ;    ;    ; 7.468 ;
+; SUB        ; ALU_op        ; 7.254 ;    ;    ; 7.496 ;
+; SUB        ; RF_wr_en      ; 7.090 ;    ;    ; 7.228 ;
+; SUB        ; RF_wr_from    ; 6.994 ;    ;    ; 7.427 ;
+; SUBI       ; ALU_PSW       ; 6.626 ;    ;    ; 6.817 ;
+; SUBI       ; ALU_op        ; 6.925 ;    ;    ; 7.182 ;
+; SUBI       ; Imm5or8       ; 7.064 ;    ;    ; 7.305 ;
+; SUBI       ; RF_wr_en      ; 7.063 ;    ;    ; 7.189 ;
+; SUBI       ; RF_wr_from    ; 6.967 ;    ;    ; 7.388 ;
++------------+---------------+-------+----+----+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+---------------+-------+----+----+-------+
+; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
++------------+---------------+-------+----+----+-------+
+; ADC        ; ALU_B         ; 4.936 ;    ;    ; 5.574 ;
+; ADC        ; ALU_PSW       ; 5.216 ;    ;    ; 5.884 ;
+; ADC        ; ALU_target[0] ; 4.924 ;    ;    ; 5.597 ;
+; ADC        ; RF_wr_en      ; 5.059 ;    ;    ; 5.697 ;
+; ADC        ; RF_wr_from    ; 5.139 ;    ;    ; 5.728 ;
+; ADD        ; ALU_B         ; 4.499 ;    ;    ; 5.032 ;
+; ADD        ; ALU_PSW       ; 4.779 ;    ;    ; 5.342 ;
+; ADD        ; RF_wr_en      ; 4.622 ;    ;    ; 5.155 ;
+; ADD        ; RF_wr_from    ; 4.702 ;    ;    ; 5.186 ;
+; ADDI       ; ALU_PSW       ; 3.595 ;    ;    ; 3.925 ;
+; ADDI       ; Imm5or8       ; 3.929 ;    ;    ; 4.299 ;
+; ADDI       ; RF_wr_en      ; 3.900 ;    ;    ; 4.137 ;
+; ADDI       ; RF_wr_from    ; 3.980 ;    ;    ; 4.168 ;
+; CMP        ; ALU_B         ; 4.722 ;    ;    ; 5.367 ;
+; CMP        ; ALU_PSW       ; 4.736 ;    ;    ; 5.394 ;
+; CMP        ; ALU_op        ; 5.216 ;    ;    ; 5.863 ;
+; JAL_Label  ; JAL           ; 4.760 ;    ;    ; 5.305 ;
+; JAL_Label  ; RF_wr_en      ; 4.518 ;    ;    ; 5.104 ;
+; JAL_Rm     ; JAL           ; 3.383 ;    ;    ; 3.648 ;
+; JAL_Rm     ; RF_wr_en      ; 3.158 ;    ;    ; 3.473 ;
+; JR         ; RF_rt_addr    ; 4.676 ;    ;    ; 5.332 ;
+; LDR        ; Imm5or8       ; 4.983 ;    ;    ; 5.640 ;
+; LDR        ; RF_wr_en      ; 4.554 ;    ;    ; 5.147 ;
+; LHI        ; ALU_target[1] ; 4.863 ;    ;    ; 5.462 ;
+; LHI        ; RF_rt_addr    ; 4.828 ;    ;    ; 5.520 ;
+; LHI        ; RF_wr_en      ; 4.986 ;    ;    ; 5.554 ;
+; LHI        ; RF_wr_from    ; 5.066 ;    ;    ; 5.585 ;
+; LLI        ; ALU_target[0] ; 4.343 ;    ;    ; 4.925 ;
+; LLI        ; ALU_target[1] ; 4.723 ;    ;    ; 5.286 ;
+; LLI        ; RF_wr_en      ; 4.846 ;    ;    ; 5.378 ;
+; LLI        ; RF_wr_from    ; 4.926 ;    ;    ; 5.409 ;
+; MOV        ; ALU_B         ; 4.465 ;    ;    ; 5.059 ;
+; MOV        ; RF_wr_en      ; 4.597 ;    ;    ; 5.171 ;
+; MOV        ; RF_wr_from    ; 4.677 ;    ;    ; 5.202 ;
+; SBB        ; ALU_B         ; 4.855 ;    ;    ; 5.449 ;
+; SBB        ; ALU_PSW       ; 5.135 ;    ;    ; 5.759 ;
+; SBB        ; ALU_op        ; 5.265 ;    ;    ; 5.907 ;
+; SBB        ; ALU_target[0] ; 4.547 ;    ;    ; 5.166 ;
+; SBB        ; RF_wr_en      ; 4.978 ;    ;    ; 5.572 ;
+; SBB        ; RF_wr_from    ; 5.058 ;    ;    ; 5.603 ;
+; STR        ; Imm5or8       ; 5.037 ;    ;    ; 5.710 ;
+; STR        ; Memory_wr_en  ; 3.906 ;    ;    ; 4.463 ;
+; STR        ; RF_rt_addr    ; 4.940 ;    ;    ; 5.627 ;
+; SUB        ; ALU_B         ; 4.618 ;    ;    ; 5.180 ;
+; SUB        ; ALU_PSW       ; 4.898 ;    ;    ; 5.490 ;
+; SUB        ; ALU_op        ; 5.032 ;    ;    ; 5.642 ;
+; SUB        ; RF_wr_en      ; 4.741 ;    ;    ; 5.303 ;
+; SUB        ; RF_wr_from    ; 4.821 ;    ;    ; 5.334 ;
+; SUBI       ; ALU_PSW       ; 4.443 ;    ;    ; 5.076 ;
+; SUBI       ; ALU_op        ; 4.826 ;    ;    ; 5.421 ;
+; SUBI       ; Imm5or8       ; 4.783 ;    ;    ; 5.436 ;
+; SUBI       ; RF_wr_en      ; 4.777 ;    ;    ; 5.318 ;
+; SUBI       ; RF_wr_from    ; 4.857 ;    ;    ; 5.349 ;
++------------+---------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+---------------+-------+----+----+-------+
+; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
++------------+---------------+-------+----+----+-------+
+; ADC        ; ALU_B         ; 4.763 ;    ;    ; 5.389 ;
+; ADC        ; ALU_PSW       ; 5.035 ;    ;    ; 5.689 ;
+; ADC        ; ALU_target[0] ; 4.745 ;    ;    ; 5.398 ;
+; ADC        ; RF_wr_en      ; 4.884 ;    ;    ; 5.509 ;
+; ADC        ; RF_wr_from    ; 4.957 ;    ;    ; 5.538 ;
+; ADD        ; ALU_B         ; 4.342 ;    ;    ; 4.870 ;
+; ADD        ; ALU_PSW       ; 4.614 ;    ;    ; 5.170 ;
+; ADD        ; RF_wr_en      ; 4.463 ;    ;    ; 4.990 ;
+; ADD        ; RF_wr_from    ; 4.536 ;    ;    ; 5.019 ;
+; ADDI       ; ALU_PSW       ; 3.482 ;    ;    ; 3.814 ;
+; ADDI       ; Imm5or8       ; 3.799 ;    ;    ; 4.168 ;
+; ADDI       ; RF_wr_en      ; 3.774 ;    ;    ; 4.014 ;
+; ADDI       ; RF_wr_from    ; 3.847 ;    ;    ; 4.043 ;
+; CMP        ; ALU_B         ; 4.551 ;    ;    ; 5.178 ;
+; CMP        ; ALU_PSW       ; 4.573 ;    ;    ; 5.220 ;
+; CMP        ; ALU_op        ; 5.057 ;    ;    ; 5.694 ;
+; JAL_Label  ; JAL           ; 4.572 ;    ;    ; 5.106 ;
+; JAL_Label  ; RF_wr_en      ; 4.364 ;    ;    ; 4.942 ;
+; JAL_Rm     ; JAL           ; 3.275 ;    ;    ; 3.545 ;
+; JAL_Rm     ; RF_wr_en      ; 3.062 ;    ;    ; 3.381 ;
+; JR         ; RF_rt_addr    ; 4.516 ;    ;    ; 5.161 ;
+; LDR        ; Imm5or8       ; 4.806 ;    ;    ; 5.452 ;
+; LDR        ; RF_wr_en      ; 4.399 ;    ;    ; 4.983 ;
+; LHI        ; ALU_target[1] ; 4.718 ;    ;    ; 5.308 ;
+; LHI        ; RF_rt_addr    ; 4.662 ;    ;    ; 5.342 ;
+; LHI        ; RF_wr_en      ; 4.813 ;    ;    ; 5.372 ;
+; LHI        ; RF_wr_from    ; 4.886 ;    ;    ; 5.401 ;
+; LLI        ; ALU_target[0] ; 4.185 ;    ;    ; 4.751 ;
+; LLI        ; ALU_target[1] ; 4.562 ;    ;    ; 5.112 ;
+; LLI        ; RF_wr_en      ; 4.657 ;    ;    ; 5.176 ;
+; LLI        ; RF_wr_from    ; 4.730 ;    ;    ; 5.205 ;
+; MOV        ; ALU_B         ; 4.310 ;    ;    ; 4.895 ;
+; MOV        ; RF_wr_en      ; 4.439 ;    ;    ; 5.004 ;
+; MOV        ; RF_wr_from    ; 4.512 ;    ;    ; 5.033 ;
+; SBB        ; ALU_B         ; 4.686 ;    ;    ; 5.271 ;
+; SBB        ; ALU_PSW       ; 4.958 ;    ;    ; 5.571 ;
+; SBB        ; ALU_op        ; 5.105 ;    ;    ; 5.735 ;
+; SBB        ; ALU_target[0] ; 4.389 ;    ;    ; 4.998 ;
+; SBB        ; RF_wr_en      ; 4.807 ;    ;    ; 5.391 ;
+; SBB        ; RF_wr_from    ; 4.880 ;    ;    ; 5.420 ;
+; STR        ; Imm5or8       ; 4.858 ;    ;    ; 5.519 ;
+; STR        ; Memory_wr_en  ; 3.776 ;    ;    ; 4.325 ;
+; STR        ; RF_rt_addr    ; 4.762 ;    ;    ; 5.434 ;
+; SUB        ; ALU_B         ; 4.457 ;    ;    ; 5.013 ;
+; SUB        ; ALU_PSW       ; 4.729 ;    ;    ; 5.313 ;
+; SUB        ; ALU_op        ; 4.881 ;    ;    ; 5.481 ;
+; SUB        ; RF_wr_en      ; 4.578 ;    ;    ; 5.133 ;
+; SUB        ; RF_wr_from    ; 4.651 ;    ;    ; 5.162 ;
+; SUBI       ; ALU_PSW       ; 4.291 ;    ;    ; 4.913 ;
+; SUBI       ; ALU_op        ; 4.682 ;    ;    ; 5.268 ;
+; SUBI       ; Imm5or8       ; 4.614 ;    ;    ; 5.256 ;
+; SUBI       ; RF_wr_en      ; 4.572 ;    ;    ; 5.096 ;
+; SUBI       ; RF_wr_from    ; 4.645 ;    ;    ; 5.125 ;
++------------+---------------+-------+----+----+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+---------------+-------+----+----+-------+
+; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
++------------+---------------+-------+----+----+-------+
+; ADC        ; ALU_B         ; 8.524 ;    ;    ; 8.867 ;
+; ADC        ; ALU_PSW       ; 9.041 ;    ;    ; 9.396 ;
+; ADC        ; ALU_target[0] ; 8.499 ;    ;    ; 8.877 ;
+; ADC        ; RF_wr_en      ; 8.765 ;    ;    ; 9.116 ;
+; ADC        ; RF_wr_from    ; 8.719 ;    ;    ; 9.313 ;
+; ADD        ; ALU_B         ; 7.809 ;    ;    ; 8.037 ;
+; ADD        ; ALU_PSW       ; 8.326 ;    ;    ; 8.566 ;
+; ADD        ; RF_wr_en      ; 8.050 ;    ;    ; 8.286 ;
+; ADD        ; RF_wr_from    ; 8.004 ;    ;    ; 8.483 ;
+; ADDI       ; ALU_PSW       ; 6.167 ;    ;    ; 6.177 ;
+; ADDI       ; Imm5or8       ; 6.702 ;    ;    ; 6.742 ;
+; ADDI       ; RF_wr_en      ; 6.714 ;    ;    ; 6.644 ;
+; ADDI       ; RF_wr_from    ; 6.668 ;    ;    ; 6.841 ;
+; CMP        ; ALU_B         ; 8.149 ;    ;    ; 8.515 ;
+; CMP        ; ALU_PSW       ; 8.194 ;    ;    ; 8.523 ;
+; CMP        ; ALU_op        ; 8.757 ;    ;    ; 9.152 ;
+; JAL_Label  ; JAL           ; 8.103 ;    ;    ; 8.590 ;
+; JAL_Label  ; RF_wr_en      ; 7.842 ;    ;    ; 8.097 ;
+; JAL_Rm     ; JAL           ; 5.601 ;    ;    ; 5.845 ;
+; JAL_Rm     ; RF_wr_en      ; 5.381 ;    ;    ; 5.388 ;
+; JR         ; RF_rt_addr    ; 8.048 ;    ;    ; 8.422 ;
+; LDR        ; Imm5or8       ; 8.609 ;    ;    ; 8.889 ;
+; LDR        ; RF_wr_en      ; 7.892 ;    ;    ; 8.152 ;
+; LHI        ; ALU_target[1] ; 8.094 ;    ;    ; 8.625 ;
+; LHI        ; RF_rt_addr    ; 8.327 ;    ;    ; 8.723 ;
+; LHI        ; RF_wr_en      ; 8.683 ;    ;    ; 8.972 ;
+; LHI        ; RF_wr_from    ; 8.637 ;    ;    ; 9.169 ;
+; LLI        ; ALU_target[0] ; 7.521 ;    ;    ; 7.825 ;
+; LLI        ; ALU_target[1] ; 7.853 ;    ;    ; 8.347 ;
+; LLI        ; RF_wr_en      ; 8.442 ;    ;    ; 8.694 ;
+; LLI        ; RF_wr_from    ; 8.396 ;    ;    ; 8.891 ;
+; MOV        ; ALU_B         ; 7.736 ;    ;    ; 8.027 ;
+; MOV        ; RF_wr_en      ; 7.992 ;    ;    ; 8.250 ;
+; MOV        ; RF_wr_from    ; 7.946 ;    ;    ; 8.447 ;
+; SBB        ; ALU_B         ; 8.410 ;    ;    ; 8.708 ;
+; SBB        ; ALU_PSW       ; 8.927 ;    ;    ; 9.237 ;
+; SBB        ; ALU_op        ; 8.860 ;    ;    ; 9.272 ;
+; SBB        ; ALU_target[0] ; 7.843 ;    ;    ; 8.173 ;
+; SBB        ; RF_wr_en      ; 8.651 ;    ;    ; 8.957 ;
+; SBB        ; RF_wr_from    ; 8.605 ;    ;    ; 9.154 ;
+; STR        ; Imm5or8       ; 8.688 ;    ;    ; 9.027 ;
+; STR        ; Memory_wr_en  ; 6.660 ;    ;    ; 6.969 ;
+; STR        ; RF_rt_addr    ; 8.486 ;    ;    ; 8.893 ;
+; SUB        ; ALU_B         ; 8.026 ;    ;    ; 8.275 ;
+; SUB        ; ALU_PSW       ; 8.543 ;    ;    ; 8.804 ;
+; SUB        ; ALU_op        ; 8.481 ;    ;    ; 8.844 ;
+; SUB        ; RF_wr_en      ; 8.267 ;    ;    ; 8.524 ;
+; SUB        ; RF_wr_from    ; 8.221 ;    ;    ; 8.721 ;
+; SUBI       ; ALU_PSW       ; 7.719 ;    ;    ; 8.056 ;
+; SUBI       ; ALU_op        ; 8.102 ;    ;    ; 8.474 ;
+; SUBI       ; Imm5or8       ; 8.266 ;    ;    ; 8.602 ;
+; SUBI       ; RF_wr_en      ; 8.319 ;    ;    ; 8.559 ;
+; SUBI       ; RF_wr_from    ; 8.273 ;    ;    ; 8.756 ;
++------------+---------------+-------+----+----+-------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+---------------+-------+----+----+-------+
+; Input Port ; Output Port   ; RR    ; RF ; FR ; FF    ;
++------------+---------------+-------+----+----+-------+
+; ADC        ; ALU_B         ; 4.763 ;    ;    ; 5.389 ;
+; ADC        ; ALU_PSW       ; 5.035 ;    ;    ; 5.689 ;
+; ADC        ; ALU_target[0] ; 4.745 ;    ;    ; 5.398 ;
+; ADC        ; RF_wr_en      ; 4.884 ;    ;    ; 5.509 ;
+; ADC        ; RF_wr_from    ; 4.957 ;    ;    ; 5.538 ;
+; ADD        ; ALU_B         ; 4.342 ;    ;    ; 4.870 ;
+; ADD        ; ALU_PSW       ; 4.614 ;    ;    ; 5.170 ;
+; ADD        ; RF_wr_en      ; 4.463 ;    ;    ; 4.990 ;
+; ADD        ; RF_wr_from    ; 4.536 ;    ;    ; 5.019 ;
+; ADDI       ; ALU_PSW       ; 3.482 ;    ;    ; 3.814 ;
+; ADDI       ; Imm5or8       ; 3.799 ;    ;    ; 4.168 ;
+; ADDI       ; RF_wr_en      ; 3.774 ;    ;    ; 4.014 ;
+; ADDI       ; RF_wr_from    ; 3.847 ;    ;    ; 4.043 ;
+; CMP        ; ALU_B         ; 4.551 ;    ;    ; 5.178 ;
+; CMP        ; ALU_PSW       ; 4.573 ;    ;    ; 5.220 ;
+; CMP        ; ALU_op        ; 5.057 ;    ;    ; 5.694 ;
+; JAL_Label  ; JAL           ; 4.572 ;    ;    ; 5.106 ;
+; JAL_Label  ; RF_wr_en      ; 4.364 ;    ;    ; 4.942 ;
+; JAL_Rm     ; JAL           ; 3.275 ;    ;    ; 3.545 ;
+; JAL_Rm     ; RF_wr_en      ; 3.062 ;    ;    ; 3.381 ;
+; JR         ; RF_rt_addr    ; 4.516 ;    ;    ; 5.161 ;
+; LDR        ; Imm5or8       ; 4.806 ;    ;    ; 5.452 ;
+; LDR        ; RF_wr_en      ; 4.399 ;    ;    ; 4.983 ;
+; LHI        ; ALU_target[1] ; 4.718 ;    ;    ; 5.308 ;
+; LHI        ; RF_rt_addr    ; 4.662 ;    ;    ; 5.342 ;
+; LHI        ; RF_wr_en      ; 4.813 ;    ;    ; 5.372 ;
+; LHI        ; RF_wr_from    ; 4.886 ;    ;    ; 5.401 ;
+; LLI        ; ALU_target[0] ; 4.185 ;    ;    ; 4.751 ;
+; LLI        ; ALU_target[1] ; 4.562 ;    ;    ; 5.112 ;
+; LLI        ; RF_wr_en      ; 4.657 ;    ;    ; 5.176 ;
+; LLI        ; RF_wr_from    ; 4.730 ;    ;    ; 5.205 ;
+; MOV        ; ALU_B         ; 4.310 ;    ;    ; 4.895 ;
+; MOV        ; RF_wr_en      ; 4.439 ;    ;    ; 5.004 ;
+; MOV        ; RF_wr_from    ; 4.512 ;    ;    ; 5.033 ;
+; SBB        ; ALU_B         ; 4.686 ;    ;    ; 5.271 ;
+; SBB        ; ALU_PSW       ; 4.958 ;    ;    ; 5.571 ;
+; SBB        ; ALU_op        ; 5.105 ;    ;    ; 5.735 ;
+; SBB        ; ALU_target[0] ; 4.389 ;    ;    ; 4.998 ;
+; SBB        ; RF_wr_en      ; 4.807 ;    ;    ; 5.391 ;
+; SBB        ; RF_wr_from    ; 4.880 ;    ;    ; 5.420 ;
+; STR        ; Imm5or8       ; 4.858 ;    ;    ; 5.519 ;
+; STR        ; Memory_wr_en  ; 3.776 ;    ;    ; 4.325 ;
+; STR        ; RF_rt_addr    ; 4.762 ;    ;    ; 5.434 ;
+; SUB        ; ALU_B         ; 4.457 ;    ;    ; 5.013 ;
+; SUB        ; ALU_PSW       ; 4.729 ;    ;    ; 5.313 ;
+; SUB        ; ALU_op        ; 4.881 ;    ;    ; 5.481 ;
+; SUB        ; RF_wr_en      ; 4.578 ;    ;    ; 5.133 ;
+; SUB        ; RF_wr_from    ; 4.651 ;    ;    ; 5.162 ;
+; SUBI       ; ALU_PSW       ; 4.291 ;    ;    ; 4.913 ;
+; SUBI       ; ALU_op        ; 4.682 ;    ;    ; 5.268 ;
+; SUBI       ; Imm5or8       ; 4.614 ;    ;    ; 5.256 ;
+; SUBI       ; RF_wr_en      ; 4.572 ;    ;    ; 5.096 ;
+; SUBI       ; RF_wr_from    ; 4.645 ;    ;    ; 5.125 ;
++------------+---------------+-------+----+----+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; RF_rt_addr    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; RF_wr_en      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; RF_wr_from    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Imm5or8       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; JAL           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ALU_B         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ALU_op        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ALU_PSW       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Memory_wr_en  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ALU_target[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ALU_target[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-------------------------------------------------------------------+
+; Input Transition Times                                            ;
++----------------+--------------+-----------------+-----------------+
+; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------------+--------------+-----------------+-----------------+
+; BCC            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BCS            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BNE            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BEQ            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BAL            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; JMP            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; OutR           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; HLT            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LHI            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; STR            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; JR             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LDR            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; JAL_Label      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; JAL_Rm         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ADDI           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SUBI           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ADC            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SBB            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ADD            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SUB            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; LLI            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; MOV            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; CMP            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_NCSO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++----------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; RF_rt_addr    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; RF_wr_en      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; RF_wr_from    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; Imm5or8       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.4 V               ; -0.00557 V          ; 0.238 V                              ; 0.014 V                              ; 2.9e-10 s                   ; 3.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.4 V              ; -0.00557 V         ; 0.238 V                             ; 0.014 V                             ; 2.9e-10 s                  ; 3.48e-10 s                 ; No                        ; Yes                       ;
+; JAL           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_B         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_op        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; ALU_PSW       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; Memory_wr_en  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; ALU_target[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_target[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.76e-09 V                   ; 2.4 V               ; -0.034 V            ; 0.102 V                              ; 0.065 V                              ; 2.49e-10 s                  ; 3.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.76e-09 V                  ; 2.4 V              ; -0.034 V           ; 0.102 V                             ; 0.065 V                             ; 2.49e-10 s                 ; 3.49e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.94e-09 V                   ; 2.39 V              ; -0.0344 V           ; 0.156 V                              ; 0.089 V                              ; 2.68e-10 s                  ; 2.6e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.94e-09 V                  ; 2.39 V             ; -0.0344 V          ; 0.156 V                             ; 0.089 V                             ; 2.68e-10 s                 ; 2.6e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; RF_rt_addr    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; RF_wr_en      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; RF_wr_from    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; Imm5or8       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.36 V              ; -0.00623 V          ; 0.121 V                              ; 0.03 V                               ; 4.4e-10 s                   ; 4.28e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.36 V             ; -0.00623 V         ; 0.121 V                             ; 0.03 V                              ; 4.4e-10 s                  ; 4.28e-10 s                 ; Yes                       ; Yes                       ;
+; JAL           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_B         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_op        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; ALU_PSW       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; Memory_wr_en  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; ALU_target[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_target[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.93e-07 V                   ; 2.37 V              ; -0.0278 V           ; 0.106 V                              ; 0.115 V                              ; 2.69e-10 s                  ; 4.05e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.93e-07 V                  ; 2.37 V             ; -0.0278 V          ; 0.106 V                             ; 0.115 V                             ; 2.69e-10 s                 ; 4.05e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.76e-07 V                   ; 2.36 V              ; -0.00439 V          ; 0.088 V                              ; 0.007 V                              ; 4.05e-10 s                  ; 3.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.76e-07 V                  ; 2.36 V             ; -0.00439 V         ; 0.088 V                             ; 0.007 V                             ; 4.05e-10 s                 ; 3.35e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; RF_rt_addr    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; RF_wr_en      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; RF_wr_from    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; Imm5or8       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.72 V              ; -0.0199 V           ; 0.186 V                              ; 0.027 V                              ; 2.63e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.72 V             ; -0.0199 V          ; 0.186 V                             ; 0.027 V                             ; 2.63e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; JAL           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_B         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_op        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; ALU_PSW       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; Memory_wr_en  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; ALU_target[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ALU_target[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.06e-08 V                   ; 2.86 V              ; -0.0341 V           ; 0.364 V                              ; 0.046 V                              ; 1.17e-10 s                  ; 2.6e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.06e-08 V                  ; 2.86 V             ; -0.0341 V          ; 0.364 V                             ; 0.046 V                             ; 1.17e-10 s                 ; 2.6e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.81e-08 V                   ; 2.72 V              ; -0.0542 V           ; 0.144 V                              ; 0.087 V                              ; 2.55e-10 s                  ; 2.14e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.81e-08 V                  ; 2.72 V             ; -0.0542 V          ; 0.144 V                             ; 0.087 V                             ; 2.55e-10 s                 ; 2.14e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 15    ; 15   ;
+; Unconstrained Input Port Paths  ; 53    ; 53   ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 53    ; 53   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Sat Nov 11 21:57:08 2023
+Info: Command: quartus_sta Controller -c Controller
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Controller.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4652 megabytes
+    Info: Processing ended: Sat Nov 11 21:57:09 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

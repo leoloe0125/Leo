@@ -1,0 +1,17 @@
+module Forwarding_unit (
+	input [10:8]Inst0,Inst1,Inst2,
+	input [10:2]Inst3,
+	input RF_wr_en_D1,RF_wr_en,RF_wr_en_for,
+	input STR,LHI,
+	output [1:0]Rs_forwarding,Rt_forwarding
+	);
+	
+
+wire Rs32,Rs31,Rs30;
+	
+assign Rs32 = 	RF_wr_en_D1  & ((Inst3[7]^ Inst2[10]) & (Inst3[6]^ Inst2[9]) & (Inst3[5]^ Inst2[8]));
+assign Rs31 = 	RF_wr_en     & ((Inst3[7]^ Inst1[10]) & (Inst3[6]^ Inst1[9]) & (Inst3[5]^ Inst1[8]));
+assign Rs30 = 	RF_wr_en_for & ((Inst3[7]^ Inst0[10]) & (Inst3[6]^ Inst0[9]) & (Inst3[5]^ Inst0[8]));
+	
+	
+assign rs_forwarding[0] = ((Inst3[7]^ Inst2[10]) & (Inst3[6]^ Inst2[9]) & (Inst3[5]^ Inst2[8]))|((Inst3[7]^ Inst1[10]) & (Inst3[6]^ Inst1[9]) & (Inst3[5]^ Inst1[8]))

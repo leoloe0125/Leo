@@ -1,0 +1,56 @@
+# Reading X:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Memory256_16bits_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying X:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied X:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Memory256_16bits {X:/altera/13.1/quartus/Memory256_16bits/Mux8to1_16bits.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux8to1_16bits
+# 
+# Top level modules:
+# 	Mux8to1_16bits
+# vlog -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Decoder3to8 {X:/altera/13.1/quartus/Decoder3to8/Decoder3to8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Decoder3to8
+# 
+# Top level modules:
+# 	Decoder3to8
+# vlog -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Memory256_16bits {X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memory256_16bits
+# -- Compiling module Memory32_8bits
+# 
+# Top level modules:
+# 	Memory256_16bits
+# 
+# vlog -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Memory256_16bits {X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memory256_16bits_tb
+# 
+# Top level modules:
+# 	Memory256_16bits_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  Memory256_16bits_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Memory256_16bits_tb 
+# Loading work.Memory256_16bits_tb
+# Loading work.Memory256_16bits
+# Loading work.Decoder3to8
+# Loading work.Mux8to1_16bits
+# Loading work.Memory32_8bits
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module Memory256_16bits_tb at X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits_tb.v line 42
+# Simulation Breakpoint: Break in Module Memory256_16bits_tb at X:/altera/13.1/quartus/Memory256_16bits/Memory256_16bits_tb.v line 42
+# MACRO ./Memory256_16bits_run_msim_rtl_verilog.do PAUSED at line 19

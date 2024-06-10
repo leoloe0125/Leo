@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\FA_16bits\simulation\modelsim
+vFA_16bits
+I0?BJPb`]S;<J=UPG@j_m_0
+V]G8g=]=T8L8jWmdGAb@P>2
+Z1 dX:\altera\13.1\FA_16bits\simulation\modelsim
+w1699714528
+8X:/altera/13.1/FA_16bits/FA_16bits.v
+FX:/altera/13.1/FA_16bits/FA_16bits.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@f@a_16bits
+!i10b 1
+!s100 j:CF:KzJhNX]Z:mg5AJh`0
+!s85 0
+!s108 1699714576.874000
+!s107 X:/altera/13.1/FA_16bits/FA_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/FA_16bits|X:/altera/13.1/FA_16bits/FA_16bits.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/FA_16bits -O0
+vFA_16bits_tb
+!i10b 1
+!s100 ll^lQQ_:9zCH1:Ua3c2kU2
+I]UcAXLWO^YFI<BTR]NfdK1
+Vc6cX`6b:9k>5GFjSL5UgK3
+R1
+w1699713839
+8X:/altera/13.1/FA_16bits/FA_16bits_tb.v
+FX:/altera/13.1/FA_16bits/FA_16bits_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1699714576.974000
+!s107 X:/altera/13.1/FA_16bits/FA_16bits_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/FA_16bits|X:/altera/13.1/FA_16bits/FA_16bits_tb.v|
+!s101 -O0
+R3
+R4
+n@f@a_16bits_tb

@@ -1,0 +1,362 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\quartus\Project\Term_project\RISC_complete\simulation\modelsim
+vALU_16bits
+Im6hISOX90EU7l^f1In]?>0
+VH:3jCj_F?GFK1MiCOm[>J1
+Z1 dX:\altera\13.1\quartus\Project\Term_project\RISC_complete\simulation\modelsim
+w1699717430
+8X:/altera/13.1/quartus/Project/Term_project/Library/ALU_16bits.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/ALU_16bits.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@a@l@u_16bits
+Z4 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Project/Term_project/Library -O0
+!i10b 1
+!s100 KeKnCf[eM[P?f?oOOMbha1
+!s85 0
+!s108 1699961375.689000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/ALU_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/ALU_16bits.v|
+!s101 -O0
+vBranch_unit
+IgndFNQocPQZ9naW:G=XR61
+VYY7iF`<HHm1AXkZeP<8=T1
+R1
+w1699955351
+8X:/altera/13.1/quartus/Project/Term_project/Library/Branch_unit.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/Branch_unit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@branch_unit
+!i10b 1
+!s100 U648OOH6iPPm871U<Lm3K3
+!s85 0
+!s108 1699961377.159000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/Branch_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Branch_unit.v|
+!s101 -O0
+vController
+Imizlej2=Dg89b8MC[D^dH2
+V[<Jhfz8^mUZQTV2MN3hRZ2
+R1
+w1699710956
+8X:/altera/13.1/quartus/Project/Term_project/Library/Controller.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/Controller.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@controller
+!i10b 1
+!s100 DeW<NgM4U@0`i<QL63GVF1
+!s85 0
+!s108 1699961376.599000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Controller.v|
+!s101 -O0
+vDecoder3to8
+IM6TKV@NMoLRO8Sa3189kM1
+VQN1GX6[M[5C4ZizUAM;461
+R1
+w1699674310
+8X:/altera/13.1/quartus/Project/Term_project/Library/Decoder3to8.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/Decoder3to8.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@decoder3to8
+!i10b 1
+!s100 MFV=aO=?7nI[UIb631<nc3
+!s85 0
+!s108 1699961376.498000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/Decoder3to8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Decoder3to8.v|
+!s101 -O0
+vDFF_16bits
+IDjBoPjz7QT[cYo7ZRWWeS2
+VF1kYjYmhjnjo>^hDjUjaU3
+R1
+w1699673363
+8X:/altera/13.1/quartus/Project/Term_project/Library/DFF_16bits.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/DFF_16bits.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@d@f@f_16bits
+!i10b 1
+!s100 K42WU8fK1OHGPPz:C_;LI0
+!s85 0
+!s108 1699961376.401000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/DFF_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/DFF_16bits.v|
+!s101 -O0
+vFA_16bits
+IPc2z3]N;GW@R[GK6n=T7W2
+V]G8g=]=T8L8jWmdGAb@P>2
+R1
+w1699717391
+8X:/altera/13.1/quartus/Project/Term_project/Library/FA_16bits.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/FA_16bits.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@f@a_16bits
+!i10b 1
+!s100 CfkeYCM7IoFPMzbZcK6Oa0
+!s85 0
+!s108 1699961376.333000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/FA_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/FA_16bits.v|
+!s101 -O0
+vForwarding_unit
+IzNA7fa1fYZk8:nWO?GViH2
+V]>j^oeG_z9=BCM3lD<b`E0
+R1
+w1699882688
+8X:/altera/13.1/quartus/Project/Term_project/Library/Fowarding_unit.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/Fowarding_unit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@forwarding_unit
+!i10b 1
+!s100 az7VLgJQVBT^V9n>Dk;2^1
+!s85 0
+!s108 1699961376.881000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/Fowarding_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Fowarding_unit.v|
+!s101 -O0
+vHazard_Detector
+I05f@dGO6GcFnhQUQz5:?R2
+VCGz>zU7ea:RVeJkGIYLzD0
+R1
+w1699896326
+8X:/altera/13.1/quartus/Project/Term_project/Library/Hazard_Detector.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/Hazard_Detector.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@hazard_@detector
+!i10b 1
+!s100 9]^l3fN_VGg85[RB[N@KP0
+!s85 0
+!s108 1699961376.969000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/Hazard_Detector.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Hazard_Detector.v|
+!s101 -O0
+vInstruction_Decoder
+IATCH9h2F?0P]X4>2Jjijj0
+Vm7_=RXcRPPJ>ajRP5jl:I1
+R1
+w1699696868
+8X:/altera/13.1/quartus/Project/Term_project/Library/Instruction_Decoder.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/Instruction_Decoder.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@instruction_@decoder
+!i10b 1
+!s100 7A^WRelI?MlEl5AY6o7=L0
+!s85 0
+!s108 1699961376.264000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/Instruction_Decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Instruction_Decoder.v|
+!s101 -O0
+vMemory256_16bits
+IBR]Gl2TJN=3J3AjaXRY6b3
+Vc[@[bd2<9Rbi0^@<69^CV1
+R1
+Z5 w1699772714
+Z6 8X:/altera/13.1/quartus/Project/Term_project/Library/Memory256_16bits.v
+Z7 FX:/altera/13.1/quartus/Project/Term_project/Library/Memory256_16bits.v
+L0 2
+R2
+r1
+31
+Z8 !s108 1699961376.112000
+Z9 !s107 X:/altera/13.1/quartus/Project/Term_project/Library/Memory256_16bits.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Memory256_16bits.v|
+R3
+R4
+n@memory256_16bits
+!i10b 1
+!s100 C?9X@U96mXl]_5S;^K9=92
+!s85 0
+!s101 -O0
+vMemory32_8bits
+I9fX`=Ig9]KDZ7aRnijU@N0
+VMRDE66VU@^MV7GD8m`dA]0
+R1
+R5
+R6
+R7
+L0 44
+R2
+r1
+31
+R8
+R9
+R10
+R3
+R4
+n@memory32_8bits
+!i10b 1
+!s100 ^nC3>AZbg:X6H>?edBm_`1
+!s85 0
+!s101 -O0
+vMux2to1_16bits
+I9L7g]Z;LOB=kzd?BcCE8R3
+VJ[M`5YOZ41fd@E;YImj0R3
+R1
+w1699897498
+8X:/altera/13.1/quartus/Project/Term_project/Library/Mux2to1_16bits.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/Mux2to1_16bits.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@mux2to1_16bits
+!i10b 1
+!s100 W=;mbbEGTgE8;nc];eVSl3
+!s85 0
+!s108 1699961377.058000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/Mux2to1_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Mux2to1_16bits.v|
+!s101 -O0
+vMux4to1_16bits
+I;dZ]5lnkmT3EY`B@832Lo3
+VBIifPBF4GUi_[0fF?C]7l3
+R1
+w1699869560
+8X:/altera/13.1/quartus/Project/Term_project/Library/Mux4to1_16bits.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/Mux4to1_16bits.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@mux4to1_16bits
+!i10b 1
+!s100 PH?WZO4aM?_M6G3z64B@W2
+!s85 0
+!s108 1699961375.807000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/Mux4to1_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Mux4to1_16bits.v|
+!s101 -O0
+vMux8to1_16bits
+I]jM1^i16R@g9<L_NUKK5N0
+VPBnoWPz2EOV<_D2Z31agG1
+R1
+w1699671962
+8X:/altera/13.1/quartus/Project/Term_project/Library/Mux8to1_16bits.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/Mux8to1_16bits.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@mux8to1_16bits
+!i10b 1
+!s100 d;a7a`_CJnkGii?XMgT4M0
+!s85 0
+!s108 1699961376.006000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/Mux8to1_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/Mux8to1_16bits.v|
+!s101 -O0
+vRF8_16bits
+IgUbbUn2U=Gf^gMjJz0]fY3
+VCeVoZ>Ob:DI6zej2:?hLM1
+R1
+w1699674770
+8X:/altera/13.1/quartus/Project/Term_project/Library/RF8_16bits.v
+FX:/altera/13.1/quartus/Project/Term_project/Library/RF8_16bits.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@r@f8_16bits
+!i10b 1
+!s100 0lT^Wj]>NL[BXzL?liT]Z1
+!s85 0
+!s108 1699961375.937000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Library/RF8_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Library|X:/altera/13.1/quartus/Project/Term_project/Library/RF8_16bits.v|
+!s101 -O0
+vRISC_complete
+I8KnzhRPG?V38mLPYe6B;m2
+V6QQ;gR_d<D>zCRFd:6<6:3
+R1
+w1699961232
+8X:/altera/13.1/quartus/Project/Term_project/RISC_complete/RISC_complete.v
+FX:/altera/13.1/quartus/Project/Term_project/RISC_complete/RISC_complete.v
+L0 1
+R2
+r1
+31
+R3
+n@r@i@s@c_complete
+!i10b 1
+!s100 aO^Ah`P4Wm;kW4IlmTP^i2
+!s85 0
+!s108 1699961376.679000
+!s107 X:/altera/13.1/quartus/Project/Term_project/RISC_complete/RISC_complete.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/RISC_complete|X:/altera/13.1/quartus/Project/Term_project/RISC_complete/RISC_complete.v|
+!s101 -O0
+Z11 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Project/Term_project/RISC_complete -O0
+vRISC_complete_tb
+!i10b 1
+!s100 =YdnRBEOHi`U;5RX_mP9B1
+IFn3MUP7`hOzg4<40h4j9R2
+VJKemPKWom=5Qk1BZMga3Y2
+R1
+w1699961130
+8X:/altera/13.1/quartus/Project/Term_project/RISC_complete/RISC_complete_tb.v
+FX:/altera/13.1/quartus/Project/Term_project/RISC_complete/RISC_complete_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1699961377.247000
+!s107 X:/altera/13.1/quartus/Project/Term_project/RISC_complete/RISC_complete_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/RISC_complete|X:/altera/13.1/quartus/Project/Term_project/RISC_complete/RISC_complete_tb.v|
+!s101 -O0
+R3
+R11
+n@r@i@s@c_complete_tb

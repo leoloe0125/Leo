@@ -1,0 +1,12 @@
+
+module Mem256_16bits(
+	input addr
+	
+	Decoder3to8 D0 (addr,en,addr_dec);
+	
+module Mem32_8bits (
+	.address,
+	.clock,
+	.data,
+	.wren,
+	.q);

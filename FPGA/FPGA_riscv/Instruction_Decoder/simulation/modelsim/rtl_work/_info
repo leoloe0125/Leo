@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\quartus\Instruction_Decoder\simulation\modelsim
+vInstruction_Decoder
+IClNLYozcd=fLG96TXEB`A0
+Vm7_=RXcRPPJ>ajRP5jl:I1
+Z1 dX:\altera\13.1\quartus\Instruction_Decoder\simulation\modelsim
+w1699696868
+8X:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder.v
+FX:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@instruction_@decoder
+!i10b 1
+!s100 1jo[zEeUilXh[Vc1>D9[A1
+!s85 0
+!s108 1699697178.890000
+!s107 X:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Instruction_Decoder|X:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Instruction_Decoder -O0
+vInstruction_Decoder_tb
+!i10b 1
+!s100 =[SBYFhjECWnchbB0m:OW2
+IiQ`7eQQHG7G60@_leIj==3
+VAJKYa?j=<JBo>hd36@lR03
+R1
+w1699697120
+8X:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder_tb.v
+FX:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1699697178.986000
+!s107 X:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Instruction_Decoder|X:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder_tb.v|
+!s101 -O0
+R3
+R4
+n@instruction_@decoder_tb

@@ -1,0 +1,24 @@
+module FA_16bits(
+	input [15:0]A,B,
+	IB
+	output [15:0]S,
+	output C);
+	
+	
+	
+module HA(
+	input A,B,
+	output P);
+	
+	assign P=A^B;
+
+endmodule
+
+module FA(
+	input A,B,C,
+	output P,S);
+
+	HA H0(A,B,P);
+	HA H1(C,P,S);
+
+endmodule

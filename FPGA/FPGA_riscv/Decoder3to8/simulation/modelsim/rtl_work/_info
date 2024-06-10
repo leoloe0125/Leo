@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\quartus\Project\Term_project\Decoder3to8\simulation\modelsim
+vDecoder3to8
+I`I3kK;3KUzV9;f9b2g=^f1
+VQN1GX6[M[5C4ZizUAM;461
+Z1 dX:\altera\13.1\quartus\Project\Term_project\Decoder3to8\simulation\modelsim
+w1699674310
+8X:/altera/13.1/quartus/Project/Term_project/Decoder3to8/Decoder3to8.v
+FX:/altera/13.1/quartus/Project/Term_project/Decoder3to8/Decoder3to8.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@decoder3to8
+!i10b 1
+!s100 lH^`;V?Ab9hb0OUhh_oO<2
+!s85 0
+!s108 1700225882.909000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Decoder3to8/Decoder3to8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Decoder3to8|X:/altera/13.1/quartus/Project/Term_project/Decoder3to8/Decoder3to8.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Project/Term_project/Decoder3to8 -O0
+vDecoder3to8_tb
+!i10b 1
+!s100 A@oTh523h9WC?Qo3Eo0223
+IEGkCi_e5m45hc1bXM;kZ41
+V>dUSlDAoXj?ZHZ^<7R3=51
+R1
+w1700225704
+8X:/altera/13.1/quartus/Project/Term_project/Decoder3to8/Decoder3to8_tb.v
+FX:/altera/13.1/quartus/Project/Term_project/Decoder3to8/Decoder3to8_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1700225883.079000
+!s107 X:/altera/13.1/quartus/Project/Term_project/Decoder3to8/Decoder3to8_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Project/Term_project/Decoder3to8|X:/altera/13.1/quartus/Project/Term_project/Decoder3to8/Decoder3to8_tb.v|
+!s101 -O0
+R3
+R4
+n@decoder3to8_tb

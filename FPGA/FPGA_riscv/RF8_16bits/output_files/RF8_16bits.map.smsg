@@ -1,0 +1,10 @@
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(5): object "rs" differs only in case from object "Rs" in the same scope
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(5): object "rt" differs only in case from object "Rt" in the same scope
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(7): object "r0" differs only in case from object "R0" in the same scope
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(7): object "r1" differs only in case from object "R1" in the same scope
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(7): object "r2" differs only in case from object "R2" in the same scope
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(7): object "r3" differs only in case from object "R3" in the same scope
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(7): object "r4" differs only in case from object "R4" in the same scope
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(7): object "r5" differs only in case from object "R5" in the same scope
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(7): object "r6" differs only in case from object "R6" in the same scope
+Info (10281): Verilog HDL Declaration information at RF8_16bits.v(7): object "r7" differs only in case from object "R7" in the same scope

@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\quartus\DFF_16bits\simulation\modelsim
+vDFF_16bits
+I5OP9ezAS1zz33S72G^88<1
+VF1kYjYmhjnjo>^hDjUjaU3
+Z1 dX:\altera\13.1\quartus\DFF_16bits\simulation\modelsim
+w1699673363
+8X:/altera/13.1/quartus/DFF_16bits/DFF_16bits.v
+FX:/altera/13.1/quartus/DFF_16bits/DFF_16bits.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@d@f@f_16bits
+!i10b 1
+!s100 9:PSXH4V4RWN02E0ViU103
+!s85 0
+!s108 1699673505.303000
+!s107 X:/altera/13.1/quartus/DFF_16bits/DFF_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/DFF_16bits|X:/altera/13.1/quartus/DFF_16bits/DFF_16bits.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/DFF_16bits -O0
+vDFF_16bits_tb
+!i10b 1
+!s100 8^i:5FkRl=]cAfc5P93GZ3
+IRD[X4eC29:X0TCb27:gIK3
+V9PJR0K>A9D8[`G^lLY>MN1
+R1
+w1699673488
+8X:/altera/13.1/quartus/DFF_16bits/DFF_16bits_tb.v
+FX:/altera/13.1/quartus/DFF_16bits/DFF_16bits_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1699673505.458000
+!s107 X:/altera/13.1/quartus/DFF_16bits/DFF_16bits_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/DFF_16bits|X:/altera/13.1/quartus/DFF_16bits/DFF_16bits_tb.v|
+!s101 -O0
+R3
+R4
+n@d@f@f_16bits_tb

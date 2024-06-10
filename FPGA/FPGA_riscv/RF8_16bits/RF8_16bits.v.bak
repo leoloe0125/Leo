@@ -1,0 +1,10 @@
+module RF8_16bits
+	(	input [15:0]Din,
+		input [2:0]wr_addr,rs_addr,rt_addr,
+		output reg [15:0]rs,rt);
+		
+		
+Mux8to1_16bits
+	(	input [15:0]Din0,Din1,Din2,Din3,Din4,Din5,Din6,Din7,
+		input [2:0]Control,
+		output reg [15:0]Dout);

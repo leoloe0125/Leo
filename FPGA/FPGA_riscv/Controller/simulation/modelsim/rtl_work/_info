@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\quartus\Controller\simulation\modelsim
+vController
+I8hoL0z7A3[T2adK[7KX9b2
+V[<Jhfz8^mUZQTV2MN3hRZ2
+Z1 dX:\altera\13.1\quartus\Controller\simulation\modelsim
+w1699710956
+8X:/altera/13.1/quartus/Controller/Controller.v
+FX:/altera/13.1/quartus/Controller/Controller.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@controller
+!i10b 1
+!s100 A8;nJ@Im6GnRNMUT?I:N11
+!s85 0
+!s108 1699711037.481000
+!s107 X:/altera/13.1/quartus/Controller/Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Controller|X:/altera/13.1/quartus/Controller/Controller.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Controller -O0
+vController_tb
+!i10b 1
+!s100 2lN3T_=P>N5LSB6[VhJC^2
+IleJ6M[I<I=mL;8N=l444b0
+VcNdGiL;S:j60IlMEe:aK_3
+R1
+w1699709291
+8X:/altera/13.1/quartus/Controller/Controller_tb.v
+FX:/altera/13.1/quartus/Controller/Controller_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1699711037.585000
+!s107 X:/altera/13.1/quartus/Controller/Controller_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Controller|X:/altera/13.1/quartus/Controller/Controller_tb.v|
+!s101 -O0
+R3
+R4
+n@controller_tb

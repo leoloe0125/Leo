@@ -1,0 +1,47 @@
+
+
+
+
+module RF8_16bits
+	(	input [15:0]wr_data,
+		input [2:0]wr_addr,rs_addr,rt_addr,
+		input clk,rst,en,
+		output  [15:0]rs,rt);
+		
+module Mux8to1_16bits
+	(	input [15:0]Din0,Din1,Din2,Din3,Din4,Din5,Din6,Din7,
+		input [2:0]Control,
+		output reg [15:0]Dout);
+		
+module Memory256_16bits(
+	input [7:0]addr,
+	input [15:0]Din,
+	input clk,en,
+	output [15:0]Dout);
+	
+module Instruction_Decoder( 
+  input [15:0]Inst,
+ output MOV,ADDI,SUBI,LHI,LLI,LDR,STR,ADD,ADC,SUB,SBB,CMP,BCC,BCS,BNE,BEQ,BAL,JMP,JAL_Label,JAL_Rm,JR,OutR,HLT);
+ 
+ module FA_16bits(
+	input [15:0]A,B,
+	input Cin,
+	output reg[15:0]S,
+	output [16:15]Cout);
+	
+module DFF_16bits
+	(input [15:0]Din,
+		input clk,en,rst,
+		output reg[15:0]Dout);
+		
+module Decoder3to8
+	(input [2:0]Din,
+		input en,
+		output reg [7:0]Dout);
+
+module Controller(
+ input
+MOV,ADDI,SUBI,LHI,LLI,LDR,STR,ADD,ADC,SUB,SBB,CMP,BCC,BCS,BNE,BEQ,BAL,JMP,JAL_Label,JAL_Rm,JR,OutR,HLT,
+output
+RF_rt_addr,RF_wr_en,RF_wr_from,Imm5or8,JAL,ALU_B,ALU_op,ALU_PSW,Memory_wr_en,
+output [1:0] ALU_target);

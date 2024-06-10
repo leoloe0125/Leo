@@ -1,0 +1,15 @@
+module FA_16bits_tb();
+
+	reg[15:0]A,B;
+	reg Cin;
+	wire[15:0]S;
+	wire [16:15]Cout;
+	
+	initial begin
+		A=16'd65536/2;
+		B=16'd65536/2-1;
+	
+	$stop
+	end
+
+	endmodule

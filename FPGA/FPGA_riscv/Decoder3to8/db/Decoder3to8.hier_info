@@ -1,0 +1,22 @@
+|Decoder3to8
+Din[0] => ShiftLeft0.IN11
+Din[1] => ShiftLeft0.IN10
+Din[2] => ShiftLeft0.IN9
+en => Dout.OUTPUTSELECT
+en => Dout.OUTPUTSELECT
+en => Dout.OUTPUTSELECT
+en => Dout.OUTPUTSELECT
+en => Dout.OUTPUTSELECT
+en => Dout.OUTPUTSELECT
+en => Dout.OUTPUTSELECT
+en => Dout.OUTPUTSELECT
+Dout[0] << Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] << Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] << Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] << Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] << Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[5] << Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[6] << Dout.DB_MAX_OUTPUT_PORT_TYPE
+Dout[7] << Dout.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,1706 @@
+TimeQuest Timing Analyzer report for Instruction_Decoder
+Sat Nov 11 18:05:27 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Propagation Delay
+ 34. Minimum Propagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 38. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 39. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 40. Clock Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths
+ 44. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; Instruction_Decoder                                ;
+; Device Family      ; Cyclone IV GX                                      ;
+; Device Name        ; EP4CGX15BF14C6                                     ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 20     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; Inst[0]    ; ADC         ; 9.160  ;        ;        ; 9.584  ;
+; Inst[0]    ; ADD         ;        ; 9.832  ; 10.327 ;        ;
+; Inst[0]    ; CMP         ; 9.331  ;        ;        ; 9.784  ;
+; Inst[0]    ; HLT         ; 8.110  ;        ;        ; 8.498  ;
+; Inst[0]    ; OutR        ;        ; 8.671  ; 9.236  ;        ;
+; Inst[0]    ; SBB         ; 7.851  ;        ;        ; 8.252  ;
+; Inst[0]    ; SUB         ;        ; 7.706  ; 8.335  ;        ;
+; Inst[1]    ; ADC         ;        ; 6.953  ; 7.145  ;        ;
+; Inst[1]    ; ADD         ;        ; 7.684  ; 7.805  ;        ;
+; Inst[1]    ; CMP         ;        ; 7.218  ; 7.417  ;        ;
+; Inst[1]    ; HLT         ;        ; 6.867  ; 7.017  ;        ;
+; Inst[1]    ; OutR        ;        ; 7.553  ; 7.627  ;        ;
+; Inst[1]    ; SBB         ; 5.665  ;        ;        ; 5.692  ;
+; Inst[1]    ; SUB         ; 5.676  ;        ;        ; 5.703  ;
+; Inst[8]    ; BAL         ;        ; 8.334  ; 8.843  ;        ;
+; Inst[8]    ; BCC         ; 8.267  ;        ;        ; 8.654  ;
+; Inst[8]    ; BCS         ;        ; 7.928  ; 8.472  ;        ;
+; Inst[8]    ; BEQ         ;        ; 8.452  ; 9.003  ;        ;
+; Inst[8]    ; BNE         ; 8.245  ;        ;        ; 8.637  ;
+; Inst[9]    ; BAL         ; 8.161  ;        ;        ; 8.561  ;
+; Inst[9]    ; BCC         ; 7.846  ;        ;        ; 8.208  ;
+; Inst[9]    ; BCS         ; 7.572  ;        ;        ; 7.919  ;
+; Inst[9]    ; BEQ         ;        ; 8.007  ; 8.520  ;        ;
+; Inst[9]    ; BNE         ;        ; 7.746  ; 8.244  ;        ;
+; Inst[10]   ; BAL         ; 8.256  ;        ;        ; 8.615  ;
+; Inst[10]   ; BCC         ;        ; 7.960  ; 8.467  ;        ;
+; Inst[10]   ; BCS         ;        ; 7.672  ; 8.193  ;        ;
+; Inst[10]   ; BEQ         ;        ; 8.206  ; 8.724  ;        ;
+; Inst[10]   ; BNE         ;        ; 7.944  ; 8.447  ;        ;
+; Inst[11]   ; ADC         ;        ; 9.580  ; 10.083 ;        ;
+; Inst[11]   ; ADD         ;        ; 10.305 ; 10.730 ;        ;
+; Inst[11]   ; ADDI        ; 7.979  ;        ;        ; 8.343  ;
+; Inst[11]   ; BAL         ; 11.081 ;        ;        ; 11.559 ;
+; Inst[11]   ; BCC         ;        ; 11.000 ; 11.421 ;        ;
+; Inst[11]   ; BCS         ;        ; 10.712 ; 11.147 ;        ;
+; Inst[11]   ; BEQ         ;        ; 11.246 ; 11.678 ;        ;
+; Inst[11]   ; BNE         ;        ; 10.984 ; 11.401 ;        ;
+; Inst[11]   ; CMP         ;        ; 9.181  ; 9.709  ;        ;
+; Inst[11]   ; HLT         ;        ; 8.830  ; 9.309  ;        ;
+; Inst[11]   ; JAL_Label   ; 11.047 ;        ;        ; 11.469 ;
+; Inst[11]   ; JAL_Rm      ;        ; 8.568  ; 9.105  ;        ;
+; Inst[11]   ; JMP         ;        ; 11.410 ; 11.806 ;        ;
+; Inst[11]   ; JR          ; 10.846 ;        ;        ; 11.255 ;
+; Inst[11]   ; LDR         ; 10.619 ;        ;        ; 11.038 ;
+; Inst[11]   ; LHI         ; 10.722 ;        ;        ; 11.136 ;
+; Inst[11]   ; LLI         ;        ; 11.887 ; 12.336 ;        ;
+; Inst[11]   ; MOV         ; 10.562 ;        ;        ; 11.014 ;
+; Inst[11]   ; OutR        ;        ; 9.516  ; 9.919  ;        ;
+; Inst[11]   ; SBB         ;        ; 8.243  ; 8.770  ;        ;
+; Inst[11]   ; STR         ; 7.834  ;        ;        ; 8.218  ;
+; Inst[11]   ; SUB         ;        ; 8.210  ; 8.737  ;        ;
+; Inst[11]   ; SUBI        ;        ; 10.949 ; 11.387 ;        ;
+; Inst[12]   ; ADC         ;        ; 9.530  ; 10.074 ;        ;
+; Inst[12]   ; ADD         ;        ; 10.255 ; 10.721 ;        ;
+; Inst[12]   ; ADDI        ; 8.204  ;        ;        ; 8.625  ;
+; Inst[12]   ; BAL         ;        ; 9.000  ; 9.552  ;        ;
+; Inst[12]   ; BCC         ;        ; 10.950 ; 11.412 ;        ;
+; Inst[12]   ; BCS         ;        ; 10.662 ; 11.138 ;        ;
+; Inst[12]   ; BEQ         ;        ; 11.196 ; 11.669 ;        ;
+; Inst[12]   ; BNE         ;        ; 10.934 ; 11.392 ;        ;
+; Inst[12]   ; CMP         ; 9.078  ;        ;        ; 9.511  ;
+; Inst[12]   ; HLT         ;        ; 8.402  ; 8.985  ;        ;
+; Inst[12]   ; JAL_Label   ;        ; 8.336  ; 8.914  ;        ;
+; Inst[12]   ; JAL_Rm      ; 8.640  ;        ;        ; 9.082  ;
+; Inst[12]   ; JMP         ;        ; 11.360 ; 11.797 ;        ;
+; Inst[12]   ; JR          ; 8.262  ;        ;        ; 8.653  ;
+; Inst[12]   ; LDR         ; 8.039  ;        ;        ; 8.433  ;
+; Inst[12]   ; LHI         ;        ; 7.975  ; 8.579  ;        ;
+; Inst[12]   ; LLI         ; 11.871 ;        ;        ; 12.401 ;
+; Inst[12]   ; MOV         ; 7.991  ;        ;        ; 8.378  ;
+; Inst[12]   ; OutR        ;        ; 9.088  ; 9.595  ;        ;
+; Inst[12]   ; SBB         ;        ; 8.193  ; 8.761  ;        ;
+; Inst[12]   ; STR         ;        ; 8.011  ; 8.604  ;        ;
+; Inst[12]   ; SUB         ;        ; 8.160  ; 8.728  ;        ;
+; Inst[12]   ; SUBI        ;        ; 10.899 ; 11.378 ;        ;
+; Inst[13]   ; ADC         ;        ; 9.306  ; 9.844  ;        ;
+; Inst[13]   ; ADD         ;        ; 10.031 ; 10.491 ;        ;
+; Inst[13]   ; ADDI        ; 7.887  ;        ;        ; 8.256  ;
+; Inst[13]   ; BAL         ;        ; 10.984 ; 11.468 ;        ;
+; Inst[13]   ; BCC         ;        ; 10.726 ; 11.182 ;        ;
+; Inst[13]   ; BCS         ;        ; 10.438 ; 10.908 ;        ;
+; Inst[13]   ; BEQ         ;        ; 10.972 ; 11.439 ;        ;
+; Inst[13]   ; BNE         ;        ; 10.710 ; 11.162 ;        ;
+; Inst[13]   ; CMP         ; 9.165  ;        ;        ; 9.563  ;
+; Inst[13]   ; HLT         ; 8.765  ;        ;        ; 9.212  ;
+; Inst[13]   ; JAL_Label   ;        ; 10.894 ; 11.434 ;        ;
+; Inst[13]   ; JAL_Rm      ;        ; 8.333  ; 8.901  ;        ;
+; Inst[13]   ; JMP         ;        ; 11.136 ; 11.567 ;        ;
+; Inst[13]   ; JR          ;        ; 10.680 ; 11.233 ;        ;
+; Inst[13]   ; LDR         ;        ; 10.463 ; 11.006 ;        ;
+; Inst[13]   ; LHI         ;        ; 10.561 ; 11.109 ;        ;
+; Inst[13]   ; LLI         ;        ; 11.652 ; 12.132 ;        ;
+; Inst[13]   ; MOV         ;        ; 10.439 ; 10.949 ;        ;
+; Inst[13]   ; OutR        ; 9.375  ;        ;        ; 9.898  ;
+; Inst[13]   ; SBB         ;        ; 7.969  ; 8.531  ;        ;
+; Inst[13]   ; STR         ; 7.738  ;        ;        ; 8.127  ;
+; Inst[13]   ; SUB         ;        ; 7.936  ; 8.498  ;        ;
+; Inst[13]   ; SUBI        ;        ; 10.675 ; 11.148 ;        ;
+; Inst[14]   ; ADC         ;        ; 9.958  ; 10.512 ;        ;
+; Inst[14]   ; ADD         ;        ; 10.749 ; 11.198 ;        ;
+; Inst[14]   ; ADDI        ;        ; 8.949  ; 9.486  ;        ;
+; Inst[14]   ; BAL         ; 9.297  ;        ;        ; 9.749  ;
+; Inst[14]   ; BCC         ; 9.091  ;        ;        ; 9.578  ;
+; Inst[14]   ; BCS         ; 8.817  ;        ;        ; 9.290  ;
+; Inst[14]   ; BEQ         ; 9.348  ;        ;        ; 9.824  ;
+; Inst[14]   ; BNE         ; 9.071  ;        ;        ; 9.562  ;
+; Inst[14]   ; CMP         ;        ; 9.939  ; 10.453 ;        ;
+; Inst[14]   ; HLT         ; 8.898  ;        ;        ; 9.359  ;
+; Inst[14]   ; JAL_Label   ;        ; 8.895  ; 9.488  ;        ;
+; Inst[14]   ; JAL_Rm      ;        ; 9.033  ; 9.612  ;        ;
+; Inst[14]   ; JMP         ;        ; 9.194  ; 9.755  ;        ;
+; Inst[14]   ; JR          ;        ; 8.674  ; 9.285  ;        ;
+; Inst[14]   ; LDR         ;        ; 8.443  ; 9.060  ;        ;
+; Inst[14]   ; LHI         ;        ; 8.537  ; 9.163  ;        ;
+; Inst[14]   ; LLI         ;        ; 12.352 ; 12.843 ;        ;
+; Inst[14]   ; MOV         ; 8.451  ;        ;        ; 8.915  ;
+; Inst[14]   ; OutR        ; 9.508  ;        ;        ; 10.045 ;
+; Inst[14]   ; SBB         ;        ; 8.637  ; 9.174  ;        ;
+; Inst[14]   ; STR         ;        ; 8.794  ; 9.354  ;        ;
+; Inst[14]   ; SUB         ;        ; 8.651  ; 9.184  ;        ;
+; Inst[14]   ; SUBI        ; 8.847  ;        ;        ; 9.276  ;
+; Inst[15]   ; ADC         ;        ; 7.287  ; 7.479  ;        ;
+; Inst[15]   ; ADD         ;        ; 8.078  ; 8.165  ;        ;
+; Inst[15]   ; ADDI        ;        ; 6.278  ; 6.453  ;        ;
+; Inst[15]   ; BAL         ; 6.674  ;        ;        ; 6.681  ;
+; Inst[15]   ; BCC         ; 6.455  ;        ;        ; 6.453  ;
+; Inst[15]   ; BCS         ; 6.181  ;        ;        ; 6.165  ;
+; Inst[15]   ; BEQ         ; 6.712  ;        ;        ; 6.699  ;
+; Inst[15]   ; BNE         ; 6.435  ;        ;        ; 6.437  ;
+; Inst[15]   ; CMP         ;        ; 7.268  ; 7.420  ;        ;
+; Inst[15]   ; HLT         ; 6.141  ;        ;        ; 6.181  ;
+; Inst[15]   ; JAL_Label   ; 6.284  ;        ;        ; 6.270  ;
+; Inst[15]   ; JAL_Rm      ; 5.751  ;        ;        ; 5.767  ;
+; Inst[15]   ; JMP         ; 6.830  ;        ;        ; 6.863  ;
+; Inst[15]   ; JR          ; 6.119  ;        ;        ; 6.098  ;
+; Inst[15]   ; LDR         ;        ; 5.803  ; 5.938  ;        ;
+; Inst[15]   ; LHI         ;        ; 5.831  ; 5.988  ;        ;
+; Inst[15]   ; LLI         ;        ; 7.254  ; 7.290  ;        ;
+; Inst[15]   ; MOV         ;        ; 5.751  ; 5.892  ;        ;
+; Inst[15]   ; OutR        ; 6.751  ;        ;        ; 6.867  ;
+; Inst[15]   ; SBB         ;        ; 5.966  ; 6.141  ;        ;
+; Inst[15]   ; STR         ;        ; 6.123  ; 6.321  ;        ;
+; Inst[15]   ; SUB         ;        ; 5.980  ; 6.151  ;        ;
+; Inst[15]   ; SUBI        ;        ; 6.360  ; 6.489  ;        ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; Inst[0]    ; ADC         ; 8.844  ;        ;        ; 9.252  ;
+; Inst[0]    ; ADD         ;        ; 9.524  ; 10.000 ;        ;
+; Inst[0]    ; CMP         ; 9.008  ;        ;        ; 9.443  ;
+; Inst[0]    ; HLT         ; 7.837  ;        ;        ; 8.208  ;
+; Inst[0]    ; OutR        ;        ; 8.406  ; 8.955  ;        ;
+; Inst[0]    ; SBB         ; 7.592  ;        ;        ; 7.976  ;
+; Inst[0]    ; SUB         ;        ; 7.445  ; 8.056  ;        ;
+; Inst[1]    ; ADC         ;        ; 6.726  ; 6.921  ;        ;
+; Inst[1]    ; ADD         ;        ; 7.466  ; 7.586  ;        ;
+; Inst[1]    ; CMP         ;        ; 6.963  ; 7.146  ;        ;
+; Inst[1]    ; HLT         ;        ; 6.627  ; 6.765  ;        ;
+; Inst[1]    ; OutR        ;        ; 7.320  ; 7.384  ;        ;
+; Inst[1]    ; SBB         ; 5.497  ;        ;        ; 5.525  ;
+; Inst[1]    ; SUB         ; 5.503  ;        ;        ; 5.533  ;
+; Inst[8]    ; BAL         ;        ; 8.049  ; 8.544  ;        ;
+; Inst[8]    ; BCC         ; 7.973  ;        ;        ; 8.335  ;
+; Inst[8]    ; BCS         ;        ; 7.632  ; 8.168  ;        ;
+; Inst[8]    ; BEQ         ;        ; 8.151  ; 8.678  ;        ;
+; Inst[8]    ; BNE         ; 7.951  ;        ;        ; 8.323  ;
+; Inst[9]    ; BAL         ; 7.887  ;        ;        ; 8.270  ;
+; Inst[9]    ; BCC         ; 7.584  ;        ;        ; 7.932  ;
+; Inst[9]    ; BCS         ; 7.321  ;        ;        ; 7.655  ;
+; Inst[9]    ; BEQ         ;        ; 7.738  ; 8.237  ;        ;
+; Inst[9]    ; BNE         ;        ; 7.485  ; 7.969  ;        ;
+; Inst[10]   ; BAL         ; 7.978  ;        ;        ; 8.322  ;
+; Inst[10]   ; BCC         ;        ; 7.691  ; 8.186  ;        ;
+; Inst[10]   ; BCS         ;        ; 7.414  ; 7.923  ;        ;
+; Inst[10]   ; BEQ         ;        ; 7.928  ; 8.435  ;        ;
+; Inst[10]   ; BNE         ;        ; 7.675  ; 8.166  ;        ;
+; Inst[11]   ; ADC         ;        ; 9.231  ; 9.712  ;        ;
+; Inst[11]   ; ADD         ;        ; 9.965  ; 10.367 ;        ;
+; Inst[11]   ; ADDI        ; 7.710  ;        ;        ; 8.063  ;
+; Inst[11]   ; BAL         ; 10.685 ;        ;        ; 11.146 ;
+; Inst[11]   ; BCC         ;        ; 10.595 ; 11.000 ;        ;
+; Inst[11]   ; BCS         ;        ; 10.318 ; 10.737 ;        ;
+; Inst[11]   ; BEQ         ;        ; 10.832 ; 11.249 ;        ;
+; Inst[11]   ; BNE         ;        ; 10.579 ; 10.980 ;        ;
+; Inst[11]   ; CMP         ;        ; 8.856  ; 9.372  ;        ;
+; Inst[11]   ; HLT         ;        ; 8.520  ; 8.991  ;        ;
+; Inst[11]   ; JAL_Label   ; 10.650 ;        ;        ; 11.059 ;
+; Inst[11]   ; JAL_Rm      ;        ; 8.242  ; 8.784  ;        ;
+; Inst[11]   ; JMP         ;        ; 10.968 ; 11.361 ;        ;
+; Inst[11]   ; JR          ; 10.459 ;        ;        ; 10.856 ;
+; Inst[11]   ; LDR         ; 10.240 ;        ;        ; 10.647 ;
+; Inst[11]   ; LHI         ; 10.339 ;        ;        ; 10.738 ;
+; Inst[11]   ; LLI         ;        ; 11.489 ; 11.929 ;        ;
+; Inst[11]   ; MOV         ; 10.187 ;        ;        ; 10.623 ;
+; Inst[11]   ; OutR        ;        ; 9.213  ; 9.610  ;        ;
+; Inst[11]   ; SBB         ;        ; 7.951  ; 8.456  ;        ;
+; Inst[11]   ; STR         ; 7.566  ;        ;        ; 7.937  ;
+; Inst[11]   ; SUB         ;        ; 7.915  ; 8.421  ;        ;
+; Inst[11]   ; SUBI        ;        ; 10.523 ; 10.954 ;        ;
+; Inst[12]   ; ADC         ;        ; 9.192  ; 9.723  ;        ;
+; Inst[12]   ; ADD         ;        ; 9.926  ; 10.378 ;        ;
+; Inst[12]   ; ADDI        ; 7.927  ;        ;        ; 8.332  ;
+; Inst[12]   ; BAL         ;        ; 8.684  ; 9.225  ;        ;
+; Inst[12]   ; BCC         ;        ; 10.556 ; 11.011 ;        ;
+; Inst[12]   ; BCS         ;        ; 10.279 ; 10.748 ;        ;
+; Inst[12]   ; BEQ         ;        ; 10.793 ; 11.260 ;        ;
+; Inst[12]   ; BNE         ;        ; 10.540 ; 10.991 ;        ;
+; Inst[12]   ; CMP         ; 8.760  ;        ;        ; 9.179  ;
+; Inst[12]   ; HLT         ;        ; 8.109  ; 8.679  ;        ;
+; Inst[12]   ; JAL_Label   ;        ; 8.045  ; 8.611  ;        ;
+; Inst[12]   ; JAL_Rm      ; 8.331  ;        ;        ; 8.742  ;
+; Inst[12]   ; JMP         ;        ; 10.929 ; 11.372 ;        ;
+; Inst[12]   ; JR          ; 7.979  ;        ;        ; 8.358  ;
+; Inst[12]   ; LDR         ; 7.764  ;        ;        ; 8.146  ;
+; Inst[12]   ; LHI         ;        ; 7.697  ; 8.289  ;        ;
+; Inst[12]   ; LLI         ; 11.476 ;        ;        ; 11.989 ;
+; Inst[12]   ; MOV         ; 7.718  ;        ;        ; 8.093  ;
+; Inst[12]   ; OutR        ;        ; 8.802  ; 9.298  ;        ;
+; Inst[12]   ; SBB         ;        ; 7.912  ; 8.467  ;        ;
+; Inst[12]   ; STR         ;        ; 7.732  ; 8.313  ;        ;
+; Inst[12]   ; SUB         ;        ; 7.876  ; 8.432  ;        ;
+; Inst[12]   ; SUBI        ;        ; 10.484 ; 10.965 ;        ;
+; Inst[13]   ; ADC         ;        ; 8.977  ; 9.503  ;        ;
+; Inst[13]   ; ADD         ;        ; 9.711  ; 10.158 ;        ;
+; Inst[13]   ; ADDI        ; 7.622  ;        ;        ; 7.978  ;
+; Inst[13]   ; BAL         ;        ; 10.588 ; 11.064 ;        ;
+; Inst[13]   ; BCC         ;        ; 10.341 ; 10.791 ;        ;
+; Inst[13]   ; BCS         ;        ; 10.064 ; 10.528 ;        ;
+; Inst[13]   ; BEQ         ;        ; 10.578 ; 11.040 ;        ;
+; Inst[13]   ; BNE         ;        ; 10.325 ; 10.771 ;        ;
+; Inst[13]   ; CMP         ; 8.844  ;        ;        ; 9.228  ;
+; Inst[13]   ; HLT         ; 8.463  ;        ;        ; 8.892  ;
+; Inst[13]   ; JAL_Label   ;        ; 10.501 ; 11.029 ;        ;
+; Inst[13]   ; JAL_Rm      ;        ; 8.016  ; 8.588  ;        ;
+; Inst[13]   ; JMP         ;        ; 10.714 ; 11.152 ;        ;
+; Inst[13]   ; JR          ;        ; 10.298 ; 10.838 ;        ;
+; Inst[13]   ; LDR         ;        ; 10.089 ; 10.619 ;        ;
+; Inst[13]   ; LHI         ;        ; 10.180 ; 10.718 ;        ;
+; Inst[13]   ; LLI         ;        ; 11.263 ; 11.733 ;        ;
+; Inst[13]   ; MOV         ;        ; 10.065 ; 10.566 ;        ;
+; Inst[13]   ; OutR        ; 9.082  ;        ;        ; 9.585  ;
+; Inst[13]   ; SBB         ;        ; 7.697  ; 8.247  ;        ;
+; Inst[13]   ; STR         ; 7.475  ;        ;        ; 7.850  ;
+; Inst[13]   ; SUB         ;        ; 7.661  ; 8.212  ;        ;
+; Inst[13]   ; SUBI        ;        ; 10.269 ; 10.745 ;        ;
+; Inst[14]   ; ADC         ;        ; 9.603  ; 10.143 ;        ;
+; Inst[14]   ; ADD         ;        ; 10.398 ; 10.835 ;        ;
+; Inst[14]   ; ADDI        ;        ; 8.636  ; 9.164  ;        ;
+; Inst[14]   ; BAL         ; 8.972  ;        ;        ; 9.409  ;
+; Inst[14]   ; BCC         ; 8.776  ;        ;        ; 9.246  ;
+; Inst[14]   ; BCS         ; 8.513  ;        ;        ; 8.969  ;
+; Inst[14]   ; BEQ         ; 9.025  ;        ;        ; 9.483  ;
+; Inst[14]   ; BNE         ; 8.756  ;        ;        ; 9.230  ;
+; Inst[14]   ; CMP         ;        ; 9.582  ; 10.087 ;        ;
+; Inst[14]   ; HLT         ; 8.589  ;        ;        ; 9.033  ;
+; Inst[14]   ; JAL_Label   ;        ; 8.582  ; 9.161  ;        ;
+; Inst[14]   ; JAL_Rm      ;        ; 8.688  ; 9.270  ;        ;
+; Inst[14]   ; JMP         ;        ; 8.872  ; 9.422  ;        ;
+; Inst[14]   ; JR          ;        ; 8.372  ; 8.968  ;        ;
+; Inst[14]   ; LDR         ;        ; 8.149  ; 8.751  ;        ;
+; Inst[14]   ; LHI         ;        ; 8.236  ; 8.849  ;        ;
+; Inst[14]   ; LLI         ;        ; 11.935 ; 12.415 ;        ;
+; Inst[14]   ; MOV         ; 8.160  ;        ;        ; 8.608  ;
+; Inst[14]   ; OutR        ; 9.208  ;        ;        ; 9.726  ;
+; Inst[14]   ; SBB         ;        ; 8.336  ; 8.864  ;        ;
+; Inst[14]   ; STR         ;        ; 8.483  ; 9.031  ;        ;
+; Inst[14]   ; SUB         ;        ; 8.347  ; 8.869  ;        ;
+; Inst[14]   ; SUBI        ; 8.540  ;        ;        ; 8.956  ;
+; Inst[15]   ; ADC         ;        ; 7.047  ; 7.240  ;        ;
+; Inst[15]   ; ADD         ;        ; 7.842  ; 7.932  ;        ;
+; Inst[15]   ; ADDI        ;        ; 6.080  ; 6.261  ;        ;
+; Inst[15]   ; BAL         ; 6.462  ;        ;        ; 6.472  ;
+; Inst[15]   ; BCC         ; 6.253  ;        ;        ; 6.254  ;
+; Inst[15]   ; BCS         ; 5.990  ;        ;        ; 5.977  ;
+; Inst[15]   ; BEQ         ; 6.502  ;        ;        ; 6.491  ;
+; Inst[15]   ; BNE         ; 6.233  ;        ;        ; 6.238  ;
+; Inst[15]   ; CMP         ;        ; 7.026  ; 7.184  ;        ;
+; Inst[15]   ; HLT         ; 5.950  ;        ;        ; 5.991  ;
+; Inst[15]   ; JAL_Label   ; 6.086  ;        ;        ; 6.077  ;
+; Inst[15]   ; JAL_Rm      ; 5.579  ;        ;        ; 5.597  ;
+; Inst[15]   ; JMP         ; 6.615  ;        ;        ; 6.650  ;
+; Inst[15]   ; JR          ; 5.929  ;        ;        ; 5.914  ;
+; Inst[15]   ; LDR         ;        ; 5.623  ; 5.762  ;        ;
+; Inst[15]   ; LHI         ;        ; 5.648  ; 5.810  ;        ;
+; Inst[15]   ; LLI         ;        ; 7.050  ; 7.092  ;        ;
+; Inst[15]   ; MOV         ;        ; 5.573  ; 5.718  ;        ;
+; Inst[15]   ; OutR        ; 6.569  ;        ;        ; 6.684  ;
+; Inst[15]   ; SBB         ;        ; 5.780  ; 5.961  ;        ;
+; Inst[15]   ; STR         ;        ; 5.927  ; 6.128  ;        ;
+; Inst[15]   ; SUB         ;        ; 5.791  ; 5.966  ;        ;
+; Inst[15]   ; SUBI        ;        ; 6.159  ; 6.292  ;        ;
++------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; Inst[0]    ; ADC         ; 8.160  ;        ;        ; 8.450  ;
+; Inst[0]    ; ADD         ;        ; 8.725  ; 9.084  ;        ;
+; Inst[0]    ; CMP         ; 8.309  ;        ;        ; 8.625  ;
+; Inst[0]    ; HLT         ; 7.214  ;        ;        ; 7.458  ;
+; Inst[0]    ; OutR        ;        ; 7.655  ; 8.106  ;        ;
+; Inst[0]    ; SBB         ; 6.994  ;        ;        ; 7.237  ;
+; Inst[0]    ; SUB         ;        ; 6.824  ; 7.323  ;        ;
+; Inst[1]    ; ADC         ;        ; 6.224  ; 6.448  ;        ;
+; Inst[1]    ; ADD         ;        ; 6.863  ; 6.983  ;        ;
+; Inst[1]    ; CMP         ;        ; 6.452  ; 6.692  ;        ;
+; Inst[1]    ; HLT         ;        ; 6.117  ; 6.335  ;        ;
+; Inst[1]    ; OutR        ;        ; 6.708  ; 6.831  ;        ;
+; Inst[1]    ; SBB         ; 5.098  ;        ;        ; 5.101  ;
+; Inst[1]    ; SUB         ; 5.070  ;        ;        ; 5.123  ;
+; Inst[8]    ; BAL         ;        ; 7.357  ; 7.830  ;        ;
+; Inst[8]    ; BCC         ; 7.362  ;        ;        ; 7.592  ;
+; Inst[8]    ; BCS         ;        ; 7.000  ; 7.477  ;        ;
+; Inst[8]    ; BEQ         ;        ; 7.486  ; 7.959  ;        ;
+; Inst[8]    ; BNE         ; 7.347  ;        ;        ; 7.572  ;
+; Inst[9]    ; BAL         ; 7.264  ;        ;        ; 7.497  ;
+; Inst[9]    ; BCC         ; 6.972  ;        ;        ; 7.198  ;
+; Inst[9]    ; BCS         ; 6.724  ;        ;        ; 6.934  ;
+; Inst[9]    ; BEQ         ;        ; 7.078  ; 7.532  ;        ;
+; Inst[9]    ; BNE         ;        ; 6.827  ; 7.285  ;        ;
+; Inst[10]   ; BAL         ; 7.360  ;        ;        ; 7.550  ;
+; Inst[10]   ; BCC         ;        ; 7.024  ; 7.489  ;        ;
+; Inst[10]   ; BCS         ;        ; 6.760  ; 7.241  ;        ;
+; Inst[10]   ; BEQ         ;        ; 7.257  ; 7.724  ;        ;
+; Inst[10]   ; BNE         ;        ; 7.005  ; 7.476  ;        ;
+; Inst[11]   ; ADC         ;        ; 8.490  ; 8.921  ;        ;
+; Inst[11]   ; ADD         ;        ; 9.126  ; 9.447  ;        ;
+; Inst[11]   ; ADDI        ; 7.093  ;        ;        ; 7.326  ;
+; Inst[11]   ; BAL         ; 9.954  ;        ;        ; 10.192 ;
+; Inst[11]   ; BCC         ;        ; 9.739  ; 10.186 ;        ;
+; Inst[11]   ; BCS         ;        ; 9.475  ; 9.938  ;        ;
+; Inst[11]   ; BEQ         ;        ; 9.972  ; 10.421 ;        ;
+; Inst[11]   ; BNE         ;        ; 9.720  ; 10.173 ;        ;
+; Inst[11]   ; CMP         ;        ; 8.128  ; 8.592  ;        ;
+; Inst[11]   ; HLT         ;        ; 7.793  ; 8.235  ;        ;
+; Inst[11]   ; JAL_Label   ; 9.901  ;        ;        ; 10.137 ;
+; Inst[11]   ; JAL_Rm      ;        ; 7.566  ; 8.059  ;        ;
+; Inst[11]   ; JMP         ;        ; 10.121 ; 10.553 ;        ;
+; Inst[11]   ; JR          ; 9.736  ;        ;        ; 9.932  ;
+; Inst[11]   ; LDR         ; 9.524  ;        ;        ; 9.730  ;
+; Inst[11]   ; LHI         ; 9.590  ;        ;        ; 9.838  ;
+; Inst[11]   ; LLI         ;        ; 10.532 ; 10.967 ;        ;
+; Inst[11]   ; MOV         ; 9.471  ;        ;        ; 9.709  ;
+; Inst[11]   ; OutR        ;        ; 8.384  ; 8.731  ;        ;
+; Inst[11]   ; SBB         ;        ; 7.272  ; 7.752  ;        ;
+; Inst[11]   ; STR         ; 6.938  ;        ;        ; 7.206  ;
+; Inst[11]   ; SUB         ;        ; 7.252  ; 7.685  ;        ;
+; Inst[11]   ; SUBI        ;        ; 9.697  ; 10.156 ;        ;
+; Inst[12]   ; ADC         ;        ; 8.452  ; 8.922  ;        ;
+; Inst[12]   ; ADD         ;        ; 9.088  ; 9.448  ;        ;
+; Inst[12]   ; ADDI        ; 7.298  ;        ;        ; 7.572  ;
+; Inst[12]   ; BAL         ;        ; 7.952  ; 8.457  ;        ;
+; Inst[12]   ; BCC         ;        ; 9.701  ; 10.187 ;        ;
+; Inst[12]   ; BCS         ;        ; 9.437  ; 9.939  ;        ;
+; Inst[12]   ; BEQ         ;        ; 9.934  ; 10.422 ;        ;
+; Inst[12]   ; BNE         ;        ; 9.682  ; 10.174 ;        ;
+; Inst[12]   ; CMP         ; 8.069  ;        ;        ; 8.387  ;
+; Inst[12]   ; HLT         ;        ; 7.421  ; 7.941  ;        ;
+; Inst[12]   ; JAL_Label   ;        ; 7.384  ; 7.859  ;        ;
+; Inst[12]   ; JAL_Rm      ; 7.697  ;        ;        ; 7.981  ;
+; Inst[12]   ; JMP         ;        ; 10.083 ; 10.554 ;        ;
+; Inst[12]   ; JR          ; 7.360  ;        ;        ; 7.587  ;
+; Inst[12]   ; LDR         ; 7.152  ;        ;        ; 7.383  ;
+; Inst[12]   ; LHI         ;        ; 7.062  ; 7.540  ;        ;
+; Inst[12]   ; LLI         ; 10.605 ;        ;        ; 10.947 ;
+; Inst[12]   ; MOV         ; 7.108  ;        ;        ; 7.337  ;
+; Inst[12]   ; OutR        ;        ; 8.012  ; 8.437  ;        ;
+; Inst[12]   ; SBB         ;        ; 7.234  ; 7.753  ;        ;
+; Inst[12]   ; STR         ;        ; 7.066  ; 7.579  ;        ;
+; Inst[12]   ; SUB         ;        ; 7.214  ; 7.686  ;        ;
+; Inst[12]   ; SUBI        ;        ; 9.659  ; 10.157 ;        ;
+; Inst[13]   ; ADC         ;        ; 8.250  ; 8.705  ;        ;
+; Inst[13]   ; ADD         ;        ; 8.886  ; 9.231  ;        ;
+; Inst[13]   ; ADDI        ; 7.015  ;        ;        ; 7.237  ;
+; Inst[13]   ; BAL         ;        ; 9.722  ; 10.247 ;        ;
+; Inst[13]   ; BCC         ;        ; 9.499  ; 9.970  ;        ;
+; Inst[13]   ; BCS         ;        ; 9.235  ; 9.722  ;        ;
+; Inst[13]   ; BEQ         ;        ; 9.732  ; 10.205 ;        ;
+; Inst[13]   ; BNE         ;        ; 9.480  ; 9.957  ;        ;
+; Inst[13]   ; CMP         ; 8.152  ;        ;        ; 8.418  ;
+; Inst[13]   ; HLT         ; 7.795  ;        ;        ; 8.083  ;
+; Inst[13]   ; JAL_Label   ;        ; 9.667  ; 10.194 ;        ;
+; Inst[13]   ; JAL_Rm      ;        ; 7.354  ; 7.873  ;        ;
+; Inst[13]   ; JMP         ;        ; 9.881  ; 10.337 ;        ;
+; Inst[13]   ; JR          ;        ; 9.462  ; 10.029 ;        ;
+; Inst[13]   ; LDR         ;        ; 9.260  ; 9.817  ;        ;
+; Inst[13]   ; LHI         ;        ; 9.368  ; 9.883  ;        ;
+; Inst[13]   ; LLI         ;        ; 10.320 ; 10.781 ;        ;
+; Inst[13]   ; MOV         ;        ; 9.239  ; 9.764  ;        ;
+; Inst[13]   ; OutR        ; 8.291  ;        ;        ; 8.674  ;
+; Inst[13]   ; SBB         ;        ; 7.032  ; 7.536  ;        ;
+; Inst[13]   ; STR         ; 6.856  ;        ;        ; 7.113  ;
+; Inst[13]   ; SUB         ;        ; 7.012  ; 7.469  ;        ;
+; Inst[13]   ; SUBI        ;        ; 9.457  ; 9.940  ;        ;
+; Inst[14]   ; ADC         ;        ; 8.829  ; 9.320  ;        ;
+; Inst[14]   ; ADD         ;        ; 9.523  ; 9.882  ;        ;
+; Inst[14]   ; ADDI        ;        ; 7.909  ; 8.410  ;        ;
+; Inst[14]   ; BAL         ; 8.299  ;        ;        ; 8.545  ;
+; Inst[14]   ; BCC         ; 8.100  ;        ;        ; 8.404  ;
+; Inst[14]   ; BCS         ; 7.852  ;        ;        ; 8.140  ;
+; Inst[14]   ; BEQ         ; 8.335  ;        ;        ; 8.637  ;
+; Inst[14]   ; BNE         ; 8.087  ;        ;        ; 8.385  ;
+; Inst[14]   ; CMP         ;        ; 8.809  ; 9.263  ;        ;
+; Inst[14]   ; HLT         ; 7.910  ;        ;        ; 8.224  ;
+; Inst[14]   ; JAL_Label   ;        ; 7.882  ; 8.363  ;        ;
+; Inst[14]   ; JAL_Rm      ;        ; 7.988  ; 8.515  ;        ;
+; Inst[14]   ; JMP         ;        ; 8.148  ; 8.646  ;        ;
+; Inst[14]   ; JR          ;        ; 7.670  ; 8.195  ;        ;
+; Inst[14]   ; LDR         ;        ; 7.454  ; 7.984  ;        ;
+; Inst[14]   ; LHI         ;        ; 7.560  ; 8.050  ;        ;
+; Inst[14]   ; LLI         ;        ; 10.954 ; 11.423 ;        ;
+; Inst[14]   ; MOV         ; 7.515  ;        ;        ; 7.805  ;
+; Inst[14]   ; OutR        ; 8.406  ;        ;        ; 8.815  ;
+; Inst[14]   ; SBB         ;        ; 7.624  ; 8.124  ;        ;
+; Inst[14]   ; STR         ;        ; 7.761  ; 8.268  ;        ;
+; Inst[14]   ; SUB         ;        ; 7.648  ; 8.094  ;        ;
+; Inst[14]   ; SUBI        ; 7.883  ;        ;        ; 8.141  ;
+; Inst[15]   ; ADC         ;        ; 6.522  ; 6.760  ;        ;
+; Inst[15]   ; ADD         ;        ; 7.216  ; 7.322  ;        ;
+; Inst[15]   ; ADDI        ;        ; 5.602  ; 5.850  ;        ;
+; Inst[15]   ; BAL         ; 6.030  ;        ;        ; 5.986  ;
+; Inst[15]   ; BCC         ; 5.824  ;        ;        ; 5.793  ;
+; Inst[15]   ; BCS         ; 5.576  ;        ;        ; 5.529  ;
+; Inst[15]   ; BEQ         ; 6.059  ;        ;        ; 6.026  ;
+; Inst[15]   ; BNE         ; 5.811  ;        ;        ; 5.774  ;
+; Inst[15]   ; CMP         ;        ; 6.502  ; 6.703  ;        ;
+; Inst[15]   ; HLT         ; 5.527  ;        ;        ; 5.542  ;
+; Inst[15]   ; JAL_Label   ; 5.650  ;        ;        ; 5.643  ;
+; Inst[15]   ; JAL_Rm      ; 5.190  ;        ;        ; 5.174  ;
+; Inst[15]   ; JMP         ; 6.180  ;        ;        ; 6.175  ;
+; Inst[15]   ; JR          ; 5.518  ;        ;        ; 5.477  ;
+; Inst[15]   ; LDR         ;        ; 5.174  ; 5.378  ;        ;
+; Inst[15]   ; LHI         ;        ; 5.221  ; 5.397  ;        ;
+; Inst[15]   ; LLI         ;        ; 6.462  ; 6.552  ;        ;
+; Inst[15]   ; MOV         ;        ; 5.130  ; 5.336  ;        ;
+; Inst[15]   ; OutR        ; 6.023  ;        ;        ; 6.133  ;
+; Inst[15]   ; SBB         ;        ; 5.317  ; 5.564  ;        ;
+; Inst[15]   ; STR         ;        ; 5.454  ; 5.708  ;        ;
+; Inst[15]   ; SUB         ;        ; 5.341  ; 5.534  ;        ;
+; Inst[15]   ; SUBI        ;        ; 5.683  ; 5.884  ;        ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; Inst[0]    ; ADC         ; 7.874  ;        ;        ; 8.156  ;
+; Inst[0]    ; ADD         ;        ; 8.445  ; 8.795  ;        ;
+; Inst[0]    ; CMP         ; 8.017  ;        ;        ; 8.324  ;
+; Inst[0]    ; HLT         ; 6.966  ;        ;        ; 7.204  ;
+; Inst[0]    ; OutR        ;        ; 7.417  ; 7.857  ;        ;
+; Inst[0]    ; SBB         ; 6.759  ;        ;        ; 6.994  ;
+; Inst[0]    ; SUB         ;        ; 6.588  ; 7.077  ;        ;
+; Inst[1]    ; ADC         ;        ; 6.019  ; 6.243  ;        ;
+; Inst[1]    ; ADD         ;        ; 6.664  ; 6.784  ;        ;
+; Inst[1]    ; CMP         ;        ; 6.228  ; 6.447  ;        ;
+; Inst[1]    ; HLT         ;        ; 5.906  ; 6.105  ;        ;
+; Inst[1]    ; OutR        ;        ; 6.503  ; 6.612  ;        ;
+; Inst[1]    ; SBB         ; 4.944  ;        ;        ; 4.949  ;
+; Inst[1]    ; SUB         ; 4.914  ;        ;        ; 4.968  ;
+; Inst[8]    ; BAL         ;        ; 7.104  ; 7.568  ;        ;
+; Inst[8]    ; BCC         ; 7.099  ;        ;        ; 7.314  ;
+; Inst[8]    ; BCS         ;        ; 6.743  ; 7.210  ;        ;
+; Inst[8]    ; BEQ         ;        ; 7.221  ; 7.671  ;        ;
+; Inst[8]    ; BNE         ; 7.084  ;        ;        ; 7.299  ;
+; Inst[9]    ; BAL         ; 7.019  ;        ;        ; 7.245  ;
+; Inst[9]    ; BCC         ; 6.741  ;        ;        ; 6.958  ;
+; Inst[9]    ; BCS         ; 6.500  ;        ;        ; 6.704  ;
+; Inst[9]    ; BEQ         ;        ; 6.835  ; 7.283  ;        ;
+; Inst[9]    ; BNE         ;        ; 6.596  ; 7.046  ;        ;
+; Inst[10]   ; BAL         ; 7.111  ;        ;        ; 7.298  ;
+; Inst[10]   ; BCC         ;        ; 6.787  ; 7.242  ;        ;
+; Inst[10]   ; BCS         ;        ; 6.533  ; 7.002  ;        ;
+; Inst[10]   ; BEQ         ;        ; 7.008  ; 7.466  ;        ;
+; Inst[10]   ; BNE         ;        ; 6.769  ; 7.228  ;        ;
+; Inst[11]   ; ADC         ;        ; 8.181  ; 8.589  ;        ;
+; Inst[11]   ; ADD         ;        ; 8.823  ; 9.121  ;        ;
+; Inst[11]   ; ADDI        ; 6.853  ;        ;        ; 7.078  ;
+; Inst[11]   ; BAL         ; 9.600  ;        ;        ; 9.831  ;
+; Inst[11]   ; BCC         ;        ; 9.387  ; 9.811  ;        ;
+; Inst[11]   ; BCS         ;        ; 9.133  ; 9.571  ;        ;
+; Inst[11]   ; BEQ         ;        ; 9.608  ; 10.035 ;        ;
+; Inst[11]   ; BNE         ;        ; 9.369  ; 9.797  ;        ;
+; Inst[11]   ; CMP         ;        ; 7.840  ; 8.293  ;        ;
+; Inst[11]   ; HLT         ;        ; 7.518  ; 7.951  ;        ;
+; Inst[11]   ; JAL_Label   ; 9.543  ;        ;        ; 9.774  ;
+; Inst[11]   ; JAL_Rm      ;        ; 7.278  ; 7.773  ;        ;
+; Inst[11]   ; JMP         ;        ; 9.733  ; 10.149 ;        ;
+; Inst[11]   ; JR          ; 9.391  ;        ;        ; 9.581  ;
+; Inst[11]   ; LDR         ; 9.187  ;        ;        ; 9.386  ;
+; Inst[11]   ; LHI         ; 9.245  ;        ;        ; 9.485  ;
+; Inst[11]   ; LLI         ;        ; 10.177 ; 10.603 ;        ;
+; Inst[11]   ; MOV         ; 9.137  ;        ;        ; 9.367  ;
+; Inst[11]   ; OutR        ;        ; 8.115  ; 8.458  ;        ;
+; Inst[11]   ; SBB         ;        ; 7.014  ; 7.471  ;        ;
+; Inst[11]   ; STR         ; 6.699  ;        ;        ; 6.960  ;
+; Inst[11]   ; SUB         ;        ; 6.992  ; 7.403  ;        ;
+; Inst[11]   ; SUBI        ;        ; 9.325  ; 9.770  ;        ;
+; Inst[12]   ; ADC         ;        ; 8.150  ; 8.609  ;        ;
+; Inst[12]   ; ADD         ;        ; 8.792  ; 9.141  ;        ;
+; Inst[12]   ; ADDI        ; 7.051  ;        ;        ; 7.316  ;
+; Inst[12]   ; BAL         ;        ; 7.676  ; 8.169  ;        ;
+; Inst[12]   ; BCC         ;        ; 9.356  ; 9.831  ;        ;
+; Inst[12]   ; BCS         ;        ; 9.102  ; 9.591  ;        ;
+; Inst[12]   ; BEQ         ;        ; 9.577  ; 10.055 ;        ;
+; Inst[12]   ; BNE         ;        ; 9.338  ; 9.817  ;        ;
+; Inst[12]   ; CMP         ; 7.784  ;        ;        ; 8.092  ;
+; Inst[12]   ; HLT         ;        ; 7.160  ; 7.668  ;        ;
+; Inst[12]   ; JAL_Label   ;        ; 7.125  ; 7.589  ;        ;
+; Inst[12]   ; JAL_Rm      ; 7.418  ;        ;        ; 7.682  ;
+; Inst[12]   ; JMP         ;        ; 9.702  ; 10.169 ;        ;
+; Inst[12]   ; JR          ; 7.110  ;        ;        ; 7.332  ;
+; Inst[12]   ; LDR         ; 6.910  ;        ;        ; 7.135  ;
+; Inst[12]   ; LHI         ;        ; 6.815  ; 7.282  ;        ;
+; Inst[12]   ; LLI         ; 10.248 ;        ;        ; 10.581 ;
+; Inst[12]   ; MOV         ; 6.868  ;        ;        ; 7.090  ;
+; Inst[12]   ; OutR        ;        ; 7.757  ; 8.175  ;        ;
+; Inst[12]   ; SBB         ;        ; 6.983  ; 7.491  ;        ;
+; Inst[12]   ; STR         ;        ; 6.822  ; 7.321  ;        ;
+; Inst[12]   ; SUB         ;        ; 6.961  ; 7.423  ;        ;
+; Inst[12]   ; SUBI        ;        ; 9.294  ; 9.790  ;        ;
+; Inst[13]   ; ADC         ;        ; 7.956  ; 8.400  ;        ;
+; Inst[13]   ; ADD         ;        ; 8.598  ; 8.932  ;        ;
+; Inst[13]   ; ADDI        ; 6.778  ;        ;        ; 6.994  ;
+; Inst[13]   ; BAL         ;        ; 9.374  ; 9.887  ;        ;
+; Inst[13]   ; BCC         ;        ; 9.162  ; 9.622  ;        ;
+; Inst[13]   ; BCS         ;        ; 8.908  ; 9.382  ;        ;
+; Inst[13]   ; BEQ         ;        ; 9.383  ; 9.846  ;        ;
+; Inst[13]   ; BNE         ;        ; 9.144  ; 9.608  ;        ;
+; Inst[13]   ; CMP         ; 7.864  ;        ;        ; 8.125  ;
+; Inst[13]   ; HLT         ; 7.522  ;        ;        ; 7.803  ;
+; Inst[13]   ; JAL_Label   ;        ; 9.317  ; 9.830  ;        ;
+; Inst[13]   ; JAL_Rm      ;        ; 7.075  ; 7.593  ;        ;
+; Inst[13]   ; JMP         ;        ; 9.508  ; 9.960  ;        ;
+; Inst[13]   ; JR          ;        ; 9.124  ; 9.678  ;        ;
+; Inst[13]   ; LDR         ;        ; 8.929  ; 9.474  ;        ;
+; Inst[13]   ; LHI         ;        ; 9.028  ; 9.532  ;        ;
+; Inst[13]   ; LLI         ;        ; 9.974  ; 10.423 ;        ;
+; Inst[13]   ; MOV         ;        ; 8.910  ; 9.424  ;        ;
+; Inst[13]   ; OutR        ; 8.029  ;        ;        ; 8.400  ;
+; Inst[13]   ; SBB         ;        ; 6.789  ; 7.282  ;        ;
+; Inst[13]   ; STR         ; 6.621  ;        ;        ; 6.872  ;
+; Inst[13]   ; SUB         ;        ; 6.767  ; 7.214  ;        ;
+; Inst[13]   ; SUBI        ;        ; 9.100  ; 9.581  ;        ;
+; Inst[14]   ; ADC         ;        ; 8.512  ; 8.992  ;        ;
+; Inst[14]   ; ADD         ;        ; 9.210  ; 9.559  ;        ;
+; Inst[14]   ; ADDI        ;        ; 7.631  ; 8.124  ;        ;
+; Inst[14]   ; BAL         ; 8.010  ;        ;        ; 8.251  ;
+; Inst[14]   ; BCC         ; 7.822  ;        ;        ; 8.114  ;
+; Inst[14]   ; BCS         ; 7.582  ;        ;        ; 7.860  ;
+; Inst[14]   ; BEQ         ; 8.046  ;        ;        ; 8.335  ;
+; Inst[14]   ; BNE         ; 7.808  ;        ;        ; 8.096  ;
+; Inst[14]   ; CMP         ;        ; 8.491  ; 8.938  ;        ;
+; Inst[14]   ; HLT         ; 7.632  ;        ;        ; 7.938  ;
+; Inst[14]   ; JAL_Label   ;        ; 7.603  ; 8.073  ;        ;
+; Inst[14]   ; JAL_Rm      ;        ; 7.683  ; 8.210  ;        ;
+; Inst[14]   ; JMP         ;        ; 7.862  ; 8.349  ;        ;
+; Inst[14]   ; JR          ;        ; 7.405  ; 7.917  ;        ;
+; Inst[14]   ; LDR         ;        ; 7.196  ; 7.714  ;        ;
+; Inst[14]   ; LHI         ;        ; 7.294  ; 7.773  ;        ;
+; Inst[14]   ; LLI         ;        ; 10.582 ; 11.040 ;        ;
+; Inst[14]   ; MOV         ; 7.259  ;        ;        ; 7.539  ;
+; Inst[14]   ; OutR        ; 8.139  ;        ;        ; 8.535  ;
+; Inst[14]   ; SBB         ;        ; 7.357  ; 7.848  ;        ;
+; Inst[14]   ; STR         ;        ; 7.487  ; 7.983  ;        ;
+; Inst[14]   ; SUB         ;        ; 7.376  ; 7.816  ;        ;
+; Inst[14]   ; SUBI        ; 7.613  ;        ;        ; 7.863  ;
+; Inst[15]   ; ADC         ;        ; 6.303  ; 6.541  ;        ;
+; Inst[15]   ; ADD         ;        ; 7.001  ; 7.108  ;        ;
+; Inst[15]   ; ADDI        ;        ; 5.422  ; 5.673  ;        ;
+; Inst[15]   ; BAL         ; 5.839  ;        ;        ; 5.801  ;
+; Inst[15]   ; BCC         ; 5.643  ;        ;        ; 5.616  ;
+; Inst[15]   ; BCS         ; 5.403  ;        ;        ; 5.362  ;
+; Inst[15]   ; BEQ         ; 5.867  ;        ;        ; 5.837  ;
+; Inst[15]   ; BNE         ; 5.629  ;        ;        ; 5.598  ;
+; Inst[15]   ; CMP         ;        ; 6.282  ; 6.487  ;        ;
+; Inst[15]   ; HLT         ; 5.350  ;        ;        ; 5.371  ;
+; Inst[15]   ; JAL_Label   ; 5.469  ;        ;        ; 5.466  ;
+; Inst[15]   ; JAL_Rm      ; 5.031  ;        ;        ; 5.021  ;
+; Inst[15]   ; JMP         ; 5.983  ;        ;        ; 5.981  ;
+; Inst[15]   ; JR          ; 5.348  ;        ;        ; 5.312  ;
+; Inst[15]   ; LDR         ;        ; 5.013  ; 5.221  ;        ;
+; Inst[15]   ; LHI         ;        ; 5.054  ; 5.233  ;        ;
+; Inst[15]   ; LLI         ;        ; 6.276  ; 6.371  ;        ;
+; Inst[15]   ; MOV         ;        ; 4.971  ; 5.181  ;        ;
+; Inst[15]   ; OutR        ; 5.857  ;        ;        ; 5.968  ;
+; Inst[15]   ; SBB         ;        ; 5.148  ; 5.397  ;        ;
+; Inst[15]   ; STR         ;        ; 5.278  ; 5.532  ;        ;
+; Inst[15]   ; SUB         ;        ; 5.167  ; 5.365  ;        ;
+; Inst[15]   ; SUBI        ;        ; 5.503  ; 5.708  ;        ;
++------------+-------------+--------+--------+--------+--------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; Inst[0]    ; ADC         ; 5.323 ;       ;       ; 6.079 ;
+; Inst[0]    ; ADD         ;       ; 5.860 ; 6.633 ;       ;
+; Inst[0]    ; CMP         ; 5.414 ;       ;       ; 6.191 ;
+; Inst[0]    ; HLT         ; 4.694 ;       ;       ; 5.359 ;
+; Inst[0]    ; OutR        ;       ; 5.255 ; 5.853 ;       ;
+; Inst[0]    ; SBB         ; 4.556 ;       ;       ; 5.224 ;
+; Inst[0]    ; SUB         ;       ; 4.567 ; 5.193 ;       ;
+; Inst[1]    ; ADC         ;       ; 4.248 ; 4.410 ;       ;
+; Inst[1]    ; ADD         ;       ; 4.650 ; 5.073 ;       ;
+; Inst[1]    ; CMP         ;       ; 4.385 ; 4.545 ;       ;
+; Inst[1]    ; HLT         ;       ; 4.080 ; 4.272 ;       ;
+; Inst[1]    ; OutR        ;       ; 4.614 ; 4.789 ;       ;
+; Inst[1]    ; SBB         ; 3.324 ;       ;       ; 3.644 ;
+; Inst[1]    ; SUB         ; 3.346 ;       ;       ; 3.651 ;
+; Inst[8]    ; BAL         ;       ; 4.922 ; 5.496 ;       ;
+; Inst[8]    ; BCC         ; 4.832 ;       ;       ; 5.468 ;
+; Inst[8]    ; BCS         ;       ; 4.663 ; 5.297 ;       ;
+; Inst[8]    ; BEQ         ;       ; 5.021 ; 5.562 ;       ;
+; Inst[8]    ; BNE         ; 4.813 ;       ;       ; 5.448 ;
+; Inst[9]    ; BAL         ; 4.756 ;       ;       ; 5.384 ;
+; Inst[9]    ; BCC         ; 4.596 ;       ;       ; 5.187 ;
+; Inst[9]    ; BCS         ; 4.424 ;       ;       ; 4.990 ;
+; Inst[9]    ; BEQ         ;       ; 4.772 ; 5.256 ;       ;
+; Inst[9]    ; BNE         ;       ; 4.587 ; 5.144 ;       ;
+; Inst[10]   ; BAL         ; 4.807 ;       ;       ; 5.421 ;
+; Inst[10]   ; BCC         ;       ; 4.727 ; 5.275 ;       ;
+; Inst[10]   ; BCS         ;       ; 4.530 ; 5.104 ;       ;
+; Inst[10]   ; BEQ         ;       ; 4.894 ; 5.370 ;       ;
+; Inst[10]   ; BNE         ;       ; 4.708 ; 5.258 ;       ;
+; Inst[11]   ; ADC         ;       ; 5.694 ; 6.170 ;       ;
+; Inst[11]   ; ADD         ;       ; 6.095 ; 6.835 ;       ;
+; Inst[11]   ; ADDI        ; 4.619 ;       ;       ; 5.286 ;
+; Inst[11]   ; BAL         ; 6.400 ;       ;       ; 7.251 ;
+; Inst[11]   ; BCC         ;       ; 6.567 ; 6.979 ;       ;
+; Inst[11]   ; BCS         ;       ; 6.370 ; 6.808 ;       ;
+; Inst[11]   ; BEQ         ;       ; 6.734 ; 7.074 ;       ;
+; Inst[11]   ; BNE         ;       ; 6.548 ; 6.962 ;       ;
+; Inst[11]   ; CMP         ;       ; 5.469 ; 5.944 ;       ;
+; Inst[11]   ; HLT         ;       ; 5.164 ; 5.671 ;       ;
+; Inst[11]   ; JAL_Label   ; 6.335 ;       ;       ; 7.198 ;
+; Inst[11]   ; JAL_Rm      ;       ; 5.050 ; 5.592 ;       ;
+; Inst[11]   ; JMP         ;       ; 6.853 ; 7.167 ;       ;
+; Inst[11]   ; JR          ; 6.278 ;       ;       ; 7.076 ;
+; Inst[11]   ; LDR         ; 6.137 ;       ;       ; 6.928 ;
+; Inst[11]   ; LHI         ; 6.148 ;       ;       ; 6.986 ;
+; Inst[11]   ; LLI         ;       ; 7.226 ; 7.577 ;       ;
+; Inst[11]   ; MOV         ; 6.108 ;       ;       ; 6.918 ;
+; Inst[11]   ; OutR        ;       ; 5.698 ; 6.188 ;       ;
+; Inst[11]   ; SBB         ;       ; 4.836 ; 5.399 ;       ;
+; Inst[11]   ; STR         ; 4.514 ;       ;       ; 5.166 ;
+; Inst[11]   ; SUB         ;       ; 4.817 ; 5.393 ;       ;
+; Inst[11]   ; SUBI        ;       ; 6.563 ; 6.971 ;       ;
+; Inst[12]   ; ADC         ;       ; 5.678 ; 6.169 ;       ;
+; Inst[12]   ; ADD         ;       ; 6.079 ; 6.834 ;       ;
+; Inst[12]   ; ADDI        ; 4.756 ;       ;       ; 5.469 ;
+; Inst[12]   ; BAL         ;       ; 5.307 ; 5.915 ;       ;
+; Inst[12]   ; BCC         ;       ; 6.551 ; 6.978 ;       ;
+; Inst[12]   ; BCS         ;       ; 6.354 ; 6.807 ;       ;
+; Inst[12]   ; BEQ         ;       ; 6.718 ; 7.073 ;       ;
+; Inst[12]   ; BNE         ;       ; 6.532 ; 6.961 ;       ;
+; Inst[12]   ; CMP         ; 5.257 ;       ;       ; 6.020 ;
+; Inst[12]   ; HLT         ;       ; 4.932 ; 5.516 ;       ;
+; Inst[12]   ; JAL_Label   ;       ; 4.944 ; 5.516 ;       ;
+; Inst[12]   ; JAL_Rm      ; 4.979 ;       ;       ; 5.711 ;
+; Inst[12]   ; JMP         ;       ; 6.837 ; 7.166 ;       ;
+; Inst[12]   ; JR          ; 4.845 ;       ;       ; 5.485 ;
+; Inst[12]   ; LDR         ; 4.706 ;       ;       ; 5.337 ;
+; Inst[12]   ; LHI         ;       ; 4.719 ; 5.324 ;       ;
+; Inst[12]   ; LLI         ; 6.964 ;       ;       ; 7.887 ;
+; Inst[12]   ; MOV         ; 4.679 ;       ;       ; 5.304 ;
+; Inst[12]   ; OutR        ;       ; 5.466 ; 6.033 ;       ;
+; Inst[12]   ; SBB         ;       ; 4.820 ; 5.398 ;       ;
+; Inst[12]   ; STR         ;       ; 4.702 ; 5.323 ;       ;
+; Inst[12]   ; SUB         ;       ; 4.801 ; 5.392 ;       ;
+; Inst[12]   ; SUBI        ;       ; 6.547 ; 6.970 ;       ;
+; Inst[13]   ; ADC         ;       ; 5.541 ; 6.022 ;       ;
+; Inst[13]   ; ADD         ;       ; 5.942 ; 6.687 ;       ;
+; Inst[13]   ; ADDI        ; 4.564 ;       ;       ; 5.234 ;
+; Inst[13]   ; BAL         ;       ; 6.571 ; 6.963 ;       ;
+; Inst[13]   ; BCC         ;       ; 6.414 ; 6.831 ;       ;
+; Inst[13]   ; BCS         ;       ; 6.217 ; 6.660 ;       ;
+; Inst[13]   ; BEQ         ;       ; 6.581 ; 6.926 ;       ;
+; Inst[13]   ; BNE         ;       ; 6.395 ; 6.814 ;       ;
+; Inst[13]   ; CMP         ; 5.282 ;       ;       ; 6.030 ;
+; Inst[13]   ; HLT         ; 5.009 ;       ;       ; 5.725 ;
+; Inst[13]   ; JAL_Label   ;       ; 6.518 ; 6.898 ;       ;
+; Inst[13]   ; JAL_Rm      ;       ; 4.921 ; 5.465 ;       ;
+; Inst[13]   ; JMP         ;       ; 6.700 ; 7.019 ;       ;
+; Inst[13]   ; JR          ;       ; 6.396 ; 6.841 ;       ;
+; Inst[13]   ; LDR         ;       ; 6.248 ; 6.700 ;       ;
+; Inst[13]   ; LHI         ;       ; 6.306 ; 6.711 ;       ;
+; Inst[13]   ; LLI         ;       ; 7.097 ; 7.450 ;       ;
+; Inst[13]   ; MOV         ;       ; 6.238 ; 6.671 ;       ;
+; Inst[13]   ; OutR        ; 5.526 ;       ;       ; 6.259 ;
+; Inst[13]   ; SBB         ;       ; 4.683 ; 5.251 ;       ;
+; Inst[13]   ; STR         ; 4.456 ;       ;       ; 5.110 ;
+; Inst[13]   ; SUB         ;       ; 4.664 ; 5.245 ;       ;
+; Inst[13]   ; SUBI        ;       ; 6.410 ; 6.823 ;       ;
+; Inst[14]   ; ADC         ;       ; 5.926 ; 6.430 ;       ;
+; Inst[14]   ; ADD         ;       ; 6.364 ; 7.109 ;       ;
+; Inst[14]   ; ADDI        ;       ; 5.288 ; 5.837 ;       ;
+; Inst[14]   ; BAL         ; 5.381 ;       ;       ; 6.089 ;
+; Inst[14]   ; BCC         ; 5.281 ;       ;       ; 5.994 ;
+; Inst[14]   ; BCS         ; 5.110 ;       ;       ; 5.797 ;
+; Inst[14]   ; BEQ         ; 5.376 ;       ;       ; 6.161 ;
+; Inst[14]   ; BNE         ; 5.264 ;       ;       ; 5.975 ;
+; Inst[14]   ; CMP         ;       ; 5.906 ; 6.392 ;       ;
+; Inst[14]   ; HLT         ; 5.112 ;       ;       ; 5.843 ;
+; Inst[14]   ; JAL_Label   ;       ; 5.233 ; 5.835 ;       ;
+; Inst[14]   ; JAL_Rm      ;       ; 5.321 ; 5.900 ;       ;
+; Inst[14]   ; JMP         ;       ; 5.469 ; 6.001 ;       ;
+; Inst[14]   ; JR          ;       ; 5.105 ; 5.775 ;       ;
+; Inst[14]   ; LDR         ;       ; 4.949 ; 5.633 ;       ;
+; Inst[14]   ; LHI         ;       ; 5.008 ; 5.646 ;       ;
+; Inst[14]   ; LLI         ;       ; 7.497 ; 7.885 ;       ;
+; Inst[14]   ; MOV         ; 4.915 ;       ;       ; 5.592 ;
+; Inst[14]   ; OutR        ; 5.629 ;       ;       ; 6.377 ;
+; Inst[14]   ; SBB         ;       ; 5.073 ; 5.642 ;       ;
+; Inst[14]   ; STR         ;       ; 5.148 ; 5.736 ;       ;
+; Inst[14]   ; SUB         ;       ; 5.079 ; 5.663 ;       ;
+; Inst[14]   ; SUBI        ; 5.160 ;       ;       ; 5.851 ;
+; Inst[15]   ; ADC         ;       ; 4.446 ; 4.601 ;       ;
+; Inst[15]   ; ADD         ;       ; 4.884 ; 5.280 ;       ;
+; Inst[15]   ; ADDI        ;       ; 3.808 ; 4.008 ;       ;
+; Inst[15]   ; BAL         ; 3.971 ;       ;       ; 4.269 ;
+; Inst[15]   ; BCC         ; 3.865 ;       ;       ; 4.148 ;
+; Inst[15]   ; BCS         ; 3.694 ;       ;       ; 3.951 ;
+; Inst[15]   ; BEQ         ; 3.960 ;       ;       ; 4.315 ;
+; Inst[15]   ; BNE         ; 3.848 ;       ;       ; 4.129 ;
+; Inst[15]   ; CMP         ;       ; 4.426 ; 4.563 ;       ;
+; Inst[15]   ; HLT         ; 3.579 ;       ;       ; 3.925 ;
+; Inst[15]   ; JAL_Label   ; 3.716 ;       ;       ; 4.039 ;
+; Inst[15]   ; JAL_Rm      ; 3.387 ;       ;       ; 3.729 ;
+; Inst[15]   ; JMP         ; 4.047 ;       ;       ; 4.434 ;
+; Inst[15]   ; JR          ; 3.683 ;       ;       ; 3.941 ;
+; Inst[15]   ; LDR         ;       ; 3.535 ; 3.781 ;       ;
+; Inst[15]   ; LHI         ;       ; 3.555 ; 3.761 ;       ;
+; Inst[15]   ; LLI         ;       ; 4.528 ; 4.658 ;       ;
+; Inst[15]   ; MOV         ;       ; 3.505 ; 3.756 ;       ;
+; Inst[15]   ; OutR        ; 4.096 ;       ;       ; 4.459 ;
+; Inst[15]   ; SBB         ;       ; 3.593 ; 3.813 ;       ;
+; Inst[15]   ; STR         ;       ; 3.668 ; 3.907 ;       ;
+; Inst[15]   ; SUB         ;       ; 3.599 ; 3.834 ;       ;
+; Inst[15]   ; SUBI        ;       ; 3.904 ; 4.111 ;       ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; Inst[0]    ; ADC         ; 5.134 ;       ;       ; 5.875 ;
+; Inst[0]    ; ADD         ;       ; 5.676 ; 6.431 ;       ;
+; Inst[0]    ; CMP         ; 5.221 ;       ;       ; 5.981 ;
+; Inst[0]    ; HLT         ; 4.530 ;       ;       ; 5.183 ;
+; Inst[0]    ; OutR        ;       ; 5.094 ; 5.684 ;       ;
+; Inst[0]    ; SBB         ; 4.399 ;       ;       ; 5.056 ;
+; Inst[0]    ; SUB         ;       ; 4.407 ; 5.024 ;       ;
+; Inst[1]    ; ADC         ;       ; 4.106 ; 4.278 ;       ;
+; Inst[1]    ; ADD         ;       ; 4.519 ; 4.938 ;       ;
+; Inst[1]    ; CMP         ;       ; 4.229 ; 4.382 ;       ;
+; Inst[1]    ; HLT         ;       ; 3.936 ; 4.122 ;       ;
+; Inst[1]    ; OutR        ;       ; 4.474 ; 4.644 ;       ;
+; Inst[1]    ; SBB         ; 3.221 ;       ;       ; 3.544 ;
+; Inst[1]    ; SUB         ; 3.241 ;       ;       ; 3.548 ;
+; Inst[8]    ; BAL         ;       ; 4.750 ; 5.318 ;       ;
+; Inst[8]    ; BCC         ; 4.661 ;       ;       ; 5.275 ;
+; Inst[8]    ; BCS         ;       ; 4.488 ; 5.114 ;       ;
+; Inst[8]    ; BEQ         ;       ; 4.836 ; 5.366 ;       ;
+; Inst[8]    ; BNE         ; 4.642 ;       ;       ; 5.258 ;
+; Inst[9]    ; BAL         ; 4.594 ;       ;       ; 5.208 ;
+; Inst[9]    ; BCC         ; 4.442 ;       ;       ; 5.021 ;
+; Inst[9]    ; BCS         ; 4.275 ;       ;       ; 4.832 ;
+; Inst[9]    ; BEQ         ;       ; 4.607 ; 5.087 ;       ;
+; Inst[9]    ; BNE         ;       ; 4.429 ; 4.981 ;       ;
+; Inst[10]   ; BAL         ; 4.642 ;       ;       ; 5.245 ;
+; Inst[10]   ; BCC         ;       ; 4.567 ; 5.108 ;       ;
+; Inst[10]   ; BCS         ;       ; 4.378 ; 4.942 ;       ;
+; Inst[10]   ; BEQ         ;       ; 4.726 ; 5.197 ;       ;
+; Inst[10]   ; BNE         ;       ; 4.548 ; 5.090 ;       ;
+; Inst[11]   ; ADC         ;       ; 5.480 ; 5.948 ;       ;
+; Inst[11]   ; ADD         ;       ; 5.890 ; 6.611 ;       ;
+; Inst[11]   ; ADDI        ; 4.460 ;       ;       ; 5.116 ;
+; Inst[11]   ; BAL         ; 6.172 ;       ;       ; 7.002 ;
+; Inst[11]   ; BCC         ;       ; 6.322 ; 6.731 ;       ;
+; Inst[11]   ; BCS         ;       ; 6.133 ; 6.565 ;       ;
+; Inst[11]   ; BEQ         ;       ; 6.481 ; 6.820 ;       ;
+; Inst[11]   ; BNE         ;       ; 6.303 ; 6.713 ;       ;
+; Inst[11]   ; CMP         ;       ; 5.273 ; 5.744 ;       ;
+; Inst[11]   ; HLT         ;       ; 4.980 ; 5.484 ;       ;
+; Inst[11]   ; JAL_Label   ; 6.106 ;       ;       ; 6.949 ;
+; Inst[11]   ; JAL_Rm      ;       ; 4.854 ; 5.403 ;       ;
+; Inst[11]   ; JMP         ;       ; 6.579 ; 6.903 ;       ;
+; Inst[11]   ; JR          ; 6.056 ;       ;       ; 6.834 ;
+; Inst[11]   ; LDR         ; 5.919 ;       ;       ; 6.693 ;
+; Inst[11]   ; LHI         ; 5.926 ;       ;       ; 6.745 ;
+; Inst[11]   ; LLI         ;       ; 6.985 ; 7.339 ;       ;
+; Inst[11]   ; MOV         ; 5.891 ;       ;       ; 6.683 ;
+; Inst[11]   ; OutR        ;       ; 5.518 ; 6.006 ;       ;
+; Inst[11]   ; SBB         ;       ; 4.658 ; 5.210 ;       ;
+; Inst[11]   ; STR         ; 4.357 ;       ;       ; 4.997 ;
+; Inst[11]   ; SUB         ;       ; 4.636 ; 5.203 ;       ;
+; Inst[11]   ; SUBI        ;       ; 6.300 ; 6.716 ;       ;
+; Inst[12]   ; ADC         ;       ; 5.474 ; 5.961 ;       ;
+; Inst[12]   ; ADD         ;       ; 5.884 ; 6.624 ;       ;
+; Inst[12]   ; ADDI        ; 4.591 ;       ;       ; 5.291 ;
+; Inst[12]   ; BAL         ;       ; 5.120 ; 5.722 ;       ;
+; Inst[12]   ; BCC         ;       ; 6.316 ; 6.744 ;       ;
+; Inst[12]   ; BCS         ;       ; 6.127 ; 6.578 ;       ;
+; Inst[12]   ; BEQ         ;       ; 6.475 ; 6.833 ;       ;
+; Inst[12]   ; BNE         ;       ; 6.297 ; 6.726 ;       ;
+; Inst[12]   ; CMP         ; 5.070 ;       ;       ; 5.818 ;
+; Inst[12]   ; HLT         ;       ; 4.758 ; 5.335 ;       ;
+; Inst[12]   ; JAL_Label   ;       ; 4.769 ; 5.335 ;       ;
+; Inst[12]   ; JAL_Rm      ; 4.798 ;       ;       ; 5.505 ;
+; Inst[12]   ; JMP         ;       ; 6.573 ; 6.916 ;       ;
+; Inst[12]   ; JR          ; 4.679 ;       ;       ; 5.307 ;
+; Inst[12]   ; LDR         ; 4.544 ;       ;       ; 5.165 ;
+; Inst[12]   ; LHI         ;       ; 4.552 ; 5.149 ;       ;
+; Inst[12]   ; LLI         ; 6.734 ;       ;       ; 7.636 ;
+; Inst[12]   ; MOV         ; 4.518 ;       ;       ; 5.133 ;
+; Inst[12]   ; OutR        ;       ; 5.296 ; 5.857 ;       ;
+; Inst[12]   ; SBB         ;       ; 4.652 ; 5.223 ;       ;
+; Inst[12]   ; STR         ;       ; 4.536 ; 5.150 ;       ;
+; Inst[12]   ; SUB         ;       ; 4.630 ; 5.216 ;       ;
+; Inst[12]   ; SUBI        ;       ; 6.294 ; 6.729 ;       ;
+; Inst[13]   ; ADC         ;       ; 5.344 ; 5.819 ;       ;
+; Inst[13]   ; ADD         ;       ; 5.754 ; 6.482 ;       ;
+; Inst[13]   ; ADDI        ; 4.407 ;       ;       ; 5.067 ;
+; Inst[13]   ; BAL         ;       ; 6.334 ; 6.728 ;       ;
+; Inst[13]   ; BCC         ;       ; 6.186 ; 6.602 ;       ;
+; Inst[13]   ; BCS         ;       ; 5.997 ; 6.436 ;       ;
+; Inst[13]   ; BEQ         ;       ; 6.345 ; 6.691 ;       ;
+; Inst[13]   ; BNE         ;       ; 6.167 ; 6.584 ;       ;
+; Inst[13]   ; CMP         ; 5.093 ;       ;       ; 5.827 ;
+; Inst[13]   ; HLT         ; 4.833 ;       ;       ; 5.534 ;
+; Inst[13]   ; JAL_Label   ;       ; 6.281 ; 6.662 ;       ;
+; Inst[13]   ; JAL_Rm      ;       ; 4.731 ; 5.281 ;       ;
+; Inst[13]   ; JMP         ;       ; 6.443 ; 6.774 ;       ;
+; Inst[13]   ; JR          ;       ; 6.166 ; 6.612 ;       ;
+; Inst[13]   ; LDR         ;       ; 6.025 ; 6.475 ;       ;
+; Inst[13]   ; LHI         ;       ; 6.077 ; 6.482 ;       ;
+; Inst[13]   ; LLI         ;       ; 6.862 ; 7.217 ;       ;
+; Inst[13]   ; MOV         ;       ; 6.015 ; 6.447 ;       ;
+; Inst[13]   ; OutR        ; 5.355 ;       ;       ; 6.072 ;
+; Inst[13]   ; SBB         ;       ; 4.522 ; 5.081 ;       ;
+; Inst[13]   ; STR         ; 4.300 ;       ;       ; 4.944 ;
+; Inst[13]   ; SUB         ;       ; 4.500 ; 5.074 ;       ;
+; Inst[13]   ; SUBI        ;       ; 6.164 ; 6.587 ;       ;
+; Inst[14]   ; ADC         ;       ; 5.712 ; 6.212 ;       ;
+; Inst[14]   ; ADD         ;       ; 6.159 ; 6.889 ;       ;
+; Inst[14]   ; ADDI        ;       ; 5.101 ; 5.645 ;       ;
+; Inst[14]   ; BAL         ; 5.192 ;       ;       ; 5.886 ;
+; Inst[14]   ; BCC         ; 5.098 ;       ;       ; 5.797 ;
+; Inst[14]   ; BCS         ; 4.932 ;       ;       ; 5.608 ;
+; Inst[14]   ; BEQ         ; 5.187 ;       ;       ; 5.956 ;
+; Inst[14]   ; BNE         ; 5.080 ;       ;       ; 5.778 ;
+; Inst[14]   ; CMP         ;       ; 5.692 ; 6.175 ;       ;
+; Inst[14]   ; HLT         ; 4.931 ;       ;       ; 5.647 ;
+; Inst[14]   ; JAL_Label   ;       ; 5.045 ; 5.640 ;       ;
+; Inst[14]   ; JAL_Rm      ;       ; 5.115 ; 5.698 ;       ;
+; Inst[14]   ; JMP         ;       ; 5.277 ; 5.803 ;       ;
+; Inst[14]   ; JR          ;       ; 4.926 ; 5.587 ;       ;
+; Inst[14]   ; LDR         ;       ; 4.777 ; 5.450 ;       ;
+; Inst[14]   ; LHI         ;       ; 4.828 ; 5.458 ;       ;
+; Inst[14]   ; LLI         ;       ; 7.246 ; 7.634 ;       ;
+; Inst[14]   ; MOV         ; 4.745 ;       ;       ; 5.409 ;
+; Inst[14]   ; OutR        ; 5.453 ;       ;       ; 6.185 ;
+; Inst[14]   ; SBB         ;       ; 4.895 ; 5.457 ;       ;
+; Inst[14]   ; STR         ;       ; 4.964 ; 5.546 ;       ;
+; Inst[14]   ; SUB         ;       ; 4.898 ; 5.475 ;       ;
+; Inst[14]   ; SUBI        ; 4.981 ;       ;       ; 5.659 ;
+; Inst[15]   ; ADC         ;       ; 4.297 ; 4.461 ;       ;
+; Inst[15]   ; ADD         ;       ; 4.744 ; 5.138 ;       ;
+; Inst[15]   ; ADDI        ;       ; 3.686 ; 3.894 ;       ;
+; Inst[15]   ; BAL         ; 3.845 ;       ;       ; 4.143 ;
+; Inst[15]   ; BCC         ; 3.744 ;       ;       ; 4.029 ;
+; Inst[15]   ; BCS         ; 3.578 ;       ;       ; 3.840 ;
+; Inst[15]   ; BEQ         ; 3.833 ;       ;       ; 4.188 ;
+; Inst[15]   ; BNE         ; 3.726 ;       ;       ; 4.010 ;
+; Inst[15]   ; CMP         ;       ; 4.277 ; 4.424 ;       ;
+; Inst[15]   ; HLT         ; 3.464 ;       ;       ; 3.812 ;
+; Inst[15]   ; JAL_Label   ; 3.597 ;       ;       ; 3.920 ;
+; Inst[15]   ; JAL_Rm      ; 3.281 ;       ;       ; 3.626 ;
+; Inst[15]   ; JMP         ; 3.918 ;       ;       ; 4.303 ;
+; Inst[15]   ; JR          ; 3.568 ;       ;       ; 3.829 ;
+; Inst[15]   ; LDR         ;       ; 3.424 ; 3.676 ;       ;
+; Inst[15]   ; LHI         ;       ; 3.440 ; 3.653 ;       ;
+; Inst[15]   ; LLI         ;       ; 4.400 ; 4.540 ;       ;
+; Inst[15]   ; MOV         ;       ; 3.395 ; 3.652 ;       ;
+; Inst[15]   ; OutR        ; 3.986 ;       ;       ; 4.350 ;
+; Inst[15]   ; SBB         ;       ; 3.480 ; 3.706 ;       ;
+; Inst[15]   ; STR         ;       ; 3.549 ; 3.795 ;       ;
+; Inst[15]   ; SUB         ;       ; 3.483 ; 3.724 ;       ;
+; Inst[15]   ; SUBI        ;       ; 3.780 ; 3.994 ;       ;
++------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; Inst[0]    ; ADC         ; 9.160  ;        ;        ; 9.584  ;
+; Inst[0]    ; ADD         ;        ; 9.832  ; 10.327 ;        ;
+; Inst[0]    ; CMP         ; 9.331  ;        ;        ; 9.784  ;
+; Inst[0]    ; HLT         ; 8.110  ;        ;        ; 8.498  ;
+; Inst[0]    ; OutR        ;        ; 8.671  ; 9.236  ;        ;
+; Inst[0]    ; SBB         ; 7.851  ;        ;        ; 8.252  ;
+; Inst[0]    ; SUB         ;        ; 7.706  ; 8.335  ;        ;
+; Inst[1]    ; ADC         ;        ; 6.953  ; 7.145  ;        ;
+; Inst[1]    ; ADD         ;        ; 7.684  ; 7.805  ;        ;
+; Inst[1]    ; CMP         ;        ; 7.218  ; 7.417  ;        ;
+; Inst[1]    ; HLT         ;        ; 6.867  ; 7.017  ;        ;
+; Inst[1]    ; OutR        ;        ; 7.553  ; 7.627  ;        ;
+; Inst[1]    ; SBB         ; 5.665  ;        ;        ; 5.692  ;
+; Inst[1]    ; SUB         ; 5.676  ;        ;        ; 5.703  ;
+; Inst[8]    ; BAL         ;        ; 8.334  ; 8.843  ;        ;
+; Inst[8]    ; BCC         ; 8.267  ;        ;        ; 8.654  ;
+; Inst[8]    ; BCS         ;        ; 7.928  ; 8.472  ;        ;
+; Inst[8]    ; BEQ         ;        ; 8.452  ; 9.003  ;        ;
+; Inst[8]    ; BNE         ; 8.245  ;        ;        ; 8.637  ;
+; Inst[9]    ; BAL         ; 8.161  ;        ;        ; 8.561  ;
+; Inst[9]    ; BCC         ; 7.846  ;        ;        ; 8.208  ;
+; Inst[9]    ; BCS         ; 7.572  ;        ;        ; 7.919  ;
+; Inst[9]    ; BEQ         ;        ; 8.007  ; 8.520  ;        ;
+; Inst[9]    ; BNE         ;        ; 7.746  ; 8.244  ;        ;
+; Inst[10]   ; BAL         ; 8.256  ;        ;        ; 8.615  ;
+; Inst[10]   ; BCC         ;        ; 7.960  ; 8.467  ;        ;
+; Inst[10]   ; BCS         ;        ; 7.672  ; 8.193  ;        ;
+; Inst[10]   ; BEQ         ;        ; 8.206  ; 8.724  ;        ;
+; Inst[10]   ; BNE         ;        ; 7.944  ; 8.447  ;        ;
+; Inst[11]   ; ADC         ;        ; 9.580  ; 10.083 ;        ;
+; Inst[11]   ; ADD         ;        ; 10.305 ; 10.730 ;        ;
+; Inst[11]   ; ADDI        ; 7.979  ;        ;        ; 8.343  ;
+; Inst[11]   ; BAL         ; 11.081 ;        ;        ; 11.559 ;
+; Inst[11]   ; BCC         ;        ; 11.000 ; 11.421 ;        ;
+; Inst[11]   ; BCS         ;        ; 10.712 ; 11.147 ;        ;
+; Inst[11]   ; BEQ         ;        ; 11.246 ; 11.678 ;        ;
+; Inst[11]   ; BNE         ;        ; 10.984 ; 11.401 ;        ;
+; Inst[11]   ; CMP         ;        ; 9.181  ; 9.709  ;        ;
+; Inst[11]   ; HLT         ;        ; 8.830  ; 9.309  ;        ;
+; Inst[11]   ; JAL_Label   ; 11.047 ;        ;        ; 11.469 ;
+; Inst[11]   ; JAL_Rm      ;        ; 8.568  ; 9.105  ;        ;
+; Inst[11]   ; JMP         ;        ; 11.410 ; 11.806 ;        ;
+; Inst[11]   ; JR          ; 10.846 ;        ;        ; 11.255 ;
+; Inst[11]   ; LDR         ; 10.619 ;        ;        ; 11.038 ;
+; Inst[11]   ; LHI         ; 10.722 ;        ;        ; 11.136 ;
+; Inst[11]   ; LLI         ;        ; 11.887 ; 12.336 ;        ;
+; Inst[11]   ; MOV         ; 10.562 ;        ;        ; 11.014 ;
+; Inst[11]   ; OutR        ;        ; 9.516  ; 9.919  ;        ;
+; Inst[11]   ; SBB         ;        ; 8.243  ; 8.770  ;        ;
+; Inst[11]   ; STR         ; 7.834  ;        ;        ; 8.218  ;
+; Inst[11]   ; SUB         ;        ; 8.210  ; 8.737  ;        ;
+; Inst[11]   ; SUBI        ;        ; 10.949 ; 11.387 ;        ;
+; Inst[12]   ; ADC         ;        ; 9.530  ; 10.074 ;        ;
+; Inst[12]   ; ADD         ;        ; 10.255 ; 10.721 ;        ;
+; Inst[12]   ; ADDI        ; 8.204  ;        ;        ; 8.625  ;
+; Inst[12]   ; BAL         ;        ; 9.000  ; 9.552  ;        ;
+; Inst[12]   ; BCC         ;        ; 10.950 ; 11.412 ;        ;
+; Inst[12]   ; BCS         ;        ; 10.662 ; 11.138 ;        ;
+; Inst[12]   ; BEQ         ;        ; 11.196 ; 11.669 ;        ;
+; Inst[12]   ; BNE         ;        ; 10.934 ; 11.392 ;        ;
+; Inst[12]   ; CMP         ; 9.078  ;        ;        ; 9.511  ;
+; Inst[12]   ; HLT         ;        ; 8.402  ; 8.985  ;        ;
+; Inst[12]   ; JAL_Label   ;        ; 8.336  ; 8.914  ;        ;
+; Inst[12]   ; JAL_Rm      ; 8.640  ;        ;        ; 9.082  ;
+; Inst[12]   ; JMP         ;        ; 11.360 ; 11.797 ;        ;
+; Inst[12]   ; JR          ; 8.262  ;        ;        ; 8.653  ;
+; Inst[12]   ; LDR         ; 8.039  ;        ;        ; 8.433  ;
+; Inst[12]   ; LHI         ;        ; 7.975  ; 8.579  ;        ;
+; Inst[12]   ; LLI         ; 11.871 ;        ;        ; 12.401 ;
+; Inst[12]   ; MOV         ; 7.991  ;        ;        ; 8.378  ;
+; Inst[12]   ; OutR        ;        ; 9.088  ; 9.595  ;        ;
+; Inst[12]   ; SBB         ;        ; 8.193  ; 8.761  ;        ;
+; Inst[12]   ; STR         ;        ; 8.011  ; 8.604  ;        ;
+; Inst[12]   ; SUB         ;        ; 8.160  ; 8.728  ;        ;
+; Inst[12]   ; SUBI        ;        ; 10.899 ; 11.378 ;        ;
+; Inst[13]   ; ADC         ;        ; 9.306  ; 9.844  ;        ;
+; Inst[13]   ; ADD         ;        ; 10.031 ; 10.491 ;        ;
+; Inst[13]   ; ADDI        ; 7.887  ;        ;        ; 8.256  ;
+; Inst[13]   ; BAL         ;        ; 10.984 ; 11.468 ;        ;
+; Inst[13]   ; BCC         ;        ; 10.726 ; 11.182 ;        ;
+; Inst[13]   ; BCS         ;        ; 10.438 ; 10.908 ;        ;
+; Inst[13]   ; BEQ         ;        ; 10.972 ; 11.439 ;        ;
+; Inst[13]   ; BNE         ;        ; 10.710 ; 11.162 ;        ;
+; Inst[13]   ; CMP         ; 9.165  ;        ;        ; 9.563  ;
+; Inst[13]   ; HLT         ; 8.765  ;        ;        ; 9.212  ;
+; Inst[13]   ; JAL_Label   ;        ; 10.894 ; 11.434 ;        ;
+; Inst[13]   ; JAL_Rm      ;        ; 8.333  ; 8.901  ;        ;
+; Inst[13]   ; JMP         ;        ; 11.136 ; 11.567 ;        ;
+; Inst[13]   ; JR          ;        ; 10.680 ; 11.233 ;        ;
+; Inst[13]   ; LDR         ;        ; 10.463 ; 11.006 ;        ;
+; Inst[13]   ; LHI         ;        ; 10.561 ; 11.109 ;        ;
+; Inst[13]   ; LLI         ;        ; 11.652 ; 12.132 ;        ;
+; Inst[13]   ; MOV         ;        ; 10.439 ; 10.949 ;        ;
+; Inst[13]   ; OutR        ; 9.375  ;        ;        ; 9.898  ;
+; Inst[13]   ; SBB         ;        ; 7.969  ; 8.531  ;        ;
+; Inst[13]   ; STR         ; 7.738  ;        ;        ; 8.127  ;
+; Inst[13]   ; SUB         ;        ; 7.936  ; 8.498  ;        ;
+; Inst[13]   ; SUBI        ;        ; 10.675 ; 11.148 ;        ;
+; Inst[14]   ; ADC         ;        ; 9.958  ; 10.512 ;        ;
+; Inst[14]   ; ADD         ;        ; 10.749 ; 11.198 ;        ;
+; Inst[14]   ; ADDI        ;        ; 8.949  ; 9.486  ;        ;
+; Inst[14]   ; BAL         ; 9.297  ;        ;        ; 9.749  ;
+; Inst[14]   ; BCC         ; 9.091  ;        ;        ; 9.578  ;
+; Inst[14]   ; BCS         ; 8.817  ;        ;        ; 9.290  ;
+; Inst[14]   ; BEQ         ; 9.348  ;        ;        ; 9.824  ;
+; Inst[14]   ; BNE         ; 9.071  ;        ;        ; 9.562  ;
+; Inst[14]   ; CMP         ;        ; 9.939  ; 10.453 ;        ;
+; Inst[14]   ; HLT         ; 8.898  ;        ;        ; 9.359  ;
+; Inst[14]   ; JAL_Label   ;        ; 8.895  ; 9.488  ;        ;
+; Inst[14]   ; JAL_Rm      ;        ; 9.033  ; 9.612  ;        ;
+; Inst[14]   ; JMP         ;        ; 9.194  ; 9.755  ;        ;
+; Inst[14]   ; JR          ;        ; 8.674  ; 9.285  ;        ;
+; Inst[14]   ; LDR         ;        ; 8.443  ; 9.060  ;        ;
+; Inst[14]   ; LHI         ;        ; 8.537  ; 9.163  ;        ;
+; Inst[14]   ; LLI         ;        ; 12.352 ; 12.843 ;        ;
+; Inst[14]   ; MOV         ; 8.451  ;        ;        ; 8.915  ;
+; Inst[14]   ; OutR        ; 9.508  ;        ;        ; 10.045 ;
+; Inst[14]   ; SBB         ;        ; 8.637  ; 9.174  ;        ;
+; Inst[14]   ; STR         ;        ; 8.794  ; 9.354  ;        ;
+; Inst[14]   ; SUB         ;        ; 8.651  ; 9.184  ;        ;
+; Inst[14]   ; SUBI        ; 8.847  ;        ;        ; 9.276  ;
+; Inst[15]   ; ADC         ;        ; 7.287  ; 7.479  ;        ;
+; Inst[15]   ; ADD         ;        ; 8.078  ; 8.165  ;        ;
+; Inst[15]   ; ADDI        ;        ; 6.278  ; 6.453  ;        ;
+; Inst[15]   ; BAL         ; 6.674  ;        ;        ; 6.681  ;
+; Inst[15]   ; BCC         ; 6.455  ;        ;        ; 6.453  ;
+; Inst[15]   ; BCS         ; 6.181  ;        ;        ; 6.165  ;
+; Inst[15]   ; BEQ         ; 6.712  ;        ;        ; 6.699  ;
+; Inst[15]   ; BNE         ; 6.435  ;        ;        ; 6.437  ;
+; Inst[15]   ; CMP         ;        ; 7.268  ; 7.420  ;        ;
+; Inst[15]   ; HLT         ; 6.141  ;        ;        ; 6.181  ;
+; Inst[15]   ; JAL_Label   ; 6.284  ;        ;        ; 6.270  ;
+; Inst[15]   ; JAL_Rm      ; 5.751  ;        ;        ; 5.767  ;
+; Inst[15]   ; JMP         ; 6.830  ;        ;        ; 6.863  ;
+; Inst[15]   ; JR          ; 6.119  ;        ;        ; 6.098  ;
+; Inst[15]   ; LDR         ;        ; 5.803  ; 5.938  ;        ;
+; Inst[15]   ; LHI         ;        ; 5.831  ; 5.988  ;        ;
+; Inst[15]   ; LLI         ;        ; 7.254  ; 7.290  ;        ;
+; Inst[15]   ; MOV         ;        ; 5.751  ; 5.892  ;        ;
+; Inst[15]   ; OutR        ; 6.751  ;        ;        ; 6.867  ;
+; Inst[15]   ; SBB         ;        ; 5.966  ; 6.141  ;        ;
+; Inst[15]   ; STR         ;        ; 6.123  ; 6.321  ;        ;
+; Inst[15]   ; SUB         ;        ; 5.980  ; 6.151  ;        ;
+; Inst[15]   ; SUBI        ;        ; 6.360  ; 6.489  ;        ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; Inst[0]    ; ADC         ; 5.134 ;       ;       ; 5.875 ;
+; Inst[0]    ; ADD         ;       ; 5.676 ; 6.431 ;       ;
+; Inst[0]    ; CMP         ; 5.221 ;       ;       ; 5.981 ;
+; Inst[0]    ; HLT         ; 4.530 ;       ;       ; 5.183 ;
+; Inst[0]    ; OutR        ;       ; 5.094 ; 5.684 ;       ;
+; Inst[0]    ; SBB         ; 4.399 ;       ;       ; 5.056 ;
+; Inst[0]    ; SUB         ;       ; 4.407 ; 5.024 ;       ;
+; Inst[1]    ; ADC         ;       ; 4.106 ; 4.278 ;       ;
+; Inst[1]    ; ADD         ;       ; 4.519 ; 4.938 ;       ;
+; Inst[1]    ; CMP         ;       ; 4.229 ; 4.382 ;       ;
+; Inst[1]    ; HLT         ;       ; 3.936 ; 4.122 ;       ;
+; Inst[1]    ; OutR        ;       ; 4.474 ; 4.644 ;       ;
+; Inst[1]    ; SBB         ; 3.221 ;       ;       ; 3.544 ;
+; Inst[1]    ; SUB         ; 3.241 ;       ;       ; 3.548 ;
+; Inst[8]    ; BAL         ;       ; 4.750 ; 5.318 ;       ;
+; Inst[8]    ; BCC         ; 4.661 ;       ;       ; 5.275 ;
+; Inst[8]    ; BCS         ;       ; 4.488 ; 5.114 ;       ;
+; Inst[8]    ; BEQ         ;       ; 4.836 ; 5.366 ;       ;
+; Inst[8]    ; BNE         ; 4.642 ;       ;       ; 5.258 ;
+; Inst[9]    ; BAL         ; 4.594 ;       ;       ; 5.208 ;
+; Inst[9]    ; BCC         ; 4.442 ;       ;       ; 5.021 ;
+; Inst[9]    ; BCS         ; 4.275 ;       ;       ; 4.832 ;
+; Inst[9]    ; BEQ         ;       ; 4.607 ; 5.087 ;       ;
+; Inst[9]    ; BNE         ;       ; 4.429 ; 4.981 ;       ;
+; Inst[10]   ; BAL         ; 4.642 ;       ;       ; 5.245 ;
+; Inst[10]   ; BCC         ;       ; 4.567 ; 5.108 ;       ;
+; Inst[10]   ; BCS         ;       ; 4.378 ; 4.942 ;       ;
+; Inst[10]   ; BEQ         ;       ; 4.726 ; 5.197 ;       ;
+; Inst[10]   ; BNE         ;       ; 4.548 ; 5.090 ;       ;
+; Inst[11]   ; ADC         ;       ; 5.480 ; 5.948 ;       ;
+; Inst[11]   ; ADD         ;       ; 5.890 ; 6.611 ;       ;
+; Inst[11]   ; ADDI        ; 4.460 ;       ;       ; 5.116 ;
+; Inst[11]   ; BAL         ; 6.172 ;       ;       ; 7.002 ;
+; Inst[11]   ; BCC         ;       ; 6.322 ; 6.731 ;       ;
+; Inst[11]   ; BCS         ;       ; 6.133 ; 6.565 ;       ;
+; Inst[11]   ; BEQ         ;       ; 6.481 ; 6.820 ;       ;
+; Inst[11]   ; BNE         ;       ; 6.303 ; 6.713 ;       ;
+; Inst[11]   ; CMP         ;       ; 5.273 ; 5.744 ;       ;
+; Inst[11]   ; HLT         ;       ; 4.980 ; 5.484 ;       ;
+; Inst[11]   ; JAL_Label   ; 6.106 ;       ;       ; 6.949 ;
+; Inst[11]   ; JAL_Rm      ;       ; 4.854 ; 5.403 ;       ;
+; Inst[11]   ; JMP         ;       ; 6.579 ; 6.903 ;       ;
+; Inst[11]   ; JR          ; 6.056 ;       ;       ; 6.834 ;
+; Inst[11]   ; LDR         ; 5.919 ;       ;       ; 6.693 ;
+; Inst[11]   ; LHI         ; 5.926 ;       ;       ; 6.745 ;
+; Inst[11]   ; LLI         ;       ; 6.985 ; 7.339 ;       ;
+; Inst[11]   ; MOV         ; 5.891 ;       ;       ; 6.683 ;
+; Inst[11]   ; OutR        ;       ; 5.518 ; 6.006 ;       ;
+; Inst[11]   ; SBB         ;       ; 4.658 ; 5.210 ;       ;
+; Inst[11]   ; STR         ; 4.357 ;       ;       ; 4.997 ;
+; Inst[11]   ; SUB         ;       ; 4.636 ; 5.203 ;       ;
+; Inst[11]   ; SUBI        ;       ; 6.300 ; 6.716 ;       ;
+; Inst[12]   ; ADC         ;       ; 5.474 ; 5.961 ;       ;
+; Inst[12]   ; ADD         ;       ; 5.884 ; 6.624 ;       ;
+; Inst[12]   ; ADDI        ; 4.591 ;       ;       ; 5.291 ;
+; Inst[12]   ; BAL         ;       ; 5.120 ; 5.722 ;       ;
+; Inst[12]   ; BCC         ;       ; 6.316 ; 6.744 ;       ;
+; Inst[12]   ; BCS         ;       ; 6.127 ; 6.578 ;       ;
+; Inst[12]   ; BEQ         ;       ; 6.475 ; 6.833 ;       ;
+; Inst[12]   ; BNE         ;       ; 6.297 ; 6.726 ;       ;
+; Inst[12]   ; CMP         ; 5.070 ;       ;       ; 5.818 ;
+; Inst[12]   ; HLT         ;       ; 4.758 ; 5.335 ;       ;
+; Inst[12]   ; JAL_Label   ;       ; 4.769 ; 5.335 ;       ;
+; Inst[12]   ; JAL_Rm      ; 4.798 ;       ;       ; 5.505 ;
+; Inst[12]   ; JMP         ;       ; 6.573 ; 6.916 ;       ;
+; Inst[12]   ; JR          ; 4.679 ;       ;       ; 5.307 ;
+; Inst[12]   ; LDR         ; 4.544 ;       ;       ; 5.165 ;
+; Inst[12]   ; LHI         ;       ; 4.552 ; 5.149 ;       ;
+; Inst[12]   ; LLI         ; 6.734 ;       ;       ; 7.636 ;
+; Inst[12]   ; MOV         ; 4.518 ;       ;       ; 5.133 ;
+; Inst[12]   ; OutR        ;       ; 5.296 ; 5.857 ;       ;
+; Inst[12]   ; SBB         ;       ; 4.652 ; 5.223 ;       ;
+; Inst[12]   ; STR         ;       ; 4.536 ; 5.150 ;       ;
+; Inst[12]   ; SUB         ;       ; 4.630 ; 5.216 ;       ;
+; Inst[12]   ; SUBI        ;       ; 6.294 ; 6.729 ;       ;
+; Inst[13]   ; ADC         ;       ; 5.344 ; 5.819 ;       ;
+; Inst[13]   ; ADD         ;       ; 5.754 ; 6.482 ;       ;
+; Inst[13]   ; ADDI        ; 4.407 ;       ;       ; 5.067 ;
+; Inst[13]   ; BAL         ;       ; 6.334 ; 6.728 ;       ;
+; Inst[13]   ; BCC         ;       ; 6.186 ; 6.602 ;       ;
+; Inst[13]   ; BCS         ;       ; 5.997 ; 6.436 ;       ;
+; Inst[13]   ; BEQ         ;       ; 6.345 ; 6.691 ;       ;
+; Inst[13]   ; BNE         ;       ; 6.167 ; 6.584 ;       ;
+; Inst[13]   ; CMP         ; 5.093 ;       ;       ; 5.827 ;
+; Inst[13]   ; HLT         ; 4.833 ;       ;       ; 5.534 ;
+; Inst[13]   ; JAL_Label   ;       ; 6.281 ; 6.662 ;       ;
+; Inst[13]   ; JAL_Rm      ;       ; 4.731 ; 5.281 ;       ;
+; Inst[13]   ; JMP         ;       ; 6.443 ; 6.774 ;       ;
+; Inst[13]   ; JR          ;       ; 6.166 ; 6.612 ;       ;
+; Inst[13]   ; LDR         ;       ; 6.025 ; 6.475 ;       ;
+; Inst[13]   ; LHI         ;       ; 6.077 ; 6.482 ;       ;
+; Inst[13]   ; LLI         ;       ; 6.862 ; 7.217 ;       ;
+; Inst[13]   ; MOV         ;       ; 6.015 ; 6.447 ;       ;
+; Inst[13]   ; OutR        ; 5.355 ;       ;       ; 6.072 ;
+; Inst[13]   ; SBB         ;       ; 4.522 ; 5.081 ;       ;
+; Inst[13]   ; STR         ; 4.300 ;       ;       ; 4.944 ;
+; Inst[13]   ; SUB         ;       ; 4.500 ; 5.074 ;       ;
+; Inst[13]   ; SUBI        ;       ; 6.164 ; 6.587 ;       ;
+; Inst[14]   ; ADC         ;       ; 5.712 ; 6.212 ;       ;
+; Inst[14]   ; ADD         ;       ; 6.159 ; 6.889 ;       ;
+; Inst[14]   ; ADDI        ;       ; 5.101 ; 5.645 ;       ;
+; Inst[14]   ; BAL         ; 5.192 ;       ;       ; 5.886 ;
+; Inst[14]   ; BCC         ; 5.098 ;       ;       ; 5.797 ;
+; Inst[14]   ; BCS         ; 4.932 ;       ;       ; 5.608 ;
+; Inst[14]   ; BEQ         ; 5.187 ;       ;       ; 5.956 ;
+; Inst[14]   ; BNE         ; 5.080 ;       ;       ; 5.778 ;
+; Inst[14]   ; CMP         ;       ; 5.692 ; 6.175 ;       ;
+; Inst[14]   ; HLT         ; 4.931 ;       ;       ; 5.647 ;
+; Inst[14]   ; JAL_Label   ;       ; 5.045 ; 5.640 ;       ;
+; Inst[14]   ; JAL_Rm      ;       ; 5.115 ; 5.698 ;       ;
+; Inst[14]   ; JMP         ;       ; 5.277 ; 5.803 ;       ;
+; Inst[14]   ; JR          ;       ; 4.926 ; 5.587 ;       ;
+; Inst[14]   ; LDR         ;       ; 4.777 ; 5.450 ;       ;
+; Inst[14]   ; LHI         ;       ; 4.828 ; 5.458 ;       ;
+; Inst[14]   ; LLI         ;       ; 7.246 ; 7.634 ;       ;
+; Inst[14]   ; MOV         ; 4.745 ;       ;       ; 5.409 ;
+; Inst[14]   ; OutR        ; 5.453 ;       ;       ; 6.185 ;
+; Inst[14]   ; SBB         ;       ; 4.895 ; 5.457 ;       ;
+; Inst[14]   ; STR         ;       ; 4.964 ; 5.546 ;       ;
+; Inst[14]   ; SUB         ;       ; 4.898 ; 5.475 ;       ;
+; Inst[14]   ; SUBI        ; 4.981 ;       ;       ; 5.659 ;
+; Inst[15]   ; ADC         ;       ; 4.297 ; 4.461 ;       ;
+; Inst[15]   ; ADD         ;       ; 4.744 ; 5.138 ;       ;
+; Inst[15]   ; ADDI        ;       ; 3.686 ; 3.894 ;       ;
+; Inst[15]   ; BAL         ; 3.845 ;       ;       ; 4.143 ;
+; Inst[15]   ; BCC         ; 3.744 ;       ;       ; 4.029 ;
+; Inst[15]   ; BCS         ; 3.578 ;       ;       ; 3.840 ;
+; Inst[15]   ; BEQ         ; 3.833 ;       ;       ; 4.188 ;
+; Inst[15]   ; BNE         ; 3.726 ;       ;       ; 4.010 ;
+; Inst[15]   ; CMP         ;       ; 4.277 ; 4.424 ;       ;
+; Inst[15]   ; HLT         ; 3.464 ;       ;       ; 3.812 ;
+; Inst[15]   ; JAL_Label   ; 3.597 ;       ;       ; 3.920 ;
+; Inst[15]   ; JAL_Rm      ; 3.281 ;       ;       ; 3.626 ;
+; Inst[15]   ; JMP         ; 3.918 ;       ;       ; 4.303 ;
+; Inst[15]   ; JR          ; 3.568 ;       ;       ; 3.829 ;
+; Inst[15]   ; LDR         ;       ; 3.424 ; 3.676 ;       ;
+; Inst[15]   ; LHI         ;       ; 3.440 ; 3.653 ;       ;
+; Inst[15]   ; LLI         ;       ; 4.400 ; 4.540 ;       ;
+; Inst[15]   ; MOV         ;       ; 3.395 ; 3.652 ;       ;
+; Inst[15]   ; OutR        ; 3.986 ;       ;       ; 4.350 ;
+; Inst[15]   ; SBB         ;       ; 3.480 ; 3.706 ;       ;
+; Inst[15]   ; STR         ;       ; 3.549 ; 3.795 ;       ;
+; Inst[15]   ; SUB         ;       ; 3.483 ; 3.724 ;       ;
+; Inst[15]   ; SUBI        ;       ; 3.780 ; 3.994 ;       ;
++------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; MOV           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ADDI          ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SUBI          ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LHI           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LLI           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LDR           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; STR           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ADD           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ADC           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SUB           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; SBB           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; CMP           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; BCC           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; BCS           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; BNE           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; BEQ           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; BAL           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; JMP           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; JAL_Label     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; JAL_Rm        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; JR            ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; OutR          ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HLT           ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-------------------------------------------------------------------+
+; Input Transition Times                                            ;
++----------------+--------------+-----------------+-----------------+
+; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------------+--------------+-----------------+-----------------+
+; Inst[2]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[3]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[4]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[5]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[6]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[7]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[12]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[11]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[13]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[14]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[15]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[1]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[0]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[9]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[8]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Inst[10]       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_NCSO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++----------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; MOV           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; ADDI          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; SUBI          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; LHI           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; LLI           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; LDR           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; STR           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ADD           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; ADC           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; SUB           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; SBB           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; CMP           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; BCC           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; BCS           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; BNE           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; BEQ           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; BAL           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; JMP           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; JAL_Label     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; JAL_Rm        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; JR            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; OutR          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; HLT           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.76e-09 V                   ; 2.4 V               ; -0.034 V            ; 0.102 V                              ; 0.065 V                              ; 2.49e-10 s                  ; 3.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.76e-09 V                  ; 2.4 V              ; -0.034 V           ; 0.102 V                             ; 0.065 V                             ; 2.49e-10 s                 ; 3.49e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.94e-09 V                   ; 2.39 V              ; -0.0344 V           ; 0.156 V                              ; 0.089 V                              ; 2.68e-10 s                  ; 2.6e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.94e-09 V                  ; 2.39 V             ; -0.0344 V          ; 0.156 V                             ; 0.089 V                             ; 2.68e-10 s                 ; 2.6e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; MOV           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; ADDI          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; SUBI          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; LHI           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; LLI           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; LDR           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; STR           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ADD           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; ADC           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; SUB           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; SBB           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; CMP           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; BCC           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; BCS           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; BNE           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; BEQ           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; BAL           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; JMP           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; JAL_Label     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; JAL_Rm        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; JR            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; OutR          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; HLT           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.93e-07 V                   ; 2.37 V              ; -0.0278 V           ; 0.106 V                              ; 0.115 V                              ; 2.69e-10 s                  ; 4.05e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.93e-07 V                  ; 2.37 V             ; -0.0278 V          ; 0.106 V                             ; 0.115 V                             ; 2.69e-10 s                 ; 4.05e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.76e-07 V                   ; 2.36 V              ; -0.00439 V          ; 0.088 V                              ; 0.007 V                              ; 4.05e-10 s                  ; 3.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.76e-07 V                  ; 2.36 V             ; -0.00439 V         ; 0.088 V                             ; 0.007 V                             ; 4.05e-10 s                 ; 3.35e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; MOV           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; ADDI          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; SUBI          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; LHI           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; LLI           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; LDR           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; STR           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ADD           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; ADC           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; SUB           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; SBB           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; CMP           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; BCC           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; BCS           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; BNE           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; BEQ           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; BAL           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; JMP           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; JAL_Label     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; JAL_Rm        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; JR            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; OutR          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; HLT           ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.06e-08 V                   ; 2.86 V              ; -0.0341 V           ; 0.364 V                              ; 0.046 V                              ; 1.17e-10 s                  ; 2.6e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.06e-08 V                  ; 2.86 V             ; -0.0341 V          ; 0.364 V                             ; 0.046 V                             ; 1.17e-10 s                 ; 2.6e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.81e-08 V                   ; 2.72 V              ; -0.0542 V           ; 0.144 V                              ; 0.087 V                              ; 2.55e-10 s                  ; 2.14e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.81e-08 V                  ; 2.72 V             ; -0.0542 V          ; 0.144 V                             ; 0.087 V                             ; 2.55e-10 s                 ; 2.14e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 144   ; 144  ;
+; Unconstrained Output Ports      ; 23    ; 23   ;
+; Unconstrained Output Port Paths ; 144   ; 144  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Sat Nov 11 18:05:26 2023
+Info: Command: quartus_sta Instruction_Decoder -c Instruction_Decoder
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Instruction_Decoder.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4640 megabytes
+    Info: Processing ended: Sat Nov 11 18:05:27 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

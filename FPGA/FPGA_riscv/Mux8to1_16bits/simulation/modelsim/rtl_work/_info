@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\Mux8to1_16bits\simulation\modelsim
+vMux8to1_16bits
+I6Z`9jXcm6E@^A`W`J<Kn22
+VPBnoWPz2EOV<_D2Z31agG1
+Z1 dX:\altera\13.1\Mux8to1_16bits\simulation\modelsim
+w1699671962
+8X:/altera/13.1/Mux8to1_16bits/Mux8to1_16bits.v
+FX:/altera/13.1/Mux8to1_16bits/Mux8to1_16bits.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@mux8to1_16bits
+!i10b 1
+!s100 ?Z@fPE]:;CTUVS?lEg=kN1
+!s85 0
+!s108 1699672097.011000
+!s107 X:/altera/13.1/Mux8to1_16bits/Mux8to1_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/Mux8to1_16bits|X:/altera/13.1/Mux8to1_16bits/Mux8to1_16bits.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/Mux8to1_16bits -O0
+vMux8to1_16bits_tb
+!i10b 1
+!s100 bXEBWM3ETkL7Ba7i3>Qcd2
+I7iFFONoEEmdg[[0OVjHU80
+VQ1l:Q7BJo7<7lz1UkiIgz1
+R1
+w1699672070
+8X:/altera/13.1/Mux8to1_16bits/Mux8to1_16bits_tb.v
+FX:/altera/13.1/Mux8to1_16bits/Mux8to1_16bits_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1699672097.117000
+!s107 X:/altera/13.1/Mux8to1_16bits/Mux8to1_16bits_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/Mux8to1_16bits|X:/altera/13.1/Mux8to1_16bits/Mux8to1_16bits_tb.v|
+!s101 -O0
+R3
+R4
+n@mux8to1_16bits_tb

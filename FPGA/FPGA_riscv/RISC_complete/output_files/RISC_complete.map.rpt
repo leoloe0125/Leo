@@ -1,0 +1,1239 @@
+Analysis & Synthesis report for RISC_complete
+Tue Nov 14 19:49:49 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "DFF_16bits:Dfor_Inst"
+ 12. Port Connectivity Checks: "DFF_16bits:Dfor_wr_data"
+ 13. Port Connectivity Checks: "DFF_16bits:Dfor_RF_wr_en"
+ 14. Port Connectivity Checks: "DFF_16bits:D1_PC"
+ 15. Port Connectivity Checks: "DFF_16bits:D1_Inst"
+ 16. Port Connectivity Checks: "DFF_16bits:D1_wr_data"
+ 17. Port Connectivity Checks: "DFF_16bits:D2_PC"
+ 18. Port Connectivity Checks: "DFF_16bits:D2_Inst"
+ 19. Port Connectivity Checks: "DFF_16bits:D2_Rt"
+ 20. Port Connectivity Checks: "DFF_16bits:D2_sum"
+ 21. Port Connectivity Checks: "ALU_16bits:ALU0"
+ 22. Port Connectivity Checks: "Mux4to1_16bits:Mux_ALU_B_target"
+ 23. Port Connectivity Checks: "Mux4to1_16bits:Mux_ALU_A_target"
+ 24. Port Connectivity Checks: "DFF_16bits:D3_PC"
+ 25. Port Connectivity Checks: "DFF_16bits:D3_Inst"
+ 26. Port Connectivity Checks: "DFF_16bits:D3_Imm"
+ 27. Port Connectivity Checks: "DFF_16bits:D3_Rt"
+ 28. Port Connectivity Checks: "DFF_16bits:D3_Rs"
+ 29. Port Connectivity Checks: "Hazard_Detector:HD0"
+ 30. Port Connectivity Checks: "RF8_16bits:RF0"
+ 31. Port Connectivity Checks: "DFF_16bits:D4_PC"
+ 32. Port Connectivity Checks: "DFF_16bits:D4_Inst"
+ 33. Port Connectivity Checks: "Mux2to1_16bits:Testing"
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
+ 36. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Nov 14 19:49:49 2023      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; RISC_complete                              ;
+; Top-level Entity Name              ; RISC_complete                              ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 14,162                                     ;
+;     Total combinational functions  ; 6,260                                      ;
+;     Dedicated logic registers      ; 8,021                                      ;
+; Total registers                    ; 8021                                       ;
+; Total pins                         ; 70                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total GXB Receiver Channel PCS     ; 0                                          ;
+; Total GXB Receiver Channel PMA     ; 0                                          ;
+; Total GXB Transmitter Channel PCS  ; 0                                          ;
+; Total GXB Transmitter Channel PMA  ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; RISC_complete      ; RISC_complete      ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 20     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+; ../Library/ALU_16bits.v          ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/ALU_16bits.v          ;         ;
+; ../Library/Mux4to1_16bits.v      ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Mux4to1_16bits.v      ;         ;
+; ../Library/RF8_16bits.v          ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/RF8_16bits.v          ;         ;
+; ../Library/Mux8to1_16bits.v      ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Mux8to1_16bits.v      ;         ;
+; ../Library/Memory256_16bits.v    ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Memory256_16bits.v    ;         ;
+; ../Library/Instruction_Decoder.v ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Instruction_Decoder.v ;         ;
+; ../Library/FA_16bits.v           ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/FA_16bits.v           ;         ;
+; ../Library/DFF_16bits.v          ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/DFF_16bits.v          ;         ;
+; ../Library/Decoder3to8.v         ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Decoder3to8.v         ;         ;
+; ../Library/Controller.v          ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Controller.v          ;         ;
+; RISC_complete.v                  ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/RISC_complete/RISC_complete.v ;         ;
+; ../Library/Fowarding_unit.v      ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Fowarding_unit.v      ;         ;
+; ../Library/Hazard_Detector.v     ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Hazard_Detector.v     ;         ;
+; ../Library/Mux2to1_16bits.v      ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Mux2to1_16bits.v      ;         ;
+; ../Library/Branch_unit.v         ; yes             ; User Verilog HDL File  ; X:/altera/13.1/quartus/Project/Term_project/Library/Branch_unit.v         ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 70               ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; clk_op           ;
+; Maximum fan-out          ; 8002             ;
+; Total fan-out            ; 48461            ;
+; Average fan-out          ; 3.36             ;
++--------------------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
++--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Library Name ;
++--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+; |RISC_complete                       ; 6260 (2587)       ; 8021 (60)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 70   ; 0            ; |RISC_complete                                              ; work         ;
+;    |ALU_16bits:ALU0|                 ; 39 (6)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|ALU_16bits:ALU0                              ; work         ;
+;       |FA_16bits:A0|                 ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|ALU_16bits:ALU0|FA_16bits:A0                 ; work         ;
+;    |Branch_unit:BU0|                 ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Branch_unit:BU0                              ; work         ;
+;    |Controller:C0|                   ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Controller:C0                                ; work         ;
+;    |DFF_16bits:D1_Inst|              ; 0 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D1_Inst                           ; work         ;
+;    |DFF_16bits:D1_wr_data|           ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D1_wr_data                        ; work         ;
+;    |DFF_16bits:D2_Inst|              ; 0 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D2_Inst                           ; work         ;
+;    |DFF_16bits:D2_PC|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D2_PC                             ; work         ;
+;    |DFF_16bits:D2_sum|               ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D2_sum                            ; work         ;
+;    |DFF_16bits:D3_Imm|               ; 0 (0)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D3_Imm                            ; work         ;
+;    |DFF_16bits:D3_Inst|              ; 0 (0)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D3_Inst                           ; work         ;
+;    |DFF_16bits:D3_PC|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D3_PC                             ; work         ;
+;    |DFF_16bits:D4_Inst|              ; 18 (18)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D4_Inst                           ; work         ;
+;    |DFF_16bits:D4_PC|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:D4_PC                             ; work         ;
+;    |DFF_16bits:Dfor_Inst|            ; 0 (0)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:Dfor_Inst                         ; work         ;
+;    |DFF_16bits:Dfor_RF_wr_en|        ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:Dfor_RF_wr_en                     ; work         ;
+;    |DFF_16bits:Dfor_wr_data|         ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:Dfor_wr_data                      ; work         ;
+;    |DFF_16bits:PC_DFF|               ; 16 (16)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|DFF_16bits:PC_DFF                            ; work         ;
+;    |Forwarding_unit:For0|            ; 26 (26)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Forwarding_unit:For0                         ; work         ;
+;    |Hazard_Detector:HD0|             ; 7 (7)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Hazard_Detector:HD0                          ; work         ;
+;    |Instruction_Decoder:ID0|         ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Instruction_Decoder:ID0                      ; work         ;
+;    |Memory256_16bits:Inst_Mem|       ; 2816 (0)          ; 3840 (0)     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem                    ; work         ;
+;       |Decoder3to8:D0|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Decoder3to8:D0     ; work         ;
+;       |Memory32_8bits:M00|           ; 48 (48)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M00 ; work         ;
+;       |Memory32_8bits:M01|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M01 ; work         ;
+;       |Memory32_8bits:M10|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M10 ; work         ;
+;       |Memory32_8bits:M11|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M11 ; work         ;
+;       |Memory32_8bits:M20|           ; 137 (137)         ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M20 ; work         ;
+;       |Memory32_8bits:M21|           ; 63 (63)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M21 ; work         ;
+;       |Memory32_8bits:M30|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M30 ; work         ;
+;       |Memory32_8bits:M31|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M31 ; work         ;
+;       |Memory32_8bits:M40|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M40 ; work         ;
+;       |Memory32_8bits:M41|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M41 ; work         ;
+;       |Memory32_8bits:M50|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M50 ; work         ;
+;       |Memory32_8bits:M51|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M51 ; work         ;
+;       |Memory32_8bits:M60|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M60 ; work         ;
+;       |Memory32_8bits:M61|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M61 ; work         ;
+;       |Memory32_8bits:M70|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M70 ; work         ;
+;       |Memory32_8bits:M71|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M71 ; work         ;
+;       |Mux8to1_16bits:Mu0|           ; 2368 (2368)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Inst_Mem|Mux8to1_16bits:Mu0 ; work         ;
+;    |Memory256_16bits:Mem_data|       ; 448 (0)           ; 3840 (0)     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data                    ; work         ;
+;       |Decoder3to8:D0|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Decoder3to8:D0     ; work         ;
+;       |Memory32_8bits:M00|           ; 48 (48)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M00 ; work         ;
+;       |Memory32_8bits:M01|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M01 ; work         ;
+;       |Memory32_8bits:M10|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M10 ; work         ;
+;       |Memory32_8bits:M11|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M11 ; work         ;
+;       |Memory32_8bits:M20|           ; 200 (200)         ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M20 ; work         ;
+;       |Memory32_8bits:M30|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M30 ; work         ;
+;       |Memory32_8bits:M31|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M31 ; work         ;
+;       |Memory32_8bits:M40|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M40 ; work         ;
+;       |Memory32_8bits:M41|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M41 ; work         ;
+;       |Memory32_8bits:M50|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M50 ; work         ;
+;       |Memory32_8bits:M51|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M51 ; work         ;
+;       |Memory32_8bits:M60|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M60 ; work         ;
+;       |Memory32_8bits:M61|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M61 ; work         ;
+;       |Memory32_8bits:M70|           ; 32 (32)           ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M70 ; work         ;
+;       |Memory32_8bits:M71|           ; 0 (0)             ; 256 (256)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M71 ; work         ;
+;    |Mux2to1_16bits:Testing|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Mux2to1_16bits:Testing                       ; work         ;
+;    |Mux4to1_16bits:Mux_ALU_A_target| ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Mux4to1_16bits:Mux_ALU_A_target              ; work         ;
+;    |Mux4to1_16bits:Mux_ALU_B_target| ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Mux4to1_16bits:Mux_ALU_B_target              ; work         ;
+;    |Mux4to1_16bits:Rs_forwarding|    ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Mux4to1_16bits:Rs_forwarding                 ; work         ;
+;    |Mux4to1_16bits:Rt_forwarding|    ; 27 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|Mux4to1_16bits:Rt_forwarding                 ; work         ;
+;    |RF8_16bits:RF0|                  ; 168 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0                               ; work         ;
+;       |DFF_16bits:R0|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|DFF_16bits:R0                 ; work         ;
+;       |DFF_16bits:R1|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|DFF_16bits:R1                 ; work         ;
+;       |DFF_16bits:R2|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|DFF_16bits:R2                 ; work         ;
+;       |DFF_16bits:R3|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|DFF_16bits:R3                 ; work         ;
+;       |DFF_16bits:R4|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|DFF_16bits:R4                 ; work         ;
+;       |DFF_16bits:R5|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|DFF_16bits:R5                 ; work         ;
+;       |DFF_16bits:R6|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|DFF_16bits:R6                 ; work         ;
+;       |DFF_16bits:R7|                ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|DFF_16bits:R7                 ; work         ;
+;       |Decoder3to8:D0|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|Decoder3to8:D0                ; work         ;
+;       |Mux8to1_16bits:Rs|            ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|Mux8to1_16bits:Rs             ; work         ;
+;       |Mux8to1_16bits:Rt|            ; 80 (80)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |RISC_complete|RF8_16bits:RF0|Mux8to1_16bits:Rt             ; work         ;
++--------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                            ;
++---------------------------------------------------------+---------------------------------------------------------------------+
+; Register name                                           ; Reason for Removal                                                  ;
++---------------------------------------------------------+---------------------------------------------------------------------+
+; DFF_16bits:D3_Imm|Dout[8..15]                           ; Stuck at GND due to stuck port data_in                              ;
+; DFF_16bits:D3_Imm|Dout[4]                               ; Merged with DFF_16bits:D3_Inst|Dout[4]                              ;
+; DFF_16bits:D3_Imm|Dout[3]                               ; Merged with DFF_16bits:D3_Inst|Dout[3]                              ;
+; DFF_16bits:D3_Imm|Dout[2]                               ; Merged with DFF_16bits:D3_Inst|Dout[2]                              ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[31][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[31][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[30][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[30][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[29][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[29][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[28][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[28][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[27][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[27][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[26][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[26][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[25][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[25][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[24][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[24][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[23][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[23][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[22][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[22][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[21][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[21][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[20][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[20][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[19][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[19][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[18][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[18][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[17][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[17][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[16][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[16][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[15][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[15][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[14][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[14][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[13][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[13][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[12][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[12][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[11][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[11][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[10][0] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[10][0] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[9][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[9][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[8][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[8][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[7][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[7][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[6][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[6][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[5][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[5][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[4][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[4][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[3][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[3][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[2][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[2][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[1][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[1][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[0][0]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[0][0]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[31][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[31][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[30][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[30][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[29][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[29][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[28][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[28][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[27][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[27][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[26][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[26][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[25][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[25][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[24][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[24][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[23][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[23][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[22][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[22][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[21][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[21][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[20][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[20][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[19][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[19][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[18][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[18][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[17][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[17][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[16][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[16][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[15][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[15][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[14][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[14][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[13][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[13][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[12][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[12][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[11][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[11][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[10][1] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[10][1] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[9][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[9][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[8][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[8][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[7][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[7][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[6][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[6][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[5][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[5][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[4][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[4][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[3][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[3][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[2][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[2][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[1][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[1][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[0][1]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[0][1]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[31][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[31][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[30][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[30][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[29][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[29][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[28][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[28][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[27][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[27][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[26][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[26][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[25][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[25][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[24][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[24][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[23][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[23][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[22][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[22][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[21][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[21][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[20][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[20][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[19][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[19][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[18][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[18][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[17][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[17][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[16][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[16][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[15][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[15][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[14][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[14][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[13][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[13][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[12][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[12][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[11][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[11][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[10][2] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[10][2] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[9][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[9][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[8][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[8][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[7][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[7][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[6][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[6][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[5][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[5][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[4][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[4][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[3][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[3][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[2][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[2][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[1][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[1][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[0][2]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[0][2]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[31][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[31][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[30][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[30][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[29][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[29][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[28][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[28][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[27][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[27][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[26][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[26][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[25][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[25][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[24][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[24][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[23][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[23][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[22][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[22][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[21][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[21][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[20][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[20][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[19][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[19][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[18][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[18][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[17][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[17][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[16][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[16][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[15][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[15][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[14][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[14][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[13][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[13][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[12][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[12][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[11][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[11][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[10][3] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[10][3] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[9][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[9][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[8][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[8][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[7][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[7][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[6][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[6][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[5][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[5][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[4][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[4][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[3][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[3][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[2][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[2][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[1][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[1][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[0][3]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[0][3]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[31][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[31][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[30][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[30][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[29][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[29][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[28][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[28][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[27][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[27][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[26][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[26][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[25][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[25][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[24][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[24][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[23][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[23][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[22][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[22][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[21][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[21][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[20][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[20][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[19][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[19][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[18][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[18][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[17][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[17][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[16][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[16][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[15][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[15][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[14][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[14][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[13][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[13][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[12][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[12][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[11][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[11][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[10][4] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[10][4] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[9][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[9][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[8][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[8][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[7][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[7][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[6][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[6][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[5][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[5][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[4][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[4][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[3][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[3][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[2][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[2][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[1][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[1][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[0][4]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[0][4]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[31][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[31][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[30][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[30][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[29][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[29][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[28][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[28][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[27][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[27][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[26][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[26][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[25][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[25][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[24][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[24][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[23][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[23][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[22][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[22][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[21][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[21][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[20][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[20][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[19][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[19][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[18][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[18][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[17][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[17][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[16][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[16][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[15][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[15][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[14][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[14][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[13][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[13][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[12][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[12][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[11][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[11][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[10][5] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[10][5] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[9][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[9][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[8][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[8][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[7][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[7][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[6][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[6][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[5][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[5][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[4][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[4][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[3][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[3][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[2][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[2][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[1][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[1][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[0][5]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[0][5]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[31][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[31][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[30][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[30][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[29][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[29][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[28][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[28][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[27][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[27][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[26][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[26][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[25][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[25][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[24][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[24][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[23][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[23][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[22][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[22][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[21][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[21][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[20][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[20][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[19][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[19][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[18][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[18][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[17][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[17][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[16][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[16][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[15][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[15][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[14][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[14][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[13][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[13][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[12][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[12][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[11][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[11][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[10][6] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[10][6] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[9][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[9][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[8][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[8][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[7][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[7][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[6][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[6][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[5][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[5][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[4][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[4][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[3][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[3][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[2][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[2][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[1][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[1][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[0][6]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[0][6]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[31][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[31][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[30][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[30][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[29][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[29][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[28][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[28][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[27][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[27][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[26][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[26][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[25][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[25][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[24][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[24][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[23][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[23][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[22][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[22][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[21][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[21][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[20][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[20][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[19][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[19][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[18][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[18][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[17][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[17][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[16][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[16][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[15][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[15][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[14][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[14][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[13][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[13][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[12][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[12][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[11][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[11][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[10][7] ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[10][7] ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[9][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[9][7]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[8][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[8][7]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[7][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[7][7]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[6][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[6][7]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[5][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[5][7]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[4][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[4][7]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[3][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[3][7]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[2][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[2][7]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[1][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[1][7]  ;
+; Memory256_16bits:Mem_data|Memory32_8bits:M21|Mem[0][7]  ; Merged with Memory256_16bits:Mem_data|Memory32_8bits:M20|Mem[0][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[31][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[31][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[30][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[30][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[29][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[29][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[28][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[28][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[27][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[27][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[26][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[26][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[25][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[25][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[24][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[24][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[23][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[23][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[22][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[22][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[21][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[21][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[20][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[20][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[19][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[19][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[18][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[18][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[17][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[17][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[16][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[16][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[15][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[15][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[14][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[14][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[13][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[13][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[12][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[12][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[11][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[11][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[10][7] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[10][7] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[9][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[9][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[8][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[8][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[7][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[7][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[6][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[6][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[5][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[5][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[4][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[4][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[3][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[3][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[2][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[2][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[1][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[1][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[0][7]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[0][7]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[31][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[31][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[30][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[30][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[29][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[29][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[28][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[28][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[27][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[27][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[26][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[26][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[25][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[25][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[24][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[24][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[23][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[23][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[22][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[22][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[21][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[21][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[20][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[20][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[19][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[19][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[18][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[18][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[17][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[17][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[16][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[16][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[15][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[15][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[14][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[14][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[13][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[13][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[12][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[12][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[11][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[11][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[10][6] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[10][6] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[9][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[9][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[8][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[8][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[7][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[7][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[6][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[6][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[5][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[5][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[4][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[4][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[3][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[3][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[2][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[2][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[1][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[1][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[0][6]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[0][6]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[31][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[31][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[30][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[30][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[29][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[29][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[28][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[28][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[27][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[27][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[26][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[26][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[25][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[25][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[24][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[24][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[23][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[23][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[22][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[22][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[21][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[21][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[20][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[20][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[19][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[19][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[18][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[18][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[17][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[17][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[16][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[16][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[15][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[15][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[14][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[14][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[13][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[13][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[12][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[12][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[11][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[11][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[10][5] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[10][5] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[9][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[9][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[8][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[8][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[7][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[7][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[6][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[6][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[5][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[5][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[4][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[4][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[3][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[3][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[2][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[2][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[1][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[1][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[0][5]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[0][5]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[31][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[31][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[30][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[30][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[29][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[29][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[28][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[28][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[27][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[27][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[26][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[26][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[25][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[25][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[24][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[24][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[23][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[23][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[22][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[22][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[21][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[21][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[20][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[20][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[19][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[19][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[18][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[18][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[17][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[17][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[16][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[16][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[15][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[15][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[14][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[14][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[13][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[13][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[12][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[12][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[11][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[11][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[10][0] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[10][0] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[9][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[9][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[8][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[8][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[7][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[7][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[6][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[6][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[5][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[5][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[4][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[4][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[3][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[3][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[2][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[2][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[1][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[1][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[0][0]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[0][0]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[31][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[31][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[30][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[30][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[29][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[29][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[28][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[28][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[27][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[27][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[26][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[26][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[25][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[25][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[24][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[24][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[23][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[23][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[22][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[22][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[21][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[21][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[20][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[20][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[19][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[19][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[18][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[18][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[17][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[17][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[16][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[16][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[15][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[15][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[14][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[14][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[13][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[13][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[12][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[12][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[11][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[11][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[10][1] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[10][1] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[9][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[9][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[8][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[8][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[7][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[7][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[6][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[6][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[5][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[5][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[4][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[4][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[3][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[3][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[2][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[2][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[1][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[1][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[0][1]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[0][1]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[31][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[31][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[30][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[30][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[29][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[29][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[28][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[28][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[27][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[27][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[26][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[26][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[25][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[25][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[24][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[24][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[23][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[23][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[22][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[22][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[21][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[21][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[20][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[20][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[19][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[19][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[18][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[18][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[17][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[17][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[16][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[16][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[15][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[15][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[14][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[14][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[13][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[13][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[12][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[12][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[11][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[11][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[10][3] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[10][3] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[9][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[9][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[8][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[8][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[7][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[7][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[6][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[6][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[5][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[5][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[4][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[4][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[3][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[3][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[2][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[2][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[1][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[1][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[0][3]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[0][3]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[31][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[31][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[30][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[30][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[29][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[29][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[28][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[28][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[27][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[27][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[26][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[26][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[25][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[25][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[24][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[24][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[23][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[23][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[22][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[22][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[21][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[21][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[20][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[20][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[19][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[19][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[18][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[18][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[17][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[17][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[16][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[16][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[15][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[15][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[14][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[14][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[13][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[13][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[12][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[12][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[11][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[11][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[10][4] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[10][4] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[9][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[9][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[8][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[8][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[7][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[7][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[6][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[6][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[5][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[5][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[4][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[4][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[3][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[3][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[2][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[2][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[1][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[1][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[0][4]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[0][4]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[31][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[31][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[30][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[30][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[29][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[29][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[28][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[28][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[27][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[27][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[26][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[26][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[25][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[25][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[24][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[24][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[23][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[23][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[22][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[22][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[21][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[21][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[20][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[20][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[19][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[19][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[18][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[18][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[17][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[17][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[16][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[16][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[15][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[15][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[14][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[14][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[13][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[13][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[12][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[12][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[11][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[11][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[10][2] ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[10][2] ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[9][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[9][2]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[8][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[8][2]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[7][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[7][2]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[6][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[6][2]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[5][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[5][2]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[4][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[4][2]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[3][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[3][2]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[2][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[2][2]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[1][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[1][2]  ;
+; Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mem[0][2]  ; Merged with Memory256_16bits:Inst_Mem|Memory32_8bits:M20|Mem[0][2]  ;
+; Total Number of Removed Registers = 523                 ;                                                                     ;
++---------------------------------------------------------+---------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 8021  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Asynchronous Clear ; 212   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 7826  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; 225:1              ; 16 bits   ; 2400 LEs      ; 2400 LEs             ; 0 LEs                  ; Yes        ; |RISC_complete|DFF_16bits:D4_Inst|Dout[1]                        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |RISC_complete|Memory256_16bits:Mem_data|Decoder3to8:D0|Dout[5]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |RISC_complete|Memory256_16bits:Mem_data|Decoder3to8:D0|Dout[3]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |RISC_complete|RF8_16bits:RF0|Decoder3to8:D0|Dout[6]             ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |RISC_complete|RF8_16bits:RF0|Decoder3to8:D0|Dout[1]             ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |RISC_complete|Mux4to1_16bits:Rs_forwarding|Mux13                ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |RISC_complete|Memory256_16bits:Inst_Mem|Decoder3to8:D0|Dout[6]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |RISC_complete|Memory256_16bits:Inst_Mem|Decoder3to8:D0|Dout[3]  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |RISC_complete|Mux4to1_16bits:Mux_ALU_A_target|Mux13             ;
+; 4:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |RISC_complete|Mux4to1_16bits:Mux_ALU_B_target|Mux0              ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |RISC_complete|Mux4to1_16bits:Rt_forwarding|Mux13                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |RISC_complete|Add0                                              ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |RISC_complete|RF8_16bits:RF0|Mux8to1_16bits:Rs|Mux7             ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |RISC_complete|RF8_16bits:RF0|Mux8to1_16bits:Rt|Mux2             ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |RISC_complete|Memory256_16bits:Mem_data|Memory32_8bits:M20|Mux1 ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |RISC_complete|Memory256_16bits:Inst_Mem|Memory32_8bits:M21|Mux3 ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |RISC_complete|Add0                                              ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; No         ; |RISC_complete|Add0                                              ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |RISC_complete|Add0                                              ;
+; 227:1              ; 16 bits   ; 2416 LEs      ; 2416 LEs             ; 0 LEs                  ; No         ; |RISC_complete|wr_data_D1[12]                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:Dfor_Inst"                                                                                                                                                                      ;
++--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                                                                                                                            ;
++--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en           ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1]       ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; Dout[15..11] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
+; Dout[7..0]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:Dfor_wr_data"                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:Dfor_RF_wr_en"                                                                                                                                                            ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                            ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Din    ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "Din[15..1]" will be connected to GND.                                      ;
+; en     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; Dout   ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "Dout[15..1]" have no fanouts                                                          ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D1_PC"                                                                                                                                                                    ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                            ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; Dout   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D1_Inst"                                                                                                                                                                 ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D1_wr_data"                                                                                                                                                              ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D2_PC"                                                                                                                                                                   ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D2_Inst"                                                                                                                                                                 ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D2_Rt"                                                                                                                                                                    ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                            ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; Dout   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D2_sum"                                                                                                                                                                  ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_16bits:ALU0"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; N    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Mux4to1_16bits:Mux_ALU_B_target"                                                                                                              ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                        ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Din2 ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "Din2[15..1]" will be connected to GND. ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Mux4to1_16bits:Mux_ALU_A_target"                                                                                                                                                          ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                                                             ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Din2[15..8] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; Din3        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Din3[15..0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                        ;
++-------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D3_PC"                                                                                                                                                                   ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D3_Inst"                                                                                                                                                                 ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D3_Imm"                                                                                                                                                                      ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Din[15..8] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; en         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D3_Rt"                                                                                                                                                                   ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D3_Rs"                                                                                                                                                                    ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                                                            ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; Dout   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Hazard_Detector:HD0"                                                                                                                                                                  ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; Stall   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "RF8_16bits:RF0"                                                                                                                                                                      ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; rst     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; rst[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D4_PC"                                                                                                                                                                   ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DFF_16bits:D4_Inst"                                                                                                                                                                 ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; en     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; en[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Mux2to1_16bits:Testing"                                                                    ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Dout[15..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:09     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue Nov 14 19:49:38 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISC_complete -c RISC_complete
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/alu_16bits.v
+    Info (12023): Found entity 1: ALU_16bits
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/mux4to1_16bits.v
+    Info (12023): Found entity 1: Mux4to1_16bits
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/rf8_16bits.v
+    Info (12023): Found entity 1: RF8_16bits
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/mux8to1_16bits.v
+    Info (12023): Found entity 1: Mux8to1_16bits
+Info (12021): Found 2 design units, including 2 entities, in source file /altera/13.1/quartus/project/term_project/library/memory256_16bits.v
+    Info (12023): Found entity 1: Memory256_16bits
+    Info (12023): Found entity 2: Memory32_8bits
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/instruction_decoder.v
+    Info (12023): Found entity 1: Instruction_Decoder
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/fa_16bits.v
+    Info (12023): Found entity 1: FA_16bits
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/dff_16bits.v
+    Info (12023): Found entity 1: DFF_16bits
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/decoder3to8.v
+    Info (12023): Found entity 1: Decoder3to8
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/controller.v
+    Info (12023): Found entity 1: Controller
+Info (12021): Found 1 design units, including 1 entities, in source file risc_complete.v
+    Info (12023): Found entity 1: RISC_complete
+Info (12021): Found 1 design units, including 1 entities, in source file risc_complete_tb.v
+    Info (12023): Found entity 1: RISC_complete_tb
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/fowarding_unit.v
+    Info (12023): Found entity 1: Forwarding_unit
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/hazard_detector.v
+    Info (12023): Found entity 1: Hazard_Detector
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/mux2to1_16bits.v
+    Info (12023): Found entity 1: Mux2to1_16bits
+Info (12021): Found 1 design units, including 1 entities, in source file /altera/13.1/quartus/project/term_project/library/branch_unit.v
+    Info (12023): Found entity 1: Branch_unit
+Info (12127): Elaborating entity "RISC_complete" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at RISC_complete.v(47): object "N" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at RISC_complete.v(47): object "V" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at RISC_complete.v(52): object "LDR_D1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at RISC_complete.v(60): object "JAL" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at RISC_complete.v(72): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at RISC_complete.v(88): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at RISC_complete.v(110): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at RISC_complete.v(114): truncated value with size 32 to match size of target (16)
+Warning (10034): Output port "mem_out" at RISC_complete.v(7) has no driver
+Info (12128): Elaborating entity "DFF_16bits" for hierarchy "DFF_16bits:PC_DFF"
+Info (12128): Elaborating entity "Mux2to1_16bits" for hierarchy "Mux2to1_16bits:Testing"
+Info (12128): Elaborating entity "Memory256_16bits" for hierarchy "Memory256_16bits:Inst_Mem"
+Info (12128): Elaborating entity "Decoder3to8" for hierarchy "Memory256_16bits:Inst_Mem|Decoder3to8:D0"
+Info (12128): Elaborating entity "Mux8to1_16bits" for hierarchy "Memory256_16bits:Inst_Mem|Mux8to1_16bits:Mu0"
+Info (12128): Elaborating entity "Memory32_8bits" for hierarchy "Memory256_16bits:Inst_Mem|Memory32_8bits:M00"
+Info (12128): Elaborating entity "Instruction_Decoder" for hierarchy "Instruction_Decoder:ID0"
+Info (12128): Elaborating entity "Controller" for hierarchy "Controller:C0"
+Info (12128): Elaborating entity "Branch_unit" for hierarchy "Branch_unit:BU0"
+Info (12128): Elaborating entity "RF8_16bits" for hierarchy "RF8_16bits:RF0"
+Info (12128): Elaborating entity "Hazard_Detector" for hierarchy "Hazard_Detector:HD0"
+Info (12128): Elaborating entity "Mux4to1_16bits" for hierarchy "Mux4to1_16bits:Rs_forwarding"
+Info (12128): Elaborating entity "Forwarding_unit" for hierarchy "Forwarding_unit:For0"
+Info (12128): Elaborating entity "ALU_16bits" for hierarchy "ALU_16bits:ALU0"
+Info (12128): Elaborating entity "FA_16bits" for hierarchy "ALU_16bits:ALU0|FA_16bits:A0"
+Warning (12241): 21 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "mem_out[0]" is stuck at GND
+    Warning (13410): Pin "mem_out[1]" is stuck at GND
+    Warning (13410): Pin "mem_out[2]" is stuck at GND
+    Warning (13410): Pin "mem_out[3]" is stuck at GND
+    Warning (13410): Pin "mem_out[4]" is stuck at GND
+    Warning (13410): Pin "mem_out[5]" is stuck at GND
+    Warning (13410): Pin "mem_out[6]" is stuck at GND
+    Warning (13410): Pin "mem_out[7]" is stuck at GND
+    Warning (13410): Pin "mem_out[8]" is stuck at GND
+    Warning (13410): Pin "mem_out[9]" is stuck at GND
+    Warning (13410): Pin "mem_out[10]" is stuck at GND
+    Warning (13410): Pin "mem_out[11]" is stuck at GND
+    Warning (13410): Pin "mem_out[12]" is stuck at GND
+    Warning (13410): Pin "mem_out[13]" is stuck at GND
+    Warning (13410): Pin "mem_out[14]" is stuck at GND
+    Warning (13410): Pin "mem_out[15]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file X:/altera/13.1/quartus/Project/Term_project/RISC_complete/output_files/RISC_complete.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "test_normal"
+    Warning (15610): No output dependent on input pin "ext_addr[8]"
+    Warning (15610): No output dependent on input pin "ext_addr[9]"
+    Warning (15610): No output dependent on input pin "ext_addr[10]"
+    Warning (15610): No output dependent on input pin "ext_addr[11]"
+    Warning (15610): No output dependent on input pin "ext_addr[12]"
+    Warning (15610): No output dependent on input pin "ext_addr[13]"
+    Warning (15610): No output dependent on input pin "ext_addr[14]"
+    Warning (15610): No output dependent on input pin "ext_addr[15]"
+Info (21057): Implemented 14289 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 37 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 14219 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 38 warnings
+    Info: Peak virtual memory: 4760 megabytes
+    Info: Processing ended: Tue Nov 14 19:49:49 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in X:/altera/13.1/quartus/Project/Term_project/RISC_complete/output_files/RISC_complete.map.smsg.
+
+

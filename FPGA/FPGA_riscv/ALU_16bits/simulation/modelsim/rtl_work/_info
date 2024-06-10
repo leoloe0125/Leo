@@ -1,0 +1,68 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\quartus\ALU_16bits\simulation\modelsim
+vALU_16bits
+IXQAU[D<aSmGOER69Gan9f1
+VH:3jCj_F?GFK1MiCOm[>J1
+Z1 dX:\altera\13.1\quartus\ALU_16bits\simulation\modelsim
+w1699717430
+8X:/altera/13.1/quartus/ALU_16bits/ALU_16bits.v
+FX:/altera/13.1/quartus/ALU_16bits/ALU_16bits.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@a@l@u_16bits
+!i10b 1
+!s100 YAg2ob1OFIjfHQeZkHdSK0
+!s85 0
+!s108 1699718620.921000
+!s107 X:/altera/13.1/quartus/ALU_16bits/ALU_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/ALU_16bits|X:/altera/13.1/quartus/ALU_16bits/ALU_16bits.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/ALU_16bits -O0
+vALU_16bits_tb
+!i10b 1
+!s100 BnJzPS5X`bOBGZ<GzFSi61
+Ig2:K28g_>5TO]f@]TAT0O2
+VnRoz87ZoLSHVDNOOHHPZG3
+R1
+w1699717872
+8X:/altera/13.1/quartus/ALU_16bits/ALU_16bits_tb.v
+FX:/altera/13.1/quartus/ALU_16bits/ALU_16bits_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1699718620.997000
+!s107 X:/altera/13.1/quartus/ALU_16bits/ALU_16bits_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/ALU_16bits|X:/altera/13.1/quartus/ALU_16bits/ALU_16bits_tb.v|
+!s101 -O0
+R3
+R4
+n@a@l@u_16bits_tb
+vFA_16bits
+IIW]QWL2EWgNB5Z:CgUBl>3
+V]G8g=]=T8L8jWmdGAb@P>2
+R1
+w1699717391
+8X:/altera/13.1/quartus/FA_16bits/FA_16bits.v
+FX:/altera/13.1/quartus/FA_16bits/FA_16bits.v
+L0 1
+R2
+r1
+31
+R3
+n@f@a_16bits
+!i10b 1
+!s100 `boGhfU5ILEiRL;7=CB:61
+!s85 0
+!s108 1699718620.808000
+!s107 X:/altera/13.1/quartus/FA_16bits/FA_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/FA_16bits|X:/altera/13.1/quartus/FA_16bits/FA_16bits.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/FA_16bits -O0

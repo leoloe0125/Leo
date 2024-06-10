@@ -1,0 +1,44 @@
+# Reading X:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Instruction_Decoder_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying X:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied X:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Instruction_Decoder_6_1200mv_85c_slow.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneiv_atom_pack
+# -- Loading package cycloneiv_components
+# -- Compiling entity Instruction_Decoder
+# -- Compiling architecture structure of Instruction_Decoder
+# 
+# vlog -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Instruction_Decoder {X:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Instruction_Decoder_tb
+# 
+# Top level modules:
+# 	Instruction_Decoder_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /NA=Instruction_Decoder_6_1200mv_85c_vhd_slow.sdo -L altera_mf -L altera -L lpm -L sgate -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L gate_work -L work -voptargs="+acc"  Instruction_Decoder_tb
+# vsim +transport_int_delays +transport_path_delays -L altera_mf -L altera -L lpm -L sgate -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L gate_work -L work -voptargs=\"+acc\" -sdftyp /NA=Instruction_Decoder_6_1200mv_85c_vhd_slow.sdo -t 1ps Instruction_Decoder_tb 
+# Loading work.Instruction_Decoder_tb
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# ALTERA version supports only a single HDL
+# ** Fatal: (vsim-3039) X:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder_tb.v(5): Instantiation of 'Instruction_Decoder' failed.
+#    Time: 0 ps  Iteration: 0  Instance: /Instruction_Decoder_tb File: X:/altera/13.1/quartus/Instruction_Decoder/Instruction_Decoder_tb.v
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Instruction_Decoder_run_msim_gate_vhdl.do PAUSED at line 12

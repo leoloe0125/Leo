@@ -1,0 +1,11 @@
+module Decoder3to8
+	(input Din[2:0]
+		input en
+		output Dout[7:0]);
+always@(*)
+	if(!en)
+		Dout = 'd0;
+	else
+		Dout ='d1<<Din;
+
+endmodule

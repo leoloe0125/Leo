@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\altera\13.1\quartus\RF8_16bits\simulation\modelsim
+vDecoder3to8
+IMe07;[OMB64Z2jVBNmJ;c3
+VQN1GX6[M[5C4ZizUAM;461
+Z1 dX:\altera\13.1\quartus\RF8_16bits\simulation\modelsim
+w1699674310
+8X:/altera/13.1/quartus/Decoder3to8/Decoder3to8.v
+FX:/altera/13.1/quartus/Decoder3to8/Decoder3to8.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@decoder3to8
+!i10b 1
+!s100 N=JAejAM@MXJS^cS3j8Pz0
+!s85 0
+!s108 1699675133.674000
+!s107 X:/altera/13.1/quartus/Decoder3to8/Decoder3to8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Decoder3to8|X:/altera/13.1/quartus/Decoder3to8/Decoder3to8.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Decoder3to8 -O0
+vDFF_16bits
+I5OP9ezAS1zz33S72G^88<1
+VF1kYjYmhjnjo>^hDjUjaU3
+R1
+w1699673363
+8X:/altera/13.1/quartus/DFF_16bits/DFF_16bits.v
+FX:/altera/13.1/quartus/DFF_16bits/DFF_16bits.v
+L0 1
+R2
+r1
+31
+R3
+n@d@f@f_16bits
+!i10b 1
+!s100 9:PSXH4V4RWN02E0ViU103
+!s85 0
+!s108 1699675133.552000
+!s107 X:/altera/13.1/quartus/DFF_16bits/DFF_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/DFF_16bits|X:/altera/13.1/quartus/DFF_16bits/DFF_16bits.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/DFF_16bits -O0
+vMux8to1_16bits
+I4HX8>RJWbi[meK7W[jz^n2
+VPBnoWPz2EOV<_D2Z31agG1
+R1
+w1699671962
+8X:/altera/13.1/quartus/Mux8to1_16bits/Mux8to1_16bits.v
+FX:/altera/13.1/quartus/Mux8to1_16bits/Mux8to1_16bits.v
+L0 1
+R2
+r1
+31
+R3
+n@mux8to1_16bits
+!i10b 1
+!s100 S<3ghk[c9HMe4W^TKCaA32
+!s85 0
+!s108 1699675133.395000
+!s107 X:/altera/13.1/quartus/Mux8to1_16bits/Mux8to1_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/Mux8to1_16bits|X:/altera/13.1/quartus/Mux8to1_16bits/Mux8to1_16bits.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/Mux8to1_16bits -O0
+vRF8_16bits
+IYKh3@]j:S<<8FZUhgzIMG0
+VCeVoZ>Ob:DI6zej2:?hLM1
+R1
+w1699674770
+8X:/altera/13.1/quartus/RF8_16bits/RF8_16bits.v
+FX:/altera/13.1/quartus/RF8_16bits/RF8_16bits.v
+L0 1
+R2
+r1
+31
+R3
+n@r@f8_16bits
+!i10b 1
+!s100 B3;zY<7fFHI9kBlj6g:eF1
+!s85 0
+!s108 1699675133.788000
+!s107 X:/altera/13.1/quartus/RF8_16bits/RF8_16bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/RF8_16bits|X:/altera/13.1/quartus/RF8_16bits/RF8_16bits.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+X:/altera/13.1/quartus/RF8_16bits -O0
+vRF8_16bits_tb
+!i10b 1
+!s100 ?`QVlZ1>R9P6eX68JILbR0
+I[:z`HH=c<f]aiRI`YEG_L0
+V3U>gf=L7nzWXaOl4k<hSa3
+R1
+w1699675066
+8X:/altera/13.1/quartus/RF8_16bits/RF8_16bits_tb.v
+FX:/altera/13.1/quartus/RF8_16bits/RF8_16bits_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1699675133.860000
+!s107 X:/altera/13.1/quartus/RF8_16bits/RF8_16bits_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+X:/altera/13.1/quartus/RF8_16bits|X:/altera/13.1/quartus/RF8_16bits/RF8_16bits_tb.v|
+!s101 -O0
+R3
+R4
+n@r@f8_16bits_tb
