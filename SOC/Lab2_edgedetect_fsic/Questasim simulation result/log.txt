@@ -1,0 +1,678 @@
+# //  Questa Sim-64
+# //  Version 2022.3_1 linux_x86_64 Aug 12 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -i -t ps -wlf ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/vsim.wlf -l ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/sim.log -L ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls -L ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/work scverify_top_opt -sc_arg "./image/people640x360_rgb.bmp" -sc_arg "1" -sc_arg "out_algorithm.bmp" -sc_arg "out_hw.bmp" -do "do {./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/scverify_msim_wave.tcl}" 
+# Start time: 15:56:07 on Apr 06,2024
+# Loading /home/raid7_2/userk/m11102154/ASoC/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/02_edgedetect_fsic/bin/Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/work/_sc/linux_x86_64_gcc-7.4.0/systemc.so
+# Loading /home/raid7_2/userk/m11102154/ASoC/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/02_edgedetect_fsic/bin/Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/work.scverify_top
+# Info: CCS_CLK_CTOR: Clock 'clk' - Using default clock period '10 ns'
+# Loading work.ccs_wrapper(fast)
+# ** Note: (vsim-17423) SystemC IEEE 1666 deprecated warnings are suppressed by default. Enable the 'ScShowIeeeDeprecationWarnings' modelsim.ini variable to get more information about the suppressed warnings.
+# Loading work.EdgeDetect_IP_EdgeDetect_Top(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_pipe_v6(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_fifo_wait_core_v5(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_genreg_v1(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_genreg_v1(fast__1)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_genreg_v1(fast__2)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_struct(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_ccs_sample_mem_ccs_ram_sync_singleport_rwport_en_6_64_9_320_320_64_5_gen(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_ccs_sample_mem_ccs_ram_sync_singleport_rwport_en_7_64_9_320_320_64_5_gen(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_dat_in_rsci(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_in_wait_coupled_v1(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_dat_in_rsci_dat_in_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_dat_out_rsci(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_out_wait_v1(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_dat_out_rsci_dat_out_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_dat_out_rsci_dat_out_wait_dp(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_dy_rsci(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_out_wait_v1(fast__1)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_dy_rsci_dy_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_dy_rsci_dy_wait_dp(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_wait_dp(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_staller(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_VerDer_run_run_fsm(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_struct(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_dat_in_rsci(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_dat_in_rsci_dat_in_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_dat_out_rsci(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_dat_out_rsci_dat_out_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_dat_out_rsci_dat_out_wait_dp(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_dx_rsci(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_dx_rsci_dx_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_dx_rsci_dx_wait_dp(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_staller(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_HorDer_run_run_fsm(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_struct(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_in_v1(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_in_v1(fast__1)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_in_v1(fast__2)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_dx_in_rsci(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_in_wait_v1(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_dx_in_rsci_dx_in_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_dx_in_rsci_dx_in_wait_dp(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_dy_in_rsci(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_in_wait_v1(fast__1)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_dy_in_rsci_dy_in_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_dy_in_rsci_dy_in_wait_dp(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_pix_chan2_rsci(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_in_wait_v1(fast__2)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_pix_chan2_rsci_pix_chan2_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_pix_chan2_rsci_pix_chan2_wait_dp(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_crc32_pix_in_rsci(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.mgc_inout_prereg_en_v1(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_crc32_pix_in_rsci_crc32_pix_in_rsc_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_crc32_dat_out_rsci(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.mgc_inout_prereg_en_v1(fast__1)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_crc32_dat_out_rsci_crc32_dat_out_rsc_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_dat_out_rsci(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.ccs_out_wait_v1(fast__2)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_dat_out_rsci_dat_out_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_dat_out_rsci_dat_out_wait_dp(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_widthIn_triosy_obj(fast)
+# Loading ./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/mgc_hls.mgc_io_sync_v2(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_widthIn_triosy_obj_widthIn_triosy_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_heightIn_triosy_obj(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_heightIn_triosy_obj_heightIn_triosy_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_sw_in_triosy_obj(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_sw_in_triosy_obj_sw_in_triosy_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_crc32_pix_in_triosy_obj(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_crc32_pix_in_triosy_obj_crc32_pix_in_triosy_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_crc32_dat_out_triosy_obj(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_crc32_dat_out_triosy_obj_crc32_dat_out_triosy_wait_ctrl(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_staller(fast)
+# Loading work.EdgeDetect_IP_EdgeDetect_MagAng_run_run_fsm(fast)
+# ** Warning: (vsim-4029) The fifo '/scverify_top/user_tb/dat_out_eol_golden'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/user_tb/dat_out_sof_golden'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/user_tb/dat_out_pix_golden'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/user_tb/crc32_dat_out_golden'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/user_tb/crc32_pix_in_golden'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_wait_ctrl_fifo_crc32_dat_out'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_fifo_crc32_dat_out'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_wait_ctrl_fifo_crc32_dat_out'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_fifo_crc32_dat_out'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_wait_ctrl_fifo_crc32_pix_in'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_fifo_crc32_pix_in'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_wait_ctrl_fifo_crc32_pix_in'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_fifo_crc32_pix_in'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_wait_ctrl_fifo_sw_in'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_fifo_sw_in'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_wait_ctrl_fifo_dat_out_eol'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_fifo_dat_out_eol'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_wait_ctrl_fifo_dat_out_sof'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_fifo_dat_out_sof'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_wait_ctrl_fifo_dat_out_pix'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_out_fifo_dat_out_pix'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_wait_ctrl_fifo_dat_in_eol'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_fifo_dat_in_eol'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_wait_ctrl_fifo_dat_in_sof'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_fifo_dat_in_sof'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_wait_ctrl_fifo_dat_in_pix'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# ** Warning: (vsim-4029) The fifo '/scverify_top/TLS_in_fifo_dat_in_pix'
+# (and any connected ports) is undebuggable as the tlm fifo size specified is '-1'. A tlm fifo with an infinite size is not debuggable.
+# Disabling STALL_FLAG toggling
+# do {./Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/rtl_v_msim/scverify_msim_wave.tcl}
+# Reading SCVerify waveform database './Catapult_4/EdgeDetect_IP_EdgeDetect_Top.v2/scverify/ccs_wave_signals.dat'
+# Populating WAVE window...
+#                 DONE
+# 0
+# 
+# stdin: <EOF>
+run -all
+# Loading Input File
+# Input file:          ./image/people640x360_rgb.bmp
+# Mode:                1
+# Output file (alg):   out_algorithm.bmp
+# Output file (hw):    out_hw.bmp
+# Image width: 640
+# Image height: 360
+############################################# FRAME NO.   0 ###############################################
+# Running
+# +++++++++++++++++++++++++SCVerify intercepting C++ function 'EdgeDetect_IP::EdgeDetect_Top::run' for RTL block 'EdgeDetect_IP_EdgeDetect_Top'
+#                       DUT instance '0x2aaab4cdcbd0'
+# Info: HW reset: TLS_rst active @ 0 s
+# Info: HW reset: TLS_arst_n active @ 0 s
+# 
+#                       _oo0oo_
+#                      o8888888o
+#                      88" . "88
+#                      (| -_- |)
+#                      0\  =  /0
+#                    ___/`---'\___
+#                  .' \\|     |# '.
+#                 / \\|||  :  |||# \
+#                / _||||| -:- |||||- \
+#               |   | \\\  -  #/ |   |
+#               | \_|  ''\---/''  |_/ |
+#               \  .-\__  '-'  ___/-. /
+#             ___'. .'  /--.--\  `. .'___
+#          ."" '<  `.___\_<|>_/___.' >' "".
+#         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+#         \  \ `_.   \_ __\ /__ _/   .-` /  /
+#     =====`-.____`.___ \_____/___.-`___.-'=====
+#                       `=---='
+#
+#
+#     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
+# 
+# dut finish
+# Magnitude: Manhattan norm per pixel 0.337778
+# Writing algorithmic bitmap output to: out_algorithm.bmp
+# Writing bit-accurate bitmap output to: out_hw.bmp
+# sofErr: 0 eolErr: 0
+# crc32_alg_pix_in  = ebb44e76  crc32_hw_pix_in  = ebb44e76
+# crc32_alg_dat_out = a6fe0b16  crc32_hw_dat_out = 13fc2869
+# Finished
+# Info: Execution of user-supplied C++ testbench 'main()' has completed with exit code = 0
+# 
+# Info: Collecting data completed
+#    captured 1 values of widthIn
+#    captured 1 values of heightIn
+#    captured 1 values of sw_in
+#    captured 1 values of crc32_pix_in_IN
+#    captured 1 values of crc32_pix_in
+#    captured 1 values of crc32_dat_out_IN
+#    captured 1 values of crc32_dat_out
+#    captured 57600 values of dat_in_pix
+#    captured 57600 values of dat_in_sof
+#    captured 57600 values of dat_in_eol
+#    captured 57600 values of dat_out_pix
+#    captured 57600 values of dat_out_sof
+#    captured 57600 values of dat_out_eol
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 12175 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 1021
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 22675 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 2045
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 2
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 33215 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 3069
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 3
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 43715 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 4093
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 4
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 54215 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 5117
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 5
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 64735 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 6141
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 6
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 75235 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 7165
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 7
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 85775 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 8189
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 8
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 96275 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 9213
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 9
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 106775 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 10237
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 10
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 117295 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 11261
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 11
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 127795 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 12285
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 12
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 138335 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 13309
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 13
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 148835 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 14333
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 14
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 159335 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 15357
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 15
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 169855 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 16381
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 16
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 180355 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 17405
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 17
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 190895 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 18429
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 18
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 201395 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 19453
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 19
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 211895 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 20477
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 20
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 222415 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 21501
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 21
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 232915 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 22525
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 22
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 243455 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 23549
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 23
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 253955 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 24573
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 24
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 264455 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 25597
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 25
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 274975 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 26621
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 26
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 285475 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 27645
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 27
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 296015 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 28669
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 28
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 306515 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 29693
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 29
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 317015 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 30717
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 30
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 327535 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 31741
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 31
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 338035 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 32765
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 32
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 348575 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 33789
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 33
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 359075 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 34813
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 34
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 369575 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 35837
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 35
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 380095 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 36861
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 36
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 390595 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 37885
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 37
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 401135 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 38909
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 38
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 411635 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 39933
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 39
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 422135 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 40957
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 40
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 432655 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 41981
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 41
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 443155 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 43005
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 42
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 453695 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 44029
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 43
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 464195 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 45053
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 44
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 474695 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 46077
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 45
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 485215 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 47101
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 46
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 495715 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 48125
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 47
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 506255 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 49149
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 48
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 516755 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 50173
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 49
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 527255 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 51197
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 50
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 537775 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 52221
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 51
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 548275 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 53245
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 52
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 558815 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 54269
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 53
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 569315 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 55293
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 54
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 579815 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 56317
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 55
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/dat_out_eol_comp: Incorrect Data Detected @ 590335 ns
+# Info: scverify_top/user_tb/dat_out_eol_comp:  iteration count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:    compare count = 57341
+# Info: scverify_top/user_tb/dat_out_eol_comp:      error count = 56
+# Info: scverify_top/user_tb/dat_out_eol_comp:     ignore count = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:           golden = 0
+# Info: scverify_top/user_tb/dat_out_eol_comp:              dut = 1
+# Info: scverify_top/user_tb/crc32_dat_out_comp: Incorrect Data Detected @ 5398785 ns
+# Info: scverify_top/user_tb/crc32_dat_out_comp:  iteration count = 1
+# Info: scverify_top/user_tb/crc32_dat_out_comp:    compare count = 1
+# Info: scverify_top/user_tb/crc32_dat_out_comp:      error count = 1
+# Info: scverify_top/user_tb/crc32_dat_out_comp:     ignore count = 0
+# Info: scverify_top/user_tb/crc32_dat_out_comp:           golden = 335292521
+# Info: scverify_top/user_tb/crc32_dat_out_comp:              dut = 4278653479
+# Info: scverify_top/user_tb/crc32_pix_in_comp: Incorrect Data Detected @ 5398785 ns
+# Info: scverify_top/user_tb/crc32_pix_in_comp:  iteration count = 1
+# Info: scverify_top/user_tb/crc32_pix_in_comp:    compare count = 1
+# Info: scverify_top/user_tb/crc32_pix_in_comp:      error count = 1
+# Info: scverify_top/user_tb/crc32_pix_in_comp:     ignore count = 0
+# Info: scverify_top/user_tb/crc32_pix_in_comp:           golden = 3954462326
+# Info: scverify_top/user_tb/crc32_pix_in_comp:              dut = 3643137560
+# Info: scverify_top/user_tb: Simulation completed
+# 
+# Checking results
+# 'crc32_pix_in'
+#    capture count        = 1
+#    comparison count     = 1
+#    ignore count         = 0
+#    error count          = 1
+#    stuck in dut fifo    = 0
+#    stuck in golden fifo = 0
+#    Error: output 'crc32_pix_in' had comparison errors
+# 'crc32_dat_out'
+#    capture count        = 1
+#    comparison count     = 1
+#    ignore count         = 0
+#    error count          = 1
+#    stuck in dut fifo    = 0
+#    stuck in golden fifo = 0
+#    Error: output 'crc32_dat_out' had comparison errors
+# 'dat_out_pix'
+#    capture count        = 57600
+#    comparison count     = 57600
+#    ignore count         = 0
+#    error count          = 0
+#    stuck in dut fifo    = 466687
+#    stuck in golden fifo = 0
+# 'dat_out_sof'
+#    capture count        = 57600
+#    comparison count     = 57600
+#    ignore count         = 0
+#    error count          = 0
+#    stuck in dut fifo    = 466687
+#    stuck in golden fifo = 0
+# 'dat_out_eol'
+#    capture count        = 57600
+#    comparison count     = 57600
+#    ignore count         = 0
+#    error count          = 56
+#    stuck in dut fifo    = 466687
+#    stuck in golden fifo = 0
+#    Error: output 'dat_out_eol' had comparison errors
+# 
+# Info: scverify_top/user_tb: Simulation FAILED @ 5398786 ns
+# ** Note: (vsim-6574) SystemC simulation stopped by user.
+# 1
+# 
+
+
